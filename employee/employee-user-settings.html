@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>User Settings</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script> -->
+  </head>
+
+  <body>
+    <header class="box-shadow">
+      <div class="logo">
+        <i class="fa fa-tachometer"></i>
+        <img class="mobile-logo" src="../img/fbs-logo-sm.png" alt="" />
+      </div>
+      <div class="user-info">
+        <div class="user-dp">
+          <img src="../img/dp.jpg" alt="" />
+        </div>
+        <div class="welcome">
+          <div class="welcome-name">Welcome, Roy Balaaldia</div>
+          <ul>
+            <li class="department">WEB DEVELOPMENT</li>
+            <li class="date">01/17/2020</li>
+          </ul>
+        </div>
+        <ul>
+          <li>
+            <i class="fas fa-bars nav-trigger"></i>
+            <!-- <a href="#" class="nav-trigger"><span></span></a> -->
+          </li>
+        </ul>
+      </div>
+      <!-- <a href="#" class="nav-trigger"><span></span></a> -->
+    </header>
+    <div class="side-nav">
+      <div class="logo">
+        <img class="desk-logo" src="../img/FBS-GREYSCALE LOGO.png" alt="" />
+        <img class="mobile-logo" src="../img/fbs-logo-sm.png" alt="" />
+      </div>
+      <nav>
+        <ul>
+          <li class="menu-dashboard menu">
+            <a href="employee-dashboard.html" for="dashboard-sidebtn">
+              <span><i class="fas fa-tachometer-alt"></i></span>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="menu-leave menu">
+            <a href="employee-leave-dashboard.html">
+              <span><i class="fas fa-business-time"></i></span>
+              <span>Leave</span>
+            </a>
+          </li>
+          <li class="menu-task menu">
+            <a href="employee-task-manager.html">
+              <span><i class="fas fa-clipboard-list"></i></span>
+              <span>Task Manager</span>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li class="menu-user menu active">
+            <a href="employee-user-settings.html">
+              <span><i class="fas fa-user-cog"></i></span>
+              <span>User Account</span>
+            </a>
+          </li>
+          <li class="menu-logout menu">
+            <a href="#">
+              <span><i class="fas fa-sign-out-alt"></i></span>
+              <span>Log Out</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-content">
+      <div class="content-wrap">
+        <h3 class="mb--50">USER SETTINGS <i class="fas fa-user-cog"></i></h3>
+        <div class="user-setting box-shadow mb--40">
+          <div class="user-setting-title box-title-head">
+            <p>Account Settings</p>
+          </div>
+          <div class="user-setting-box">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="user-add-image">
+                  <div class="user-icon"><i class="fa fa-user"></i></div>
+                  <a class="user-add-icon" href="#"
+                    ><i class="fas fa-plus-circle"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="user-id mb--20">
+                  <p>Email</p>
+                  <form action="">
+                    <input type="email" class="input-res" />
+                  </form>
+                </div>
+                <div class="user-status">
+                  <p>User Name</p>
+                  <form action="">
+                    <input type="text" class="input-res" />
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-5 col-sm-12">
+                <div class="user-pass mb--20">
+                  <p>Password</p>
+                  <form action="">
+                    <input type="password" class="input-res" />
+                  </form>
+                </div>
+                <div class="user-pass-confirm">
+                  <p>Confirm Password</p>
+                  <form action="">
+                    <input type="password" class="input-res" />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="save-settings mb--30">
+          <button class="btn-purple">
+            <a href="#pop-process-success">
+              SAVE SETTINGS
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="pop-process-success" class="overlay">
+      <div class="popup success-modal">
+        <a class="close" href="#process">&times;</a>
+        <div class="content">
+          <ul class="list-text">
+            <li class="no-pd"><i class="fas fa-check-circle"></i></li>
+            <li class="no-pd">SUCCESS!</li>
+          </ul>
+          <div class="t-center">
+            <div class="confirm-button">
+              <a href="#" class="btn-purple confirm-yes">DONE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

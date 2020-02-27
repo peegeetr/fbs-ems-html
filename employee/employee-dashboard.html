@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Employee Leave Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script> -->
+  </head>
+
+  <body>
+    <header class="box-shadow">
+      <div class="logo">
+        <i class="fa fa-tachometer"></i>
+        <img class="mobile-logo" src="../img/fbs-logo-sm.png" alt="" />
+      </div>
+      <div class="user-info">
+        <div class="user-dp">
+          <img src="../img/dp.jpg" alt="" />
+        </div>
+        <div class="welcome">
+          <div class="welcome-name">Welcome, Roy Balaaldia</div>
+          <ul>
+            <li class="department">WEB DEVELOPMENT</li>
+            <li class="date">01/17/2020</li>
+          </ul>
+        </div>
+        <ul>
+          <li>
+            <i class="fas fa-bars nav-trigger"></i>
+            <!-- <a href="#" class="nav-trigger"><span></span></a> -->
+          </li>
+        </ul>
+      </div>
+      <!-- <a href="#" class="nav-trigger"><span></span></a> -->
+    </header>
+    <div class="side-nav">
+      <div class="logo">
+        <img class="desk-logo" src="../img/FBS-GREYSCALE LOGO.png" alt="" />
+        <img class="mobile-logo" src="../img/fbs-logo-sm.png" alt="" />
+      </div>
+      <nav>
+        <ul>
+          <li class="menu-dashboard menu active">
+            <a href="employee-dashboard.html" for="dashboard-sidebtn">
+              <span><i class="fas fa-tachometer-alt"></i></span>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="menu-leave menu">
+            <a href="employee-leave-dashboard.html">
+              <span><i class="fas fa-business-time"></i></span>
+              <span>Leave</span>
+            </a>
+          </li>
+          <li class="menu-task menu">
+            <a href="employee-task-manager.html">
+              <span><i class="fas fa-clipboard-list"></i></span>
+              <span>Task Manager</span>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li class="menu-logout menu">
+            <a href="#">
+              <span><i class="fas fa-sign-out-alt"></i></span>
+              <span>Log Out</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-content">
+      <div class="content-wrap">
+        <h3>DASHBOARD <i class="fas fa-tachometer-alt"></i></h3>
+        <div class="employee-dashboard">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12">
+              <div class="employee-db-box box-shadow mb--20">
+                <div class="box-title-head">
+                  <p>TASK</p>
+                </div>
+                <ul>
+                  <li>On Going <span>1</span></li>
+                  <li>Pending <span>4</span></li>
+                  <li>Completed <span>7</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+              <div class="employee-db-box box-shadow mb--20">
+                <div class="box-title-head">
+                  <p>PROJECTS</p>
+                </div>
+                <ul>
+                  <li>Two Miles Website</li>
+                  <li>San Pablo Colleges</li>
+                  <li>Immersion Program</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+              <div class="employee-db-box box-shadow mb--20">
+                <div class="box-title-head">
+                  <p>CLIENTS</p>
+                </div>
+                <ul>
+                  <li>Eddie Wouldgrow</li>
+                  <li>John Sparks</li>
+                  <li>John Speaks</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+              <div class="employee-db-box box-shadow mb--20">
+                <div class="box-title-head">
+                  <p>HOLIDAYS</p>
+                </div>
+                <ul>
+                  <li>Eidl'ftr - June 31, 2020</li>
+                  <li>Christmas - December 25, 2020</li>
+                  <li>New Year - January 1, 2021</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

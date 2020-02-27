@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Add New User</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script> -->
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <i class="fa fa-tachometer"></i>
+        <img class="mobile-logo" src="../img/fbs-logo-sm.png" alt="" />
+      </div>
+      <div class="user">
+        <ul>
+          <li><i class="fas fa-user-circle"></i><span>Admin</span></li>
+          <li>
+            <i class="fas fa-bars nav-trigger"></i>
+            <!-- <a href="#" class="nav-trigger"><span></span></a> -->
+          </li>
+        </ul>
+      </div>
+      <!-- <a href="#" class="nav-trigger"><span></span></a> -->
+    </header>
+    <div class="side-nav">
+      <div class="logo">
+        <img class="desk-logo" src="../img/FBS-GREYSCALE LOGO.png" alt="" />
+        <img class="mobile-logo" src="../img/fbs-logo-sm.png" alt="" />
+      </div>
+      <nav>
+        <ul>
+          <li class="menu-dashboard menu">
+            <a href="admin-dashboard.html" for="dashboard-sidebtn">
+              <span><i class="fas fa-tachometer-alt"></i></span>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="menu-leave menu">
+            <a href="admin-leave-dashboard.html">
+              <span><i class="fas fa-business-time"></i></span>
+              <span>Leave</span>
+            </a>
+          </li>
+          <li class="menu-employee menu">
+            <a href="list-of-employees.html">
+              <span><i class="fa fa-user"></i></span>
+              <span>Employee</span>
+            </a>
+          </li>
+          <li class="menu-task menu">
+            <a href="admin-task-manager.html">
+              <span><i class="fas fa-clipboard-list"></i></span>
+              <span>Task Manager</span>
+            </a>
+          </li>
+          <li class="menu-settings menu">
+            <a href="admin-settings.html">
+              <span><i class="fas fa-cogs"></i></span>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li class="menu-user menu active">
+            <a href="admin-user-settings.html">
+              <span><i class="fas fa-user-cog"></i></span>
+              <span>User</span>
+            </a>
+          </li>
+          <li class="menu-logout menu">
+            <a href="#">
+              <span><i class="fas fa-sign-out-alt"></i></span>
+              <span>Log Out</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-content">
+      <div class="content-wrap">
+        <h3 class="mb--40">ADD NEW USER <i class="fas fa-user-plus"></i></h3>
+        <div class="add-new-user">
+          <p>Create a brand new user and add them to this system.</p>
+          <div class="add-new-user-box">
+            <div class="add-new-user-wrap box-shadow mb--50">
+              <p class="p-title">ADD NEW</p>
+              <div class="add-new-user-form">
+                <div class="fill-up">
+                  <p>Email<span class="color--red">*</span></p>
+                  <input type="email" class="input-res" />
+                </div>
+                <div class="fill-up">
+                  <p>First Name <span class="color--red">*</span></p>
+                  <input type="text" name="name" />
+                </div>
+                <div class="fill-up">
+                  <p>Last Name <span class="color--red">*</span></p>
+                  <input type="text" id="reason" name="reason" />
+                </div>
+                <div class="save-settings mb--30">
+                  <button>
+                    <a href="#pop-process-success" class="btn-purple">
+                      ADD USER
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="pop-process-success" class="overlay">
+      <div class="popup success-modal">
+        <a class="close" href="#process">&times;</a>
+        <div class="content">
+          <ul class="list-text">
+            <li class="no-pd"><i class="fas fa-check-circle"></i></li>
+            <li class="no-pd">SUCCESS!</li>
+          </ul>
+          <div class="t-center">
+            <div class="confirm-button">
+              <a href="#" class="btn-purple confirm-yes">DONE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

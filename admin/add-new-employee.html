@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Add New Employees</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script> -->
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <i class="fa fa-tachometer"></i>
+        <img class="mobile-logo" src="../img/fbs-logo-sm.png" alt="" />
+      </div>
+      <div class="user">
+        <ul>
+          <li><i class="fas fa-user-circle"></i><span>Admin</span></li>
+          <li>
+            <i class="fas fa-bars nav-trigger"></i>
+            <!-- <a href="#" class="nav-trigger"><span></span></a> -->
+          </li>
+        </ul>
+      </div>
+      <!-- <a href="#" class="nav-trigger"><span></span></a> -->
+    </header>
+    <div class="side-nav">
+      <div class="logo">
+        <img class="desk-logo" src="../img/FBS-GREYSCALE LOGO.png" alt="" />
+        <img class="mobile-logo" src="../img/fbs-logo-sm.png" alt="" />
+        <span></span>
+      </div>
+      <nav>
+        <ul>
+          <li class="menu-dashboard menu">
+            <a href="admin-dashboard.html" for="dashboard-sidebtn">
+              <span><i class="fas fa-tachometer-alt"></i></span>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="menu-leave menu">
+            <a href="admin-leave-dashboard.html">
+              <span><i class="fas fa-business-time"></i></span>
+              <span>Leave</span>
+            </a>
+          </li>
+          <li class="menu-employee menu active">
+            <a href="list-of-employees.html">
+              <span><i class="fa fa-user"></i></span>
+              <span>Employee</span>
+            </a>
+          </li>
+          <li class="menu-task menu">
+            <a href="admin-task-manager.html">
+              <span><i class="fas fa-clipboard-list"></i></span>
+              <span>Task Manager</span>
+            </a>
+          </li>
+          <li class="menu-settings menu">
+            <a href="admin-settings.html">
+              <span><i class="fas fa-cogs"></i></span>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li class="menu-user menu">
+            <a href="admin-user-settings.html">
+              <span><i class="fas fa-user-cog"></i></span>
+              <span>User Account</span>
+            </a>
+          </li>
+          <li class="menu-logout menu">
+            <a href="#">
+              <span><i class="fas fa-sign-out-alt"></i></span>
+              <span>Log Out</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-content">
+      <div class="content-wrap">
+        <h3 class="mb--50">ADD NEW EMPLOYEE <i class="fa fa-user"></i></h3>
+        <div class="general-info box-shadow mb--40">
+          <div class="general-info-title box-title-head">
+            <p>General Information</p>
+          </div>
+          <div class="general-info-box">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="employee-add-image">
+                  <div class="user-icon"><i class="fa fa-user"></i></div>
+                  <a class="employee-add-icon" href="#"
+                    ><i class="fas fa-plus-circle"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="employee-id mb--20">
+                  <p>Employee ID <span class="color--red">*</span></p>
+                  <form action="">
+                    <input type="text" class="input-res" />
+                  </form>
+                </div>
+                <div class="employee-status">
+                  <p>Employee Status <span class="color--red">*</span></p>
+                  <form action="">
+                    <input type="text" class="input-res" />
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-5 col-sm-12">
+                <div class="employee-id mb--20">
+                  <p>Department <span class="color--red">*</span></p>
+                  <select name="" id="">
+                    <option value="0">Department</option>
+                    <option value="1">Accounting Assocciate</option>
+                    <option value="2">Web Developer</option>
+                    <option value="3">SEO</option>
+                    <option value="4">Virtual Assistant</option>
+                  </select>
+                </div>
+                <div class="employee-status">
+                  <p>Position <span class="color--red">*</span></p>
+                  <form action="">
+                    <input type="text" class="input-res" />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="personal-info box-shadow mb--40">
+          <div class="personal-info-title box-title-head">
+            <p>Personal Information</p>
+          </div>
+          <div class="personal-info-box">
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="employee-status">
+                  <p>First Name <span class="color--red">*</span></p>
+                  <form action="">
+                    <input type="text" class="input-res" />
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="employee-status">
+                  <p>Middle Name <span class="color--red">*</span></p>
+                  <form action="">
+                    <input type="text" class="input-res" />
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="employee-status">
+                  <p>Last Name <span class="color--red">*</span></p>
+                  <form action="">
+                    <input type="text" class="input-res" />
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="employee-status">
+                  <p>Sex <span class="color--red">*</span></p>
+                  <form class="radio" action="">
+                    <label for=""
+                      >Male
+                      <input type="radio" name="male" value="male" />
+                    </label>
+                    <label for=""
+                      >Female
+                      <input type="radio" name="felame" value="female" />
+                    </label>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="employee-status">
+                  <p>Age <span class="color--red">*</span></p>
+                  <form action="">
+                    <input type="text" class="input-res" />
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="employee-status">
+                  <p>Civil Status <span class="color--red">*</span></p>
+                  <form action="">
+                    <input type="text" class="input-res" />
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="employee-status">
+                  <p>Date of Birth <span class="color--red">*</span></p>
+                  <form action="">
+                    <input type="text" class="input-res" />
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="employee-status">
+                  <p>Birth Place <span class="color--red">*</span></p>
+                  <form action="">
+                    <input type="text" class="input-res" />
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-9 col-md-9 col-sm-12">
+                <div class="employee-status">
+                  <p>
+                    Address
+                    <em
+                      >(House No., Street, Subd., Brgy., City, Prov., Country,
+                      Zip Code)</em
+                    ><span class="color--red">*</span>
+                  </p>
+                  <form action="">
+                    <input type="text" class="input-res" />
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="employee-status">
+                  <p>Zip Code <span class="color--red">*</span></p>
+                  <form action="">
+                    <input type="text" class="input-res" />
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="employee-status">
+                  <p>Mobile Number <span class="color--red">*</span></p>
+                  <form action="">
+                    <input type="text" class="input-res" />
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="employee-status">
+                  <p>Landline Number</p>
+                  <form action="">
+                    <input type="text" class="input-res" />
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="employee-status">
+                  <p>Email Address <span class="color--red">*</span></p>
+                  <form action="">
+                    <input type="text" class="input-res" />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="government-ids box-shadow mb--40">
+                <div class="government-id-title box-title-head">
+                  <p>GOVERNMENT ID'S</p>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="employee-status government-id-box">
+                      <p>SSS No. <span class="color--red">*</span></p>
+                      <form action="">
+                        <input type="text" class="input-res" />
+                      </form>
+                    </div>
+                    <div class="employee-status government-id-box">
+                      <p>Pagibig No.<span class="color--red">*</span></p>
+                      <form action="">
+                        <input type="text" class="input-res" />
+                      </form>
+                    </div>
+                    <div class="employee-status government-id-box">
+                      <p>
+                        Driver's License No.
+                      </p>
+                      <form action="">
+                        <input type="text" class="input-res" />
+                      </form>
+                    </div>
+                    <div class="employee-status government-id-box">
+                      <p>
+                        Passport No./Exp. Date
+                      </p>
+                      <form action="">
+                        <input type="text" class="input-res" />
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="employee-status government-id-box">
+                      <p>PhilHealth No. <span class="color--red">*</span></p>
+                      <form action="">
+                        <input type="text" class="input-res" />
+                      </form>
+                    </div>
+                    <div class="employee-status government-id-box">
+                      <p>TIN No.<span class="color--red">*</span></p>
+                      <form action="">
+                        <input type="text" class="input-res" />
+                      </form>
+                    </div>
+                    <div class="employee-status government-id-box">
+                      <p>
+                        Postal Identification No.
+                      </p>
+                      <form action="">
+                        <input type="text" class="input-res" />
+                      </form>
+                    </div>
+                    <div class="employee-status government-id-box">
+                      <p>
+                        HMO No.
+                      </p>
+                      <form action="">
+                        <input type="text" class="input-res" />
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="relative-info box-shadow mb--40">
+                <div class="relative-info-title box-title-head">
+                  <p>RELATIVES INFORMATION</p>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="employee-status relative-info-box">
+                      <p>
+                        Mother's Maiden Name <span class="color--red">*</span>
+                      </p>
+                      <form action="">
+                        <input type="text" class="input-res" />
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="employee-status relative-info-box">
+                      <p>Birthdate <span class="color--red">*</span></p>
+                      <form action="">
+                        <input type="text" class="input-res" />
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="employee-status relative-info-box">
+                      <p>
+                        Father's Maiden Name <span class="color--red">*</span>
+                      </p>
+                      <form action="">
+                        <input type="text" class="input-res" />
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="employee-status relative-info-box">
+                      <p>Birthdate <span class="color--red">*</span></p>
+                      <form action="">
+                        <input type="text" class="input-res" />
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="employee-status relative-info-box">
+                      <p>
+                        Spouse's Name (If Any)
+                      </p>
+                      <form action="">
+                        <input type="text" class="input-res" />
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="employe-status relative-info-box">
+                      <p>Birthdate</p>
+                      <form action="">
+                        <input type="text" class="input-res" />
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="employee-status relative-info-box">
+                      <p>
+                        Number of Children
+                      </p>
+                      <form action="">
+                        <input type="text" class="input-res" />
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="file-resume box-shadow mb--40">
+                <div class="file-resume-title box-title-head">
+                  <p>FILE UPLOAD FOR RESUME</p>
+                </div>
+                <div class="file-resume-box">
+                  <button class="upload-btn btn-purple">
+                    <a href="#"> Upload <i class="fas fa-upload"></i> </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="file-tor box-shadow mb--40">
+                <div class="file-tor-title box-title-head">
+                  <p>FILE UPLOAD FOR T.O.R</p>
+                </div>
+                <div class="file-tor-box">
+                  <button class="upload-btn btn-purple">
+                    <a href="#"> Upload <i class="fas fa-upload"></i> </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="file-diploma box-shadow mb--40">
+                <div class="file-diploma-title box-title-head">
+                  <p>FILE UPLOAD FOR DIPLOMA</p>
+                </div>
+                <div class="file-diploma-box">
+                  <button class="upload-btn btn-purple center-vertical">
+                    <a href="#"> Upload <i class="fas fa-upload"></i> </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="save-employee">
+          <a href="#pop-process" class="save-btn btn-purple">
+            SAVE EMPLOYEE
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="pop-process" class="overlay">
+      <div class="popup delete-modal">
+        <h2 class="mb--20">CONFIRMATION</h2>
+        <a class="close" href="#process">&times;</a>
+        <div class="content">
+          <ul class="list-text">
+            <li>Are you sure you want to add a new employee?</li>
+          </ul>
+          <div class="confirm-button">
+            <a href="#pop-process-success" class="btn-purple confirm-yes">
+              Yes</a
+            >
+            <a href="#" class="btn-purple confirm-no"> No</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="pop-process-success" class="overlay">
+      <div class="popup success-modal">
+        <a class="close" href="#process">&times;</a>
+        <div class="content">
+          <ul class="list-text">
+            <li class="no-pd"><i class="fas fa-check-circle"></i></li>
+            <li class="no-pd">SUCCESS!</li>
+          </ul>
+          <div class="t-center">
+            <div class="confirm-button">
+              <a href="#" class="btn-purple confirm-yes">DONE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

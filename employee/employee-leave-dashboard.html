@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Employee Leave Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script> -->
+  </head>
+
+  <body>
+    <header class="box-shadow">
+      <div class="logo">
+        <i class="fa fa-tachometer"></i>
+        <img class="mobile-logo" src="../img/fbs-logo-sm.png" alt="" />
+      </div>
+      <div class="user-info">
+        <div class="user-dp">
+          <img src="../img/dp.jpg" alt="" />
+        </div>
+        <div class="welcome">
+          <div class="welcome-name">Welcome, Roy Balaaldia</div>
+          <ul>
+            <li class="department">WEB DEVELOPMENT</li>
+            <li class="date">01/17/2020</li>
+          </ul>
+        </div>
+        <ul>
+          <li>
+            <i class="fas fa-bars nav-trigger"></i>
+            <!-- <a href="#" class="nav-trigger"><span></span></a> -->
+          </li>
+        </ul>
+      </div>
+      <!-- <a href="#" class="nav-trigger"><span></span></a> -->
+    </header>
+    <div class="side-nav">
+      <div class="logo">
+        <img class="desk-logo" src="../img/FBS-GREYSCALE LOGO.png" alt="" />
+        <img class="mobile-logo" src="../img/fbs-logo-sm.png" alt="" />
+      </div>
+      <nav>
+        <ul>
+          <li class="menu-dashboard menu">
+            <a href="employee-dashboard.html" for="dashboard-sidebtn">
+              <span><i class="fas fa-tachometer-alt"></i></span>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="menu-leave menu active">
+            <a href="employee-leave-dashboard.html">
+              <span><i class="fas fa-business-time"></i></span>
+              <span>Leave</span>
+            </a>
+          </li>
+          <li class="menu-task menu">
+            <a href="employee-task-manager.html">
+              <span><i class="fas fa-clipboard-list"></i></span>
+              <span>Task Manager</span>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li class="menu-logout menu">
+            <a href="#">
+              <span><i class="fas fa-sign-out-alt"></i></span>
+              <span>Log Out</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-content">
+      <div class="content-wrap">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <h3>LEAVE DASHBOARD <i class="fas fa-plane-departure"></i></h3>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <button class="right">
+              <a class="btn-purple" href="#pop-process-form">Apply Leave</a>
+            </button>
+          </div>
+        </div>
+        <div class="leave-counter">
+          <p class="p-title mb--30">Leave Status</p>
+          <div class="filter-stats mb--30">
+            <table>
+              <tr>
+                <th>Leave Type</th>
+                <th>From</th>
+                <th>To</th>
+                <th>No. of Days</th>
+                <th>Reason</th>
+                <th>Status</th>
+                <th>Edit</th>
+                <th>Delete</th>
+              </tr>
+              <tr>
+                <td>Vacation</td>
+                <td>1/1/2020</td>
+                <td>1/2/2020</td>
+                <td>1</td>
+                <td>I have to visit my Girlfriend</td>
+                <td>Approved</td>
+                <td><a href="#">
+                      <i class="fas fa-pen"></i>
+                    </a>
+                </td>
+                <td>
+                  <a href="#pop-process-delete">
+                    <i class="fas fa-trash-alt"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Vacation</td>
+                <td>1/1/2020</td>
+                <td>1/2/2020</td>
+                <td>1</td>
+                <td>I have to visit my Girlfriend</td>
+                <td>Pending</td>
+                <td><a href="#">
+                      <i class="fas fa-pen"></i>
+                    </a>
+                </td>
+                <td>
+                  <a href="#pop-process-delete">
+                    <i class="fas fa-trash-alt"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Vacation</td>
+                <td>1/1/2020</td>
+                <td>1/2/2020</td>
+                <td>1</td>
+                <td>I have to visit my Girlfriend</td>
+                <td>Declined</td>
+                <td><a href="#">
+                      <i class="fas fa-pen"></i>
+                    </a>
+                </td>
+                <td>
+                  <a href="#pop-process-delete">
+                    <i class="fas fa-trash-alt"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Vacation</td>
+                <td>1/1/2020</td>
+                <td>1/2/2020</td>
+                <td>1</td>
+                <td>I have to visit my Girlfriend</td>
+                <td>Approved</td>
+                <td><a href="#">
+                      <i class="fas fa-pen"></i>
+                    </a>
+                </td>
+                <td>
+                  <a href="#pop-process-delete">
+                    <i class="fas fa-trash-alt"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>Vacation</td>
+                <td>1/1/2020</td>
+                <td>1/2/2020</td>
+                <td>1</td>
+                <td>I have to visit my Girlfriend</td>
+                <td>Approved</td>
+                <td><a href="#">
+                      <i class="fas fa-pen"></i>
+                    </a>
+                </td>
+                <td>
+                  <a href="#pop-process-delete">
+                    <i class="fas fa-trash-alt"></i>
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="leave-status mb--30">
+            <div class="p-title">
+              <p>Available Leaves</p>
+            </div>
+            <ul>
+              <li class="box-shadow">
+                <p>Vacation</p>
+                <p>1/5</p>
+              </li>
+              <li class="box-shadow">
+                <p>Sick</p>
+                <p>1/5</p>
+              </li>
+              <li class="box-shadow">
+                <p>Emergency</p>
+                <p>1/5</p>
+              </li>
+              <li class="box-shadow">
+                <p>Birhday</p>
+                <p>1/1</p>
+              </li>
+              <li class="box-shadow">
+                <p>Maternity</p>
+                <p>10/10</p>
+              </li>
+              <li class="box-shadow">
+                <p>Paternity</p>
+                <p>10/10</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="pop-process-success" class="overlay">
+      <div class="popup success-modal">
+        <a class="close" href="#process">&times;</a>
+        <div class="content">
+          <ul class="list-text">
+            <li class="no-pd"><i class="fas fa-check-circle"></i></li>
+            <li class="no-pd">SUCCESS!</li>
+          </ul>
+          <div>
+            <div class="confirm-button">
+              <a href="#" class="btn-purple confirm-success">DONE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="pop-process-form" class="overlay">
+      <div class="popup">
+        <a class="close" href="#process">&times;</a>
+        <div class="content"></div>
+          <div class="leave-form">
+            <div class="leave-form-wrap ">
+              <div class="box-title-head">
+                <p>Apply Leave</p>
+              </div>
+              <div class="leave-form-box">
+                <div class="leave-select">
+                  <p>Leave Type <span class="color--red">*</span></p>
+                  <select name="" id="">
+                    <option value="0" disabled selected>-</option>
+                    <option value="1">Vacation</option>
+                    <option value="2">Sick Leave</option>
+                    <option value="3">Emergency</option>
+                    <option value="4">Birthday</option>
+                    <option value="5">Paternity</option>
+                    <option value="6">Maternity</option>
+                  </select>
+                </div>
+                <div class="date">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <div class="leave-date-box mb--20">
+                        <p>From <span class="color--red">*</span></p>
+                        <form action="">
+                          <input type="date" class="input-res" />
+                        </form>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <div class="leave-date-box mb--20">
+                        <p>To <span class="color--red">*</span></p>
+                        <form action="">
+                          <input type="date" class="input-res" />
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <form class="leave-reason mb--20">
+                  <p>Reason <span class="color--red">*</span></p>
+                  <input type="text" id="reason" name="reason" />
+                </form>
+                <p>Numbers of Date Applied <span class="color--red">*</span></p>
+                <select name="" id="" class="leave-duration mb--20">
+                  <option value="0" disabled selected>-</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+                <form class="leave-supervisor mb--20">
+                  <p>Your Supervisor</p>
+                  <input type="text" disabled="disabled" value="Dichoso, Juan" />
+                </form>
+                <div class="leave-button">
+                  <button>
+                    <a class="btn-purple" href="#pop-process-success">APPLY LEAVE</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div id="pop-process-delete" class="overlay">
+      <div class="popup delete-modal">
+        <h2 class="mb--20">CONFIRMATION</h2>
+        <a class="close" href="#process">&times;</a>
+        <div class="content">
+          <ul class="list-text">
+            <li>Are you sure you want to delete this item?</li>
+          </ul>
+          <div class="confirm-button">
+            <a href="#" class="btn-purple confirm-yes"> Yes</a>
+            <a href="#" class="btn-purple confirm-no"> No</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

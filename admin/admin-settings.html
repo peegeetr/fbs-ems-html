@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin Settings</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script> -->
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <i class="fa fa-tachometer"></i>
+        <img class="mobile-logo" src="../img/fbs-logo-sm.png" alt="" />
+      </div>
+      <div class="user">
+        <ul>
+          <li><i class="fas fa-user-circle"></i><span>Admin</span></li>
+          <li>
+            <i class="fas fa-bars nav-trigger"></i>
+            <!-- <a href="#" class="nav-trigger"><span></span></a> -->
+          </li>
+        </ul>
+      </div>
+      <!-- <a href="#" class="nav-trigger"><span></span></a> -->
+    </header>
+    <div class="side-nav">
+      <div class="logo">
+        <img class="desk-logo" src="../img/FBS-GREYSCALE LOGO.png" alt="" />
+        <img class="mobile-logo" src="../img/fbs-logo-sm.png" alt="" />
+      </div>
+      <nav>
+        <ul>
+          <li class="menu-dashboard menu">
+            <a href="admin-dashboard.html" for="dashboard-sidebtn">
+              <span><i class="fas fa-tachometer-alt"></i></span>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="menu-leave menu">
+            <a href="admin-leave-dashboard.html">
+              <span><i class="fas fa-business-time"></i></span>
+              <span>Leave</span>
+            </a>
+          </li>
+          <li class="menu-employee menu">
+            <a href="list-of-employees.html">
+              <span><i class="fa fa-user"></i></span>
+              <span>Employee</span>
+            </a>
+          </li>
+          <li class="menu-task menu">
+            <a href="admin-task-manager.html">
+              <span><i class="fas fa-clipboard-list"></i></span>
+              <span>Task Manager</span>
+            </a>
+          </li>
+          <li class="menu-settings menu active">
+            <a href="admin-settings.html">
+              <span><i class="fas fa-cogs"></i></span>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li class="menu-user menu">
+            <a href="admin-user-settings.html">
+              <span><i class="fas fa-user-cog"></i></span>
+              <span>User Account</span>
+            </a>
+          </li>
+          <li class="menu-logout menu">
+            <a href="#">
+              <span><i class="fas fa-sign-out-alt"></i></span>
+              <span>Log Out</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-content">
+      <div class="content-wrap">
+        <h3 class="mb--50">LEAVE SETTINGS <i class="fas fa-cogs"></i></h3>
+        <div class="add-leave-box">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <div class="add-leave mb--30">
+                <button>
+                  <a href="#pop-process-add" class="btn-purple">
+                    Add New
+                  </a>
+                </button>
+              </div>
+              <div class="add-leave-settings">
+                <table>
+                  <tr>
+                    <th>Leave Type</th>
+                    <th>No. of Days</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                  </tr>
+                  <tr>
+                    <td>Vacation</td>
+                    <td>5</td>
+                    <td>
+                      <a href="#pop-process-edit">
+                        <i class="fas fa-pen"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="#pop-process-delete">
+                        <i class="fas fa-trash-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Sick</td>
+                    <td>5</td>
+                    <td>
+                      <a href="#pop-process-edit">
+                        <i class="fas fa-pen"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="#pop-process-delete">
+                        <i class="fas fa-trash-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Emergency</td>
+                    <td>5</td>
+                    <td>
+                      <a href="#pop-process-edit">
+                        <i class="fas fa-pen"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="#pop-process-delete">
+                        <i class="fas fa-trash-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Birthday</td>
+                    <td>1</td>
+                    <td>
+                      <a href="#pop-process-edit">
+                        <i class="fas fa-pen"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="#pop-process-delete">
+                        <i class="fas fa-trash-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Paternity</td>
+                    <td>5</td>
+                    <td>
+                      <a href="#pop-process-edit">
+                        <i class="fas fa-pen"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="#pop-process-delete">
+                        <i class="fas fa-trash-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Maternity</td>
+                    <td>5</td>
+                    <td>
+                      <a href="#pop-process-edit">
+                        <i class="fas fa-pen"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="#pop-process-delete">
+                        <i class="fas fa-trash-alt"></i>
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="pop-process-edit" class="overlay">
+      <div class="popup">
+        <h2 class="mb--20">EDIT</h2>
+        <a class="close" href="#process">&times;</a>
+        <div class="content">
+          <ul class="list-text">
+            <li>
+              <form>
+                <div>
+                  <label for="leave-type">Leave Type</label>
+                  <input
+                    type="text"
+                    id="leave-type"
+                    class="input-res"
+                    placeholder="Vacation"
+                  />
+                </div>
+                <div>
+                  <label for="leave-days">No. of days</label>
+                  <input
+                    type="text"
+                    id="leave-days"
+                    class="input-res"
+                    placeholder="5"
+                  />
+                </div>
+              </form>
+            </li>
+          </ul>
+          <div class="confirm-button">
+            <a href="#" class="btn-purple confirm-yes"> Save</a>
+            <a href="#" class="btn-purple confirm-no"> Close</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="pop-process-add" class="overlay">
+      <div class="popup">
+        <h2 class="mb--20">ADD NEW</h2>
+        <a class="close" href="#process">&times;</a>
+        <div class="content">
+          <ul class="list-text">
+            <li>
+              <form>
+                <div>
+                  <label for="leave-type">Leave Type</label>
+                  <input type="text" id="leave-type" class="input-res" />
+                </div>
+                <div>
+                  <label for="leave-days">No. of days</label>
+                  <input type="text" id="leave-days" class="input-res" />
+                </div>
+              </form>
+            </li>
+          </ul>
+          <div class="confirm-button">
+            <a href="#" class="btn-purple confirm-yes"> Yes</a>
+            <a href="#" class="btn-purple confirm-no"> No</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="pop-process-delete" class="overlay">
+      <div class="popup delete-modal">
+        <h2 class="mb--20">CONFIRMATION</h2>
+        <a class="close" href="#process">&times;</a>
+        <div class="content">
+          <ul class="list-text">
+            <li>Are you sure you want to delete this item?</li>
+          </ul>
+          <div class="confirm-button">
+            <a href="#" class="btn-purple confirm-yes"> Yes</a>
+            <a href="#" class="btn-purple confirm-no"> No</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

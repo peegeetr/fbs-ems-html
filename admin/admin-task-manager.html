@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Task Manager</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script> -->
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <i class="fa fa-tachometer"></i>
+        <img class="mobile-logo" src="../img/fbs-logo-sm.png" alt="" />
+      </div>
+      <div class="user">
+        <ul>
+          <li><i class="fas fa-user-circle"></i><span>Admin</span></li>
+          <li>
+            <i class="fas fa-bars nav-trigger"></i>
+            <!-- <a href="#" class="nav-trigger"><span></span></a> -->
+          </li>
+        </ul>
+      </div>
+      <!-- <a href="#" class="nav-trigger"><span></span></a> -->
+    </header>
+    <div class="side-nav">
+      <div class="logo">
+        <img class="desk-logo" src="../img/FBS-GREYSCALE LOGO.png" alt="" />
+        <img class="mobile-logo" src="../img/fbs-logo-sm.png" alt="" />
+      </div>
+      <nav>
+        <ul>
+          <li class="menu-dashboard menu">
+            <a href="admin-dashboard.html" for="dashboard-sidebtn">
+              <span><i class="fas fa-tachometer-alt"></i></span>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="menu-leave menu">
+            <a href="admin-leave-dashboard.html">
+              <span><i class="fas fa-business-time"></i></span>
+              <span>Leave</span>
+            </a>
+          </li>
+          <li class="menu-employee menu">
+            <a href="list-of-employees.html">
+              <span><i class="fa fa-user"></i></span>
+              <span>Employee</span>
+            </a>
+          </li>
+          <li class="menu-task menu active">
+            <a href="admin-task-manager.html">
+              <span><i class="fas fa-clipboard-list"></i></span>
+              <span>Task Manager</span>
+            </a>
+          </li>
+          <li class="menu-settings menu">
+            <a href="admin-settings.html">
+              <span><i class="fas fa-cogs"></i></span>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li class="menu-user menu">
+            <a href="admin-user-settings.html">
+              <span><i class="fas fa-user-cog"></i></span>
+              <span>User Account</span>
+            </a>
+          </li>
+          <li class="menu-logout menu">
+            <a href="#">
+              <span><i class="fas fa-sign-out-alt"></i></span>
+              <span>Log Out</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-content">
+      <div class="content-wrap">
+        <h3 class="mb--50">
+          Task Manager <i class="fas fa-clipboard-list"></i>
+        </h3>
+        <div class="task-manager">
+          <div class="task-manager-wrap">
+            <p class="p-title">Completed Task</p>
+            <div class="task-manager-search-box box-shadow mb--30">
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-12 mb--10">
+                  <p>All Clients</p>
+                  <select name="" id="">
+                    <option value="0" disabled selected>-</option>
+                    <option value="1">Avant Advisory</option>
+                    <option value="2">Balai Inn</option>
+                    <option value="3">Catalyst Community</option>
+                    <option value="4">Chamber of Tourism</option>
+                    <option value="5">Eddie Wouldgrow</option>
+                    <option value="6">FBS</option>
+                    <option value="7">FCA</option>
+                    <option value="8">FTW</option>
+                    <option value="9">FWC</option>
+                    <option value="10">FCA</option>
+                    <option value="11">Immersion Program</option>
+                    <option value="12">Jardin De Julieta Resort</option>
+                    <option value="13">Jesus Christ's CEO</option>
+                    <option value="14">Maja Thai Massage</option>
+                    <option value="15">Over the Top Marketing</option>
+                    <option value="16">PFM</option>
+                    <option value="17">Phix Genomics</option>
+                    <option value="18">Pyrobuster Enterprise</option>
+                    <option value="19">REMOTELINK USA</option>
+                    <option value="20">San Pablo Colleges</option>
+                    <option value="21">Social Economic Enterprise</option>
+                    <option value="22">Taza Mia Coffee</option>
+                    <option value="23">Two Miles</option>
+                  </select>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                  <p>From</p>
+                  <input type="date" name="" id="" />
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                  <p>To</p>
+                  <input type="date" name="" id="" />
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="admin-task-button">
+                        <button class="sort-btn btn-purple" type="submit">
+                          <span>Filter</span> <i class="fas fa-filter"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="admin-task-button">
+                        <button class="export-btn btn-purple">
+                          <a href="#"
+                            >Export <i class="fas fa-file-export"></i
+                          ></a>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="employee-list-box">
+              <table>
+                <tr>
+                  <th>Client Name</th>
+                  <th>Task Name</th>
+                  <th>Description</th>
+                  <th>Time Spent</th>
+                  <th>Employee</th>
+                  <th>Date Created</th>
+                  <th>Date Completed</th>
+                </tr>
+                <tr>
+                  <td>Two Miles</td>
+                  <td>Two Miles Website</td>
+                  <td>Developing Two Miles website</td>
+                  <td>00:00:00</td>
+                  <td>Catubay</td>
+                  <td>2020-01-23</td>
+                  <td>2020-01-24</td>
+                </tr>
+                <tr>
+                  <td>Two Miles</td>
+                  <td>Two Miles Website</td>
+                  <td>Developing Two Miles website</td>
+                  <td>00:00:00</td>
+                  <td>Catubay</td>
+                  <td>2020-01-23</td>
+                  <td>2020-01-24</td>
+                </tr>
+                <tr>
+                  <td>Two Miles</td>
+                  <td>Two Miles Website</td>
+                  <td>Developing Two Miles website</td>
+                  <td>00:00:00</td>
+                  <td>Catubay</td>
+                  <td>2020-01-23</td>
+                  <td>2020-01-24</td>
+                </tr>
+                <tr>
+                  <td>Two Miles</td>
+                  <td>Two Miles Website</td>
+                  <td>Developing Two Miles website</td>
+                  <td>00:00:00</td>
+                  <td>Catubay</td>
+                  <td>2020-01-23</td>
+                  <td>2020-01-24</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>

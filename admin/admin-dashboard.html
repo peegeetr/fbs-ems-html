@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin Leave Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script> -->
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <i class="fa fa-tachometer"></i>
+        <img class="mobile-logo" src="../img/fbs-logo-sm.png" alt="" />
+      </div>
+      <div class="user">
+        <ul>
+          <li><i class="fas fa-user-circle"></i><span>Admin</span></li>
+          <li>
+            <i class="fas fa-bars nav-trigger"></i>
+            <!-- <a href="#" class="nav-trigger"><span></span></a> -->
+          </li>
+        </ul>
+      </div>
+      <!-- <a href="#" class="nav-trigger"><span></span></a> -->
+    </header>
+    <div class="side-nav">
+      <div class="logo">
+        <img class="desk-logo" src="../img/FBS-GREYSCALE LOGO.png" alt="" />
+        <img class="mobile-logo" src="../img/fbs-logo-sm.png" alt="" />
+        <span></span>
+      </div>
+      <nav>
+        <ul>
+          <li class="menu-dashboard menu active">
+            <a href="admin-dashboard.html" for="dashboard-sidebtn">
+              <span><i class="fas fa-tachometer-alt"></i></span>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="menu-leave menu">
+            <a href="admin-leave-dashboard.html">
+              <span><i class="fas fa-business-time"></i></span>
+              <span>Leave</span>
+            </a>
+          </li>
+          <li class="menu-employee menu">
+            <a href="list-of-employees.html">
+              <span><i class="fa fa-user"></i></span>
+              <span>Employee</span>
+            </a>
+          </li>
+          <li class="menu-task menu">
+            <a href="admin-task-manager.html">
+              <span><i class="fas fa-clipboard-list"></i></span>
+              <span>Task Manager</span>
+            </a>
+          </li>
+          <li class="menu-settings menu">
+            <a href="admin-settings.html">
+              <span><i class="fas fa-cogs"></i></span>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li class="menu-user menu">
+            <a href="admin-user-settings.html">
+              <span><i class="fas fa-user-cog"></i></span>
+              <span>User Account</span>
+            </a>
+          </li>
+          <li class="menu-logout menu">
+            <a href="#">
+              <span><i class="fas fa-sign-out-alt"></i></span>
+              <span>Log Out</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-content">
+      <div class="content-wrap">
+        <h3 class="welcome-title">Welcome, Admin!</h3>
+        <p class=" welcome-sub">Dashboard</p>
+        <div class="dashboard-box-1 mb--50">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+              <div class="project-box admin-db-box box-shadow">
+                <i class="fas fa-flask"></i>
+                <div class="project-stat-box">
+                  <ul>
+                    <li>79</li>
+                    <li>Projects</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+              <div class="client-box admin-db-box box-shadow">
+                <i class="fas fa-user-tie"></i>
+                <div class="client-stat-box">
+                  <ul>
+                    <li>12</li>
+                    <li>Clients</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+              <div class="admin-task-box admin-db-box box-shadow">
+                <i class="fas fa-clipboard-list"></i>
+                <div class="admin-task-stat-box">
+                  <ul>
+                    <li>22</li>
+                    <li>Task</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+              <div class="admin-employee-box admin-db-box box-shadow">
+                <i class="fas fa-user"></i>
+                <div class="admin-employee-stat-box">
+                  <ul>
+                    <li>24</li>
+                    <li>Employees</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dashboard-box-2">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <div class="statistics-box-1 box-shadow mb--20">
+                <div class="stat-title">
+                  <p>Statistics</p>
+                </div>
+                <div class="box-1 box-shadow">
+                  <div class="box-title">
+                    <p>Today Leave</p>
+                    <p>4/24</p>
+                  </div>
+                  <div class="stat-progress-bar">
+                    <div class="progress-bar-leave"></div>
+                  </div>
+                </div>
+                <div class="box-2 box-shadow">
+                  <div class="box-title">
+                    <p>Completed Projects</p>
+                    <p>101/132</p>
+                  </div>
+                  <div class="stat-progress-bar">
+                    <div class="progress-bar-projects"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <div class="statistics-box-2 box-shadow mb--20">
+                <div class="stat-title">
+                  <p>Today Absent</p>
+                </div>
+                <div class="absentlist box-shadow box-1">
+                  <div class="absent-name">
+                    <img src="../img/han.jpg" alt="" />
+                    <p>Catubay, David</p>
+                  </div>
+                  <div class="absent-stat">
+                    <div class="absent-date">
+                      <p>4 Sept 2019</p>
+                      <p>Leave Date</p>
+                    </div>
+                    <div class="absent-status-pending">
+                      <p>Pending</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="absentlist box-shadow box-1">
+                  <div class="absent-name">
+                    <img src="../img/han.jpg" alt="" />
+                    <p>Catubay, David</p>
+                  </div>
+                  <div class="absent-stat">
+                    <div class="absent-date">
+                      <p>4 Sept 2019</p>
+                      <p>Leave Date</p>
+                    </div>
+                    <div class="absent-status-approved">
+                      <p>Approved</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="absent-button">
+                  <button class="btn-purple absent-btn">
+                    Load More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <div class="statistics-box-2 box-shadow mb--20">
+                <div class="stat-title">
+                  <p>Task Statistics</p>
+                </div>
+                <div class="admin-task-stats">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="total-task box-shadow">
+                        <p>Total Task</p>
+                        <p class="number">27</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="overdue-task box-shadow">
+                        <p>Overdue Task</p>
+                        <p class="number">27</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="task-statistics-tally">
+                  <ul>
+                    <li>
+                      <span class="circle"></span> Completed Task
+                      <span>63</span>
+                    </li>
+                    <li>
+                      <span class="circle"></span> In Progress Task
+                      <span>107</span>
+                    </li>
+                    <li>
+                      <span class="circle"></span> On Hold Task <span>24</span>
+                    </li>
+                    <li>
+                      <span class="circle"></span> Pending Task <span>36</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin Leave Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script> -->
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <i class="fa fa-tachometer"></i>
+        <img class="mobile-logo" src="../img/fbs-logo-sm.png" alt="" />
+      </div>
+      <div class="user">
+        <ul>
+          <li><i class="fas fa-user-circle"></i><span>Admin</span></li>
+          <li>
+            <i class="fas fa-bars nav-trigger"></i>
+            <!-- <a href="#" class="nav-trigger"><span></span></a> -->
+          </li>
+        </ul>
+      </div>
+      <!-- <a href="#" class="nav-trigger"><span></span></a> -->
+    </header>
+    <div class="side-nav">
+      <div class="logo">
+        <img class="desk-logo" src="../img/FBS-GREYSCALE LOGO.png" alt="" />
+        <img class="mobile-logo" src="../img/fbs-logo-sm.png" alt="" />
+        <span></span>
+      </div>
+      <nav>
+        <ul>
+          <li class="menu-dashboard menu">
+            <a href="admin-dashboard.html" for="dashboard-sidebtn">
+              <span><i class="fas fa-tachometer-alt"></i></span>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="menu-leave menu active">
+            <a href="admin-leave-dashboard.html">
+              <span><i class="fas fa-business-time"></i></span>
+              <span>Leave</span>
+            </a>
+          </li>
+          <li class="menu-employee menu">
+            <a href="list-of-employees.html">
+              <span><i class="fa fa-user"></i></span>
+              <span>Employee</span>
+            </a>
+          </li>
+          <li class="menu-task menu">
+            <a href="admin-task-manager.html">
+              <span><i class="fas fa-clipboard-list"></i></span>
+              <span>Task Manager</span>
+            </a>
+          </li>
+          <li class="menu-settings menu">
+            <a href="admin-settings.html">
+              <span><i class="fas fa-cogs"></i></span>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li class="menu-user menu">
+            <a href="admin-user-settings.html">
+              <span><i class="fas fa-user-cog"></i></span>
+              <span>User Account</span>
+            </a>
+          </li>
+          <li class="menu-logout menu">
+            <a href="#">
+              <span><i class="fas fa-sign-out-alt"></i></span>
+              <span>Log Out</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-content">
+      <div class="content-wrap">
+        <h3>ADMIN LEAVE DASHBOARD <i class="fas fa-plane-departure"></i></h3>
+        <div class="leave-counter mb--30">
+          <div class="employee-section">
+            <div class="employee">
+              <p class="p-title">Leave Filter</p>
+              <div class="leave-filter">
+                <div class="leave-filter-box">
+                  <p>FBS Employee</p>
+                  <div class="filter-select">
+                    <select name="" id="">
+                      <option value="0">All Employee</option>
+                      <option value="1">Catubay, David</option>
+                      <option value="2">Pasco, Mark</option>
+                      <option value="3">Calalang, Virgil</option>
+                      <option value="4">Prele, Dhreanz</option>
+                      <option value="5">Del Monte, Sarah</option>
+                      <option value="6">De Jesus, Michael</option>
+                      <option value="7">Reyes, Patrick</option>
+                      <option value="8">De Jesus, Jeezreal</option>
+                      <option value="9">Del Rosario, Joyce Anne</option>
+                      <option value="10">Katigbak, Jerina</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="leave-filter-box">
+                  <p>From</p>
+                  <form action="">
+                    <input type="date" class="input-res" />
+                  </form>
+                </div>
+                <div class="leave-filter-box">
+                  <p>To</p>
+                  <form action="">
+                    <input type="date" class="input-res" />
+                  </form>
+                </div>
+                <div class="leave-filter-box">
+                  <p>Status</p>
+                  <div class="filter-select">
+                    <select name="" id="">
+                      <option value="0" disabled selected>Status</option>
+                      <option value="1">Approved</option>
+                      <option value="2">Declined</option>
+                      <option value="3">Pending</option>
+                      <option value="4">Cancelled</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="filter-button">
+                  <button class="filter-btn btn-purple" type="submit">
+                    Filter <i class="fas fa-filter"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="leave-sum-content mb--50">
+          <div class="leave-summary mb--10">
+            <table>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Leave Type</th>
+                <th>From</th>
+                <th>To</th>
+                <th>No. of Days</th>
+                <th>Reason</th>
+                <th>Status</th>
+                <th>Edit</th>
+                <th>Save</th>
+              </tr>
+              <tr>
+                <td>David</td>
+                <td>Catubay</td>
+                <td>Vacation</td>
+                <td>1/1/2020</td>
+                <td>1/2/2020</td>
+                <td>1</td>
+                <td>I have to visit my Girlfriend</td>
+                <td>
+                  <div class="table-select">
+                    <select name="" id="">
+                      <option value="0" disabled selected>Pending</option>
+                      <option value="1">Approved</option>
+                      <option value="2">Declined</option>
+                      
+                    </select>
+                  </div>
+                </td>
+                <td><a href="#"><i class="fas fa-pen"></i></a></td>
+                <td><a href="#pop-process-success"><i class="fas fa-save"></i></a></i></td>
+              </tr>
+              <tr>
+                <td>David</td>
+                <td>Catubay</td>
+                <td>Vacation</td>
+                <td>1/1/2020</td>
+                <td>1/2/2020</td>
+                <td>1</td>
+                <td>I have to visit my Girlfriend</td>
+                <td>
+                  <div class="custom-select table-select">
+                    <select name="" id="">
+                      <option value="0" disabled selected>Pending</option>
+                      <option value="1">Approved</option>
+                      <option value="2">Declined</option>
+                      
+                    </select>
+                  </div>
+                </td>
+                <td><a href="#"><i class="fas fa-pen"></i></a></td>
+                <td><a href="#pop-process-success"><i class="fas fa-save"></i></a></i></td>
+              </tr>
+              <tr>
+                <td>David</td>
+                <td>Catubay</td>
+                <td>Vacation</td>
+                <td>1/1/2020</td>
+                <td>1/2/2020</td>
+                <td>1</td>
+                <td>I have to visit my Girlfriend</td>
+                <td>
+                  <div class="custom-select table-select">
+                    <select name="" id="">
+                      <option value="0" disabled selected>Pending</option>
+                      <option value="1">Approved</option>
+                      <option value="2">Declined</option>
+                      
+                    </select>
+                  </div>
+                </td>
+                <td><a href="#"><i class="fas fa-pen"></i></a></td>
+                <td><a href="#pop-process-success"><i class="fas fa-save"></i></a></i></td>
+              </tr>
+              <tr>
+                <td>David</td>
+                <td>Catubay</td>
+                <td>Vacation</td>
+                <td>1/1/2020</td>
+                <td>1/2/2020</td>
+                <td>1</td>
+                <td>I have to visit my Girlfriend</td>
+                <td>
+                  <div class="custom-select table-select">
+                    <select name="" id="">
+                      <option value="0" disabled selected>Pending</option>
+                      <option value="1">Approved</option>
+                      <option value="2">Declined</option>
+                      
+                    </select>
+                  </div>
+                </td>
+                <td><a href="#"><i class="fas fa-pen"></i></a></td>
+                <td><a href="#pop-process-success"><i class="fas fa-save"></i></a></i></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="leave-status mb--30">
+          <div class="p-title">
+            <p>Available Leaves</p>
+          </div>
+          <ul>
+            <li class="box-shadow">
+              <p>Vacation</p>
+              <p>1/5</p>
+            </li>
+            <li class="box-shadow">
+              <p>Sick</p>
+              <p>1/5</p>
+            </li>
+            <li class="box-shadow">
+              <p>Emergency</p>
+              <p>1/5</p>
+            </li>
+            <li class="box-shadow">
+              <p>Birhday</p>
+              <p>1/1</p>
+            </li>
+            <li class="box-shadow">
+              <p>Maternity</p>
+              <p>10/10</p>
+            </li>
+            <li class="box-shadow">
+              <p>Paternity</p>
+              <p>10/10</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="pop-process-success" class="overlay">
+      <div class="popup success-modal">
+        <a class="close" href="#process">&times;</a>
+        <div class="content">
+          <ul class="list-text">
+            <li class="no-pd"><i class="fas fa-check-circle"></i></li>
+            <li class="no-pd">SUCCESS!</li>
+          </ul>
+          <div class="t-center">
+            <div class="confirm-button">
+              <a href="#" class="btn-purple confirm-yes">DONE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
