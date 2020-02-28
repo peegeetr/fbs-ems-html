@@ -101,7 +101,7 @@
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6">
             <button class="add-user-btn btn-purple mb--0">
-              <a href="admin-add-new-user.html"
+              <a href="#add-user"
                 >ADD NEW USER <i class="fas fa-user-cog"></i
               ></a>
             </button>
@@ -112,43 +112,35 @@
           <table class="mb--30">
             <tr>
               <th>Username</th>
-              <th>Name</th>
               <th>Email</th>
+              <th>Action</th>
             </tr>
             <tr>
               <td>LoverBoy</td>
-              <td>David Catubay</td>
               <td>david.catubay@twomiles.com</td>
+              <td><a href="#pop-process-delete"><i class="fas fa-trash-alt"></i></a></i></td>
             </tr>
             <tr>
               <td>LoverBoy</td>
-              <td>David Catubay</td>
               <td>david.catubay@twomiles.com</td>
+              <td><a href="#pop-process-delete"><i class="fas fa-trash-alt"></i></a></i></td>
             </tr>
             <tr>
               <td>LoverBoy</td>
-              <td>David Catubay</td>
               <td>david.catubay@twomiles.com</td>
+              <td><a href="#pop-process-delete"><i class="fas fa-trash-alt"></i></a></i></td>
             </tr>
             <tr>
               <td>LoverBoy</td>
-              <td>David Catubay</td>
               <td>david.catubay@twomiles.com</td>
+              <td><a href="#pop-process-delete"><i class="fas fa-trash-alt"></i></a></i></td>
             </tr>
           </table>
-        </div>
-
-        <div class="save-settings mb--30">
-          <button class="btn-purple">
-            <a href="#pop-process-success">
-              SAVE SETTINGS
-            </a>
-          </button>
         </div>
       </div>
     </div>
     <div id="pop-process-delete" class="overlay">
-      <div class="popup">
+      <div class="popup delete-modal">
         <h2 class="mb--20">CONFIRMATION</h2>
         <a class="close" href="#process">&times;</a>
         <div class="content">
@@ -174,6 +166,41 @@
             <div class="confirm-button">
               <a href="#" class="btn-purple confirm-yes">DONE</a>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="add-user" class="overlay">
+      <div class="popup add-user-modal">
+        <a class="close" href="#process">&times;</a>
+        <div class="content">
+          <h3 class="mb--40">ADD NEW USER <i class="fas fa-user-plus"></i></h3>
+          <div class="add-new-user">
+            <p class="mb--20 t-center">Create a brand new user and add them to this system.</p>
+            <div class="add-new-user-box">
+              <div class="add-new-user-wrap">
+                <div class="add-new-user-form">
+                  <div>
+                    <p>Email<span class="color--red">*</span></p>
+                    <input type="email" class="input-res" />
+                  </div>
+                  <div>
+                    <p>Username <span class="color--red">*</span></p>
+                    <input type="text" name="name" />
+                  </div>
+                  <div class="mb--10">
+                    <p>Password <span class="color--red">*</span></p>
+                    <input type="text" id="reason" name="reason" />
+                  </div>
+                  <div class="save-settings mb--30">
+                    <button type="submit" onclick="window.location.href = '#pop-process-success';" class="btn-purple">
+                        ADD USER
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           </div>
         </div>
       </div>

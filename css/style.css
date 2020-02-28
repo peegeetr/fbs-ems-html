@@ -111,7 +111,7 @@ body {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  overflow-y: scroll;
+  overflow-y: auto;
   width: 100%;
 }
 
@@ -538,6 +538,10 @@ form textarea {
 
 .box-title-head p {
   margin: 0 auto;
+}
+
+.action i {
+  margin: 0 5px;
 }
 
 /* ===================================================================
@@ -1561,14 +1565,15 @@ span.circle {
 
 .employee-search-box {
   padding: 15px;
+  border: 0.5px solid #ddd;
 }
 
-.employee-list-button {
-  margin-top: 22px;
-}
-
-.search-btn,
-.add-employee-btn {
+.search-employee button {
+  background: #da28b5;
+  padding: 6px 20px;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 0.25rem;
   width: 100%;
 }
 
@@ -1833,6 +1838,10 @@ button.add-user-btn i {
   padding: 10px;
   background: #eef1f7;
   margin-top: 0 !important;
+}
+
+.save-settings button {
+  width: 100%;
 }
 
 /* =================================================================== 
@@ -2161,6 +2170,10 @@ article:after {
   color: rgb(218, 40, 181);
 }
 
+.add-user-modal {
+  width: 30%;
+}
+
 /* ===================================================================
  * 0.0 :: Mobile CSS
  * ===================================================================
@@ -2318,6 +2331,10 @@ article:after {
   }
 
   .leave-status ul {
+    text-align: center;
+  }
+  .add-employee-btn {
+    width: 100%;
     text-align: center;
   }
 }
