@@ -466,7 +466,7 @@ form textarea {
 .btn-blue,
 .btn-purple {
   color: #fff;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 10px;
   margin-top: 10px;
   cursor: pointer;
@@ -477,7 +477,7 @@ form textarea {
 }
 
 .btn-purple {
-  background: rgb(218, 40, 181);
+  background: #da28b5;
 }
 
 .btn-purple:hover {
@@ -502,6 +502,10 @@ form textarea {
 .border-bottom-thick {
   border-bottom: 3px solid #ddd;
   margin: 20px 0;
+}
+
+.no-border {
+  border: none !important;
 }
 
 .box-shadow {
@@ -1239,15 +1243,47 @@ span:after {
 
 /* Right Section */
 
-.right-section {
-  background: url("../img/right-img.png");
-  height: 100vh;
-  background-color: #000;
-  background-size: cover;
-  width: 100%;
+/* Right Section End */
+
+/* Admin Landing Page */
+
+.svg-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -999;
+  opacity: 0.9;
 }
 
-/* Right Section End */
+.svg-2 {
+  position: fixed;
+  bottom: -5px;
+  right: 0;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.right-section-content p {
+  padding: 20px;
+}
+
+.partners-clients ul {
+  list-style-type: none;
+}
+
+.partners-clients ul li {
+  margin: 10px;
+  padding: 10px;
+  background: #fff;
+  height: 200px;
+  width: 200px;
+  display: inline-flex;
+}
+
+.partners-clients ul li img {
+  object-fit: cover;
+  margin: auto;
+}
 
 /* ===================================================================
  * 6.1 :: Landing Page - SIGN UP / FORGOT ACCOUNT
@@ -1587,6 +1623,45 @@ span.circle {
   overflow-y: scroll;
 }
 
+.tab-nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.tab-nav ul li {
+  padding: 1rem;
+  flex: 0 0 20%;
+  border: 1px solid #f2f2f2;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tab-nav ul li:hover {
+  background-color: #da28b5;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+.tab-link {
+  background: #eef1f7;
+}
+
+.tab-content {
+  display: none;
+}
+
+.active {
+  background-color: #da28b5;
+  color: #fff;
+  font-weight: bold;
+}
+
+.show {
+  display: block;
+}
+
 /* =================================================================== 
  * 9.1 ::  Add New Employees (Admin)
  * ===================================================================
@@ -1627,7 +1702,8 @@ span.circle {
 
 .general-info-box,
 .personal-info-box {
-  padding: 15px;
+  padding: 30px 20px;
+  border: 1px solid #eee;
 }
 
 .government-id-box,
