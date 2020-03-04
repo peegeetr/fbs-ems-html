@@ -98,10 +98,10 @@
           <div class="col-lg-12">
             <div class="tab-nav">
               <ul>
-                <li class="tab-link active" id="tab-1">GENERAL INFORMATION</li>
-                <li class="tab-link" id="tab-2">PERSONAL INFORMATION</li>
+                <li class="tab-link active" id="tab-1">GENERAL INFO</li>
+                <li class="tab-link" id="tab-2">PERSONAL INFO</li>
                 <li class="tab-link" id="tab-3">GOVERNMENT ID's</li>
-                <li class="tab-link" id="tab-4">RELATIVE INFORMATION</li>
+                <li class="tab-link" id="tab-4">RELATIVE INFO</li>
                 <li class="tab-link" id="tab-5">FILES</li>
               </ul>
             </div>
@@ -109,130 +109,101 @@
             <div class="tab-content-wrapper">
               <div class="tab-content show" id="tab-1-content">
                 <div class="general-info-box">
-                  <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-12">
-                      <div class="employee-add-image">
-                        <div class=""><img src="../img/dp.jpg" alt="" /></div>
+                  <form action="">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="employee-add-image">
+                          <div class=""><img src="../img/dp.jpg" alt="" /></div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="employee-id mb--20">
+                          <p>Employee ID <span class="color--red">*</span></p>
+                          <input type="text" class="input-res form-control" value="000001" disabled />
+                        </div>
+                        <div class="employee-status">
+                          <p>Employee Status <span class="color--red">*</span></p>
+                          <input type="text" class="input-res form-control" value="Regular" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-5 col-md-5 col-sm-12">
+                        <div class="employee-id mb--20">
+                          <p>Department <span class="color--red">*</span></p>
+                          <select name="" id="" disabled class="form-control">
+                            <option value="1">Accounting</option>
+                            <option value="2">Web Developer</option>
+                            <option value="3">SEO</option>
+                            <option value="4">Virtual Assistant</option>
+                          </select>
+                        </div>
+                        <div class="employee-status">
+                          <p>Position <span class="color--red">*</span></p>
+                          <input type="text" class="input-res form-control" value="Accounting associate" disabled />
+                        </div>
                       </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                      <div class="employee-id mb--20">
-                        <p>Employee ID <span class="color--red">*</span></p>
-
-                        <input
-                          type="text"
-                          class="input-res"
-                          value="000001"
-                          disabled
-                        />
-                      </div>
-                      <div class="employee-status">
-                        <p>Employee Status <span class="color--red">*</span></p>
-
-                        <input
-                          type="text"
-                          class="input-res"
-                          value="Regular"
-                          disabled
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-5 col-md-5 col-sm-12">
-                      <div class="employee-id mb--20">
-                        <p>Department <span class="color--red">*</span></p>
-                        <select name="" id="" disabled>
-                          <option value="1">Accounting</option>
-                          <option value="2">Web Developer</option>
-                          <option value="3">SEO</option>
-                          <option value="4">Virtual Assistant</option>
-                        </select>
-                      </div>
-                      <div class="employee-status">
-                        <p>Position <span class="color--red">*</span></p>
-
-                        <input
-                          type="text"
-                          class="input-res"
-                          value="Accounting associate"
-                          disabled
-                        />
-                      </div>
-                    </div>
-                  </div>
+                  </form>
                 </div>
               </div>
               <div class="tab-content" id="tab-2-content">
                 <div class="personal-info-box">
-                  <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-12">
-                      <div class="employee-status">
-                        <p>First Name <span class="color--red">*</span></p>
-                        <form action="">
-                          <input type="text" class="input-res" value="David" />
-                        </form>
+                  <form action="">
+                    <div class="row">
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="employee-status">
+                          <p>First Name <span class="color--red">*</span></p>
+                          <input type="text" class="input-res form-control" value="David" />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="employee-status">
+                          <p>Middle Name <span class="color--red">*</span></p>
+                          <input type="text" class="input-res form-control" value="Esperas" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="employee-status">
+                          <p>Last Name <span class="color--red">*</span></p>
+                          <input type="text" class="input-res form-control" value="Catubay" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="employee-status">
+                          <p>Sex <span class="color--red">*</span></p>
+                          <form class="radio" action="">
+                            <label for="">Male
+                              <input type="radio" name="gender" value="male" checked />
+                            </label>
+                            <label for="">Female
+                              <input type="radio" name="gender" value="female" disabled />
+                            </label>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-12">
-                      <div class="employee-status">
-                        <p>Middle Name <span class="color--red">*</span></p>
-                        <form action="">
-                          <input type="text" class="input-res" value="Esperas" disabled />
-                        </form>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-12">
-                      <div class="employee-status">
-                        <p>Last Name <span class="color--red">*</span></p>
-                        <form action="">
-                          <input type="text" class="input-res" value="Catubay" disabled />
-                        </form>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-12">
-                      <div class="employee-status">
-                        <p>Sex <span class="color--red">*</span></p>
-                        <form class="radio" action="">
-                          <label for="">Male
-                            <input type="radio" name="gender" value="male" checked />
-                          </label>
-                          <label for="">Female
-                            <input type="radio" name="gender" value="female" disabled />
-                          </label>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
+                  </form>
                   <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-12">
                       <div class="employee-status">
                         <p>Age <span class="color--red">*</span></p>
-                        <form action="">
-                          <input type="text" class="input-res" value="26" disabled />
-                        </form>
+                          <input type="text" class="input-res form-control" value="26" disabled />
                       </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-12">
                       <div class="employee-status">
                         <p>Civil Status <span class="color--red">*</span></p>
-                        <form action="">
-                          <input type="text" class="input-res" value="Single" disabled />
-                        </form>
+                          <input type="text" class="input-res form-control" value="Single" disabled />
                       </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-12">
                       <div class="employee-status">
                         <p>Date of Birth <span class="color--red">*</span></p>
-                        <form action="">
-                          <input type="text" class="input-res" value="January 1, 1990" disabled />
-                        </form>
+                          <input type="text" class="input-res form-control" value="January 1, 1990" disabled />
                       </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-12">
                       <div class="employee-status">
                         <p>Birth Place <span class="color--red">*</span></p>
-                        <form action="">
-                          <input type="text" class="input-res" value="San Pablo City" disabled />
-                        </form>
+                          <input type="text" class="input-res form-control" value="San Pablo City" disabled />
                       </div>
                     </div>
                   </div>
@@ -243,17 +214,13 @@
                           Address
                           <em>(House No., Street, Subd., Brgy., City, Prov., Country)</em><span class="color--red">*</span>
                         </p>
-                        <form action="">
-                          <input type="text" class="input-res" value="#123 Brgy. San Gregorio, San Pablo City, Laguna" disabled />
-                        </form>
+                          <input type="text" class="input-res form-control" value="#123 Brgy. San Gregorio, San Pablo City, Laguna" disabled />
                       </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-12">
                       <div class="employee-status">
                         <p>Zip Code <span class="color--red">*</span></p>
-                        <form action="">
-                          <input type="text" class="input-res" value="4000" disabled />
-                        </form>
+                          <input type="text" class="input-res form-control" value="4000" disabled />
                       </div>
                     </div>
                   </div>
@@ -261,178 +228,170 @@
                     <div class="col-lg-4 col-md-4 col-sm-12">
                       <div class="employee-status">
                         <p>Mobile Number <span class="color--red">*</span></p>
-                        <form action="">
-                          <input type="text" class="input-res" value="+63-901-234-5678" disabled />
-                        </form>
+                          <input type="text" class="input-res form-control" value="+63-901-234-5678" disabled />
                       </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
                       <div class="employee-status">
                         <p>Landline Number</p>
-                        <form action="">
-                          <input type="text" class="input-res" disabled />
-                        </form>
+                          <input type="text" class="input-res form-control" disabled />
                       </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
                       <div class="employee-status">
                         <p>Email Address <span class="color--red">*</span></p>
-                        <form action="">
-                          <input type="text" class="input-res" value="loverboy@gmail.com" disabled />
-                        </form>
+                          <input type="text" class="input-res form-control" value="loverboy@gmail.com" disabled />
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="tab-content" id="tab-3-content">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="employee-status government-id-box">
-                      <p>SSS No. <span class="color--red">*</span></p>
-                      <form action="">
-                        <input type="text" class="input-res" value="123456789" disabled />
-                      </form>
+                <div class="government-id-box">
+                  <form action="">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="employee-status">
+                          <p>SSS No. <span class="color--red">*</span></p>
+                          <input type="text" class="input-res form-control" value="123456789" disabled />
+                        </div>
+                        <div class="employee-status">
+                          <p>Pagibig No.<span class="color--red">*</span></p>
+                          <input type="text" class="input-res form-control" value="123456789" disabled />
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="employee-status">
+                          <p>
+                            Driver's License No.
+                          </p>
+                          <input type="text" class="input-res form-control" value="12345khft" disabled />
+                        </div>
+                        <div class="employee-status">
+                          <p>
+                            Passport No./Exp. Date
+                          </p>
+                          <input type="text" class="input-res form-control" value="12354131" disabled>
+                        </div>
+                      </div>
                     </div>
-                    <div class="employee-status government-id-box">
-                      <p>Pagibig No.<span class="color--red">*</span></p>
-                      <form action="">
-                        <input type="text" class="input-res" value="123456789" disabled />
-                      </form>
-                    </div>
-                    <div class="employee-status government-id-box">
-                      <p>
-                        Driver's License No.
-                      </p>
-                      <form action="">
-                        <input type="text" class="input-res" value="12345khft" disabled />
-                      </form>
-                    </div>
-                    <div class="employee-status government-id-box">
-                      <p>
-                        Passport No./Exp. Date
-                      </p>
-                      <form action="">
-                        <input type="text" class="input-res" value="12354131" disabled>
-                      </form>
-                    </div>
-                  </div>
+                  </form>
                 </div>
               </div>
               <div class="tab-content" id="tab-4-content">
-                <div class="row">
-                  <div class="col-lg-12">
-                      <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-                          <div class="employee-status relative-info-box">
-                            <p>
-                              Mother's Maiden Name <span class="color--red">*</span>
-                            </p>
-                            <form action="">
-                              <input type="text" class="input-res" value="Ezperanza Esperas" disabled />
-                            </form>
+                <div class="relative-info-box">
+                  <form action="">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="row">
+                          <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="employee-status">
+                              <p>
+                                Mother's Maiden Name <span class="color--red">*</span>
+                              </p>
+                              <input type="text" class="input-res form-control" value="Ezperanza Esperas" disabled />
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="employee-status">
+                              <p>Birthdate <span class="color--red">*</span></p>
+                              <input type="text" class="input-res form-control" value="September 12, 1957" disabled />
+                            </div>
                           </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-                          <div class="employee-status relative-info-box">
-                            <p>Birthdate <span class="color--red">*</span></p>
-                            <form action="">
-                              <input type="text" class="input-res" value="September 12, 1957" disabled />
-                            </form>
+                        <div class="row">
+                          <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="employee-status">
+                              <p>
+                                Father's Maiden Name <span class="color--red">*</span>
+                              </p>
+                              <input type="text" class="input-res form-control" value="Crisostomo Catubay" disabled />
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="employee-status">
+                              <p>Birthdate <span class="color--red">*</span></p>
+                              <input type="text" class="input-res form-control" value="September 12, 1957" disabled />
+                            </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-                          <div class="employee-status relative-info-box">
-                            <p>
-                              Father's Maiden Name <span class="color--red">*</span>
-                            </p>
-                            <form action="">
-                              <input type="text" class="input-res" value="Crisostomo Catubay" disabled />
-                            </form>
+                        <div class="row">
+                          <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="employee-status">
+                              <p>
+                                Spouse's Name (If Any)
+                              </p>
+                              <input type="text" class="input-res form-control" disabled />
+                            </div>
+                          </div>
+                          <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="employee-status">
+                              <p>Birthdate</p>
+                              <input type="text" class="input-res form-control" disabled />
+                            </div>
                           </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-                          <div class="employee-status relative-info-box">
-                            <p>Birthdate <span class="color--red">*</span></p>
-                            <form action="">
-                              <input type="text" class="input-res" value="September 12, 1957" disabled />
-                            </form>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-                          <div class="employee-status relative-info-box">
-                            <p>
-                              Spouse's Name (If Any)
-                            </p>
-                            <form action="">
-                              <input type="text" class="input-res" disabled />
-                            </form>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-                          <div class="employe-status relative-info-box">
-                            <p>Birthdate</p>
-                            <form action="">
-                              <input type="text" class="input-res" disabled />
-                            </form>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-                          <div class="employee-status relative-info-box">
-                            <p>
-                              Number of Children
-                            </p>
-                            <form action="">
-                              <input type="text" class="input-res" disabled />
-                            </form>
+                        <div class="row">
+                          <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="employee-status">
+                              <p>
+                                Number of Children
+                              </p>
+                              <input type="text" class="input-res form-control" disabled />
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  
+                  </form>
                 </div>
               </div>
               <div class="tab-content" id="tab-5-content">
-                <div class="row">
-                  <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="file-resume box-shadow mb--40">
-                      <div class="file-resume-title box-title-head">
-                        <p>FILE UPLOAD FOR RESUME</p>
-                      </div>
-                      <div class="file-resume-box">
-                        <button class="upload-btn btn-purple">
-                          <a href="#"> Upload <i class="fas fa-upload"></i> </a>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="file-tor box-shadow mb--40">
-                      <div class="file-tor-title box-title-head">
-                        <p>FILE UPLOAD FOR T.O.R</p>
-                      </div>
-                      <div class="file-tor-box">
-                        <button class="upload-btn btn-purple">
-                          <a href="#"> Upload <i class="fas fa-upload"></i> </a>
-                        </button>
+                <div class="employee-file-record">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                      <div class="file-resume box-shadow mb--20">
+                        <div class="box-title-head">
+                          Resume
+                        </div>
+                        <div class="file-name t-center">
+                          <p>jakjshdkhasd.pdf</p>
+                        </div>
+                        <div class="file-resume-box">
+                          <button class="upload-btn btn-clear">
+                            Download <i class="fas fa-download"></i> </a>
+                          </button>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="file-diploma box-shadow mb--40">
-                      <div class="file-diploma-title box-title-head">
-                        <p>FILE UPLOAD FOR DIPLOMA</p>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                      <div class="file-tor box-shadow mb--20">
+                        <div class="box-title-head">
+                          T.O.R
+                        </div>
+                        <div class="file-name t-center">
+                          <p>asjdjasjdaosdpo.pdf</p>
+                        </div>
+                        <div class="file-tor-box">
+                          <button class="upload-btn btn-clear">
+                            Download <i class="fas fa-download"></i> </a>
+                          </button>
+                        </div>
                       </div>
-                      <div class="file-diploma-box">
-                        <button class="upload-btn btn-purple">
-                          <a href="#"> Upload <i class="fas fa-upload"></i> </a>
-                        </button>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                      <div class="file-diploma box-shadow mb--20">
+                        <div class="box-title-head">
+                          DIPLOMA
+                        </div>
+                        <div class="file-name t-center">
+                          <p>jahsdjkhaksd.pdf</p>
+                        </div>
+                        <div class="file-diploma-box">
+                          <button class="upload-btn btn-clear">
+                            Download <i class="fas fa-download"></i> </a>
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>

@@ -484,14 +484,23 @@ form textarea {
   background: #6a104f;
 }
 
-.btn-blue {
-  color: #fff;
-  background: #2196f3;
+.btn-clear {
+  color: #2a2a2a;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: 1px solid #2a2a2a;
 }
 
-.btn-blue:hover {
-  background-color: #2196f3;
+.btn-clear:hover {
+  background-color: #6a104f;
   transition: all 0.3s ease-in-out;
+  color: #fff;
 }
 
 .border-bottom {
@@ -547,6 +556,36 @@ form textarea {
 .action i {
   margin: 0 5px;
 }
+
+.form-control {
+  border: none !important;
+  border-bottom: 1px solid #ddd !important;
+}
+
+.form-control:focus {
+  background-image: linear-gradient(
+      0deg,
+      var(--primary-color) 2px,
+      rgba(156, 39, 176, 0) 0
+    ),
+    linear-gradient(0deg, #d2d2d2 1px, hsla(0, 0%, 82%, 0) 0);
+  border: none !important;
+}
+
+.label {
+  color: #000;
+  padding: 1px 3px;
+  margin: 0 !important;
+}
+.approved {
+  background-color: rgb(149, 238, 152);
+} /* Green */
+.pending {
+  background-color: rgba(255, 152, 0, 0.5);
+} /* Orange */
+.declined {
+  background-color: #fa7d74;
+} /* Red */
 
 /* ===================================================================
  * 3.0 :: Structure / Grid/ Column
@@ -1710,7 +1749,7 @@ span.circle {
 
 .tab-nav ul li {
   padding: 1rem;
-  flex: 0 0 20%;
+  flex: 0 0 19%;
   border: 1px solid #f2f2f2;
   text-align: center;
   font-weight: bold;
@@ -1779,19 +1818,17 @@ span.circle {
   color: #b2226f;
 }
 
+.employee-file-record,
 .general-info-box,
-.personal-info-box {
+.personal-info-box,
+.government-id-box,
+.relative-info-box {
   padding: 30px 20px;
   border: 1px solid #eee;
 }
 
-.government-id-box,
-.relative-info-box {
-  padding: 0 15px;
-}
-
 .employee-status {
-  margin-bottom: 20px;
+  margin: 10px 0;
 }
 
 form.radio {
@@ -1804,14 +1841,12 @@ form.radio label {
   font-size: 16px;
 }
 
-.save-employee,
 .file-diploma-box,
 .file-tor-box,
 .file-resume-box {
   display: flex;
   justify-content: center;
   padding: 15px;
-  text-align: center;
 }
 
 .save-employee .save-btn,
@@ -1841,6 +1876,11 @@ form.radio label {
   text-align: center;
   display: flex;
   object-fit: cover;
+}
+
+.file-name {
+  padding: 10px;
+  font-weight: 600;
 }
 
 /* =================================================================== 
@@ -2038,6 +2078,10 @@ button.add-user-btn i {
   width: 100%;
 }
 
+.leave-form-wrap {
+  width: 100%;
+}
+
 .leave-form-box {
   padding: 15px;
 }
@@ -2209,6 +2253,7 @@ article:after {
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
+  display: flex;
 }
 .overlay:target {
   visibility: visible;
@@ -2216,12 +2261,22 @@ article:after {
   z-index: 6;
 }
 
-.popup {
+/* .popup {
   margin: 70px auto;
   padding: 20px;
   background: #fff;
   border-radius: 5px;
   width: 30%;
+  position: relative;
+  transition: all 2s ease-in-out;
+} */
+
+.popup {
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 60%;
   position: relative;
   transition: all 2s ease-in-out;
 }
@@ -2329,6 +2384,11 @@ article:after {
   width: 30%;
 }
 
+.form-modal {
+  width: 30% !important;
+}
+
+
 /* ===================================================================
  * 0.0 :: Mobile CSS
  * ===================================================================
@@ -2350,14 +2410,24 @@ article:after {
   .left-content {
     padding: 10px !important;
   }
+  .delete-modal {
+    width: 30%;
+  }
+
+  .form-modal {
+    width: 30% !important;
+  }
 }
 
 @media screen and (max-width: 1000px) {
+  .tab-nav ul {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 970px) {
   .popup {
-    width: 50%;
+    width: 50% !important;
   }
   .right-section {
     display: none;
@@ -2472,7 +2542,7 @@ article:after {
   }
 
   .popup {
-    width: 80%;
+    width: 80% !important;
   }
 
   .sign-up-box {
