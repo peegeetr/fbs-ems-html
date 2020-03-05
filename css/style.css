@@ -1263,6 +1263,7 @@ form.index-login {
 .login-btn {
   cursor: pointer;
   padding: 10px 20px;
+  width: 100%;
 }
 
 .sign-up-box p {
