@@ -1276,13 +1276,41 @@ form.index-login {
 }
 
 .forget-account,
-.sign-up-box .sign-up {
+.sign-up-box {
+  color: #b2226f;
+  font-size: 14px;
+}
+
+.sign-up {
   color: #b2226f;
 }
 
 .forget-account:hover,
 .sign-up-box .sign-up:hover {
   color: #6a104f;
+}
+
+.error-message {
+  display: flex;
+  width: 100%;
+  border: 1px solid red;
+}
+
+.warning {
+  align-self: flex-start;
+  background: rgb(255, 0, 0);
+  flex:2;
+}
+
+.warning i {
+  font-size: 25px;
+  color: #fff;
+  margin: 90px 15px;
+}
+
+.warning-text {
+  width: 100%;
+  flex:10;
 }
 
 /* Left Section End */
@@ -2644,28 +2672,36 @@ article:after {
 .loader {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 16px solid #6A103F;
+  border-top: 16px solid #6a103f;
   width: 60px;
   height: 60px;
-  -webkit-animation: spin 0.8s linear infinite; 
+  -webkit-animation: spin 0.8s linear infinite;
   animation: spin 0.8s linear infinite;
   margin: 0 auto;
 }
 
 .loader-container p {
-    margin: 20px 0;
-    color: #888;
+  margin: 20px 0;
+  color: #888;
 }
 
 /* Safari */
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* End Spinner */
