@@ -1257,19 +1257,22 @@ form.index-login {
 .sign-up-box {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .login-btn {
   cursor: pointer;
-  order: 2;
   padding: 10px 20px;
+  width: 100%;
 }
 
 .sign-up-box p {
-  align-self: flex-end;
   font-size: 18px;
   color: #444;
-  order: 1;
+}
+
+.flex-50 {
+  flex: 49%;
 }
 
 .forget-account,
@@ -1740,7 +1743,6 @@ span.circle {
   display: block;
 }
 
-
 .tab-nav ul {
   display: flex;
   list-style: none;
@@ -1935,7 +1937,6 @@ button.add-user-btn i {
   font-size: 18px;
 }
 
-
 .list-of-users table ul li {
   list-style-type: none;
   margin: 5px;
@@ -2059,7 +2060,6 @@ button.add-user-btn i {
  * 14.0 :: Employee Leave Dashboard
  * ===================================================================
  */
-
 
 .leave-counter button {
   display: inline-block;
