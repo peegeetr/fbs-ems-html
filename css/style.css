@@ -1239,6 +1239,11 @@ span:after {
   font-size: 18px;
 }
 
+form.index-login {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
 .left-content form label {
   font-size: 18px;
 }

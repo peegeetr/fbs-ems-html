@@ -46,10 +46,105 @@
             </div>
           </div>
           <div class="col-lg-8 col-md-6 col-sm-12">
-            <div class="right-section"></div>
+            <div class="right-section">
+              <div class="right-section-content">
+                <div class="announcement">
+                  <div class="announcement-slider">
+                    <div class="slideshow-container">
+                      <div class="mySlides">
+                        <h2>
+                          Lorem ipsum dolor sit
+                        </h2>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Explicabo excepturi nobis laudantium impedit.
+                        </p>
+                      </div>
+
+                      <div class="mySlides">
+                        <h2>
+                          ipsum dolor sit
+                        </h2>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Aliquid maiores molestiae voluptatem, alias
+                          itaque molestias eaque amet quos? Repudiandae sed cum
+                          vero aperiam commodi, architecto atque ea quia. Nulla
+                          neque explicabo repellendus earum enim odit eum
+                          debitis molestiae, placeat, laudantium distinctio quod
+                          illo vitae accusantium delectus! Velit error cumque
+                          numquam.
+                        </p>
+                      </div>
+
+                      <div class="mySlides">
+                        <h2>
+                          dolor sit
+                        </h2>
+                        <p>
+                          Lorem ipsum, dolor sit amet consectetur adipisicing
+                          elit. Laboriosam atque, nobis excepturi vitae a eius,
+                          temporibus maxime recusandae porro quod consectetur,
+                          minima voluptate deleniti ipsum. Iure dicta nihil
+                          delectus ducimus similique porro sint suscipit
+                          laboriosam illo aspernatur, doloremque eligendi totam
+                          ea repudiandae minus quaerat earum iste? Nam quo
+                          temporibus eligendi culpa ut. Iste consectetur tempora
+                          sed optio sint quae quidem vel sapiente reiciendis
+                          natus labore nulla exercitationem numquam accusamus,
+                          expedita ut voluptatibus magni cum eligendi et nobis
+                          voluptatem. Blanditiis, quo.
+                        </p>
+                      </div>
+
+                      <!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
+                      <a class="next" onclick="plusSlides(1)">❯</a> -->
+                    </div>
+
+                    <div class="dot-container">
+                      <span class="dot" onclick="currentSlide(1)"></span>
+                      <span class="dot" onclick="currentSlide(2)"></span>
+                      <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
   </body>
 </html>
