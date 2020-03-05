@@ -1636,7 +1636,6 @@ span.circle {
 
 .leave-summary {
   margin-top: 30px;
-  overflow-y: scroll;
 }
 
 .leave-filter {
@@ -1736,9 +1735,6 @@ span.circle {
   display: block;
 }
 
-.employee-list-box {
-  overflow-y: scroll;
-}
 
 .tab-nav ul {
   display: flex;
@@ -1934,9 +1930,6 @@ button.add-user-btn i {
   font-size: 18px;
 }
 
-/* .list-of-users {
-  overflow-y: auto;
-} */
 
 .list-of-users table ul li {
   list-style-type: none;
@@ -2062,9 +2055,6 @@ button.add-user-btn i {
  * ===================================================================
  */
 
-.filter-stats {
-  overflow-y: scroll;
-}
 
 .leave-counter button {
   display: inline-block;
