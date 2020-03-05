@@ -1935,9 +1935,9 @@ button.add-user-btn i {
   font-size: 18px;
 }
 
-.list-of-users {
+/* .list-of-users {
   overflow-y: auto;
-}
+} */
 
 .list-of-users table ul li {
   list-style-type: none;
