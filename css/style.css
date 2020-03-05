@@ -111,7 +111,6 @@ body {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  overflow-y: auto;
   width: 100%;
 }
 
