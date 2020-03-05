@@ -1936,7 +1936,7 @@ button.add-user-btn i {
 }
 
 .list-of-users {
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .list-of-users table ul li {
