@@ -2388,7 +2388,44 @@ article:after {
   width: 30% !important;
 }
 
+/* test-modal */
+.hidden {
+  position: fixed;
+  top: 10%;
+  bottom: 0;
 
+  right: 2%;
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+}
+.hidden:target {
+  visibility: visible;
+  opacity: 1;
+  z-index: 6;
+}
+
+.side-modal {
+  background: #333;
+  color: #fff;
+  height: 50px;
+  text-align: center;
+}
+
+.side-modal i {
+  color: #da28b5;
+}
+
+.side-success {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.side-success div {
+  margin: 10px;
+}
 /* ===================================================================
  * 0.0 :: Mobile CSS
  * ===================================================================
@@ -2589,5 +2626,13 @@ article:after {
 
   .verify-box {
     text-align: center;
+  }
+  .form-modal {
+    overflow-y: scroll;
+    margin: 10px auto;
+  }
+
+  .leave-form-box {
+    overflow-y: scroll;
   }
 }

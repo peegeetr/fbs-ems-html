@@ -143,7 +143,7 @@
                 <td>1</td>
                 <td>I have to visit my Girlfriend</td>
                 <td>
-                  <a href="#">
+                  <a href="#pop-process-form-edit">
                     <i class="fas fa-pen"></i>
                   </a>
                 </td>
@@ -154,14 +154,14 @@
                 </td>
               </tr>
               <tr>
-                <td><p class="label pending">Approved</p></td>
+                <td><p class="label pending">Pending</p></td>
                 <td>Vacation</td>
                 <td>1/1/2020</td>
                 <td>1/2/2020</td>
                 <td>1</td>
                 <td>I have to visit my Girlfriend</td>
                 <td>
-                  <a href="#">
+                  <a href="#pop-process-form-edit">
                     <i class="fas fa-pen"></i>
                   </a>
                 </td>
@@ -179,7 +179,7 @@
                 <td>1</td>
                 <td>I have to visit my Girlfriend</td>
                 <td>
-                  <a href="#">
+                  <a href="#pop-process-form-edit">
                     <i class="fas fa-pen"></i>
                   </a>
                 </td>
@@ -197,7 +197,7 @@
                 <td>1</td>
                 <td>I have to visit my Girlfriend</td>
                 <td>
-                  <a href="#">
+                  <a href="#pop-process-form-edit">
                     <i class="fas fa-pen"></i>
                   </a>
                 </td>
@@ -215,7 +215,7 @@
                 <td>1</td>
                 <td>I have to visit my Girlfriend</td>
                 <td>
-                  <a href="#">
+                  <a href="#pop-process-form-edit">
                     <i class="fas fa-pen"></i>
                   </a>
                 </td>
@@ -255,7 +255,8 @@
             <div class="box-title-head">
               <p>Apply Leave</p>
             </div>
-            <div class="leave-form-box">
+            <form action="">
+              <div class="leave-form-box">
               <div class="leave-select">
                 <p>Leave Type <span class="color--red">*</span></p>
                 <select name="" id="">
@@ -273,25 +274,19 @@
                   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="leave-date-box mb--20">
                       <p>From <span class="color--red">*</span></p>
-                      <form action="">
                         <input type="date" class="input-res" />
-                      </form>
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="leave-date-box mb--20">
                       <p>To <span class="color--red">*</span></p>
-                      <form action="">
                         <input type="date" class="input-res" />
-                      </form>
                     </div>
                   </div>
                 </div>
               </div>
-              <form class="leave-reason mb--20">
                 <p>Reason <span class="color--red">*</span></p>
                 <input type="text" id="reason" name="reason" />
-              </form>
               <p>Numbers of Date Applied <span class="color--red">*</span></p>
               <select name="" id="" class="leave-duration mb--20">
                 <option value="0" disabled selected>-</option>
@@ -301,16 +296,15 @@
                 <option value="4">4</option>
                 <option value="5">5</option>
               </select>
-              <form class="leave-supervisor mb--20">
                 <p>Your Supervisor</p>
                 <input type="text" disabled="disabled" value="Dichoso, Juan" />
-              </form>
               <div class="leave-button">
-                <button class="btn-purple" onclick="window.location.href='#pop-process-success'">
+                <button class="btn-purple" onclick="window.location.href='#success'" >
                     APPLY LEAVE</a>
                 </button>
               </div>
             </div>
+            </form>
           </div>
         </div>
       </div>
@@ -327,6 +321,87 @@
             <a href="#" class="btn-purple confirm-yes"> Yes</a>
             <a href="#" class="btn-purple confirm-no"> No</a>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="pop-process-form-edit" class="overlay">
+      <div class="popup form-modal">
+        <a class="close" href="#process">&times;</a>
+        <div>
+          <div class="leave-form mb--20">
+              <div class="leave-form-wrap ">
+              <div class="box-title-head">
+                <p>Apply Leave</p>
+              </div>
+              <form action="">
+                <div class="leave-form-box">
+                <div class="leave-select">
+                  <p>Leave Type <span class="color--red">*</span></p>
+                  <select name="" id="">
+                    <option value="1">Vacation</option>
+                    <option value="2">Sick Leave</option>
+                    <option value="3">Emergency</option>
+                    <option value="4">Birthday</option>
+                    <option value="5">Paternity</option>
+                    <option value="6">Maternity</option>
+                  </select>
+                </div>
+                <div class="date">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <div class="leave-date-box mb--20">
+                        <p>From <span class="color--red">*</span></p>
+                          <input type="date" class="input-res"/>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <div class="leave-date-box mb--20">
+                        <p>To <span class="color--red">*</span></p>
+                          <input type="date" class="input-res" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  <div class="leave-reason">
+                    <p>Reason <span class="color--red">*</span></p>
+                  <input type="text" id="reason" name="reason" value="I have to visit my girlfriend" />
+                  </div>
+                <p>Numbers of Date Applied <span class="color--red">*</span></p>
+                <select name="" id="" class="leave-duration mb--20">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+                  <div class="mb--20">
+                    <p>Your Supervisor</p>
+                  <input type="text" disabled="disabled" value="Dichoso, Juan" />
+                  </div>
+                  <div class="cancel-leave mb--20">
+                    <input type="checkbox"><label for="checkbox"> Check if you want to cancel leave</label>
+                  </div>
+                <div class="leave-button">
+                  <button class="btn-purple" onclick="window.location.href='#pop-process-success'">
+                      Save Changes</a>
+                  </button>
+                </div>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="success" class="hidden">
+      <div class="side-modal">
+        <div class="side-success">
+            <div><i class="fas fa-check-circle"></i></div>
+            <div>SUCCESS!</div>
+            <div>
+                <a href="#" class="btn-purple confirm-success">DONE</a>
+            </div>
         </div>
       </div>
     </div>

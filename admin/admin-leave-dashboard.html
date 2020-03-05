@@ -47,7 +47,7 @@
           <li class="menu-dashboard menu">
             <a href="admin-dashboard.html" for="dashboard-sidebtn">
               <span><i class="fas fa-tachometer-alt"></i></span>
-              <span>Dashboardsssss</span>
+              <span>Dashboard</span>
             </a>
           </li>
           <li class="menu-leave menu active">
@@ -93,7 +93,9 @@
     </div>
     <div class="main-content">
       <div class="content-wrap">
-        <h3>ADMIN LEAVE DASHBOARD <i class="fas fa-plane-departure"></i></h3>
+        <h3 class="mb--60">
+          ADMIN LEAVE DASHBOARD <i class="fas fa-plane-departure"></i>
+        </h3>
         <div class="leave-counter mb--30">
           <div class="employee-section">
             <div class="employee">
@@ -134,6 +136,7 @@
         </div>
         <div class="leave-sum-content mb--50">
           <div class="leave-summary mb--10">
+            <p class="p-title">Leave Request</p>
             <table>
               <tr>
                 <th>First Name</th>
@@ -144,8 +147,8 @@
                 <th>No. of Days</th>
                 <th>Reason</th>
                 <th>Status</th>
-                <th>Edit</th>
-                <th>Save</th>
+                <th>Approve</th>
+                <th>Declined</th>
               </tr>
               <tr>
                 <td>David</td>
@@ -156,17 +159,10 @@
                 <td>1</td>
                 <td>I have to visit my Girlfriend</td>
                 <td>
-                  <div class="table-select">
-                    <select name="" id="">
-                      <option value="0" disabled selected>Pending</option>
-                      <option value="1">Approved</option>
-                      <option value="2">Declined</option>
-                      
-                    </select>
-                  </div>
+                  Pending
                 </td>
-                <td><a href="#"><i class="fas fa-pen"></i></a></td>
-                <td><a href="#pop-process-success"><i class="fas fa-save"></i></a></i></td>
+                <td><a href="#"><i class="fas fa-check-circle"></i></a></td>
+                <td><a href="#pop-process-success"><i class="fas fa-minus-circle"></i></a></i></td>
               </tr>
               <tr>
                 <td>David</td>
@@ -177,17 +173,10 @@
                 <td>1</td>
                 <td>I have to visit my Girlfriend</td>
                 <td>
-                  <div class="custom-select table-select">
-                    <select name="" id="">
-                      <option value="0" disabled selected>Pending</option>
-                      <option value="1">Approved</option>
-                      <option value="2">Declined</option>
-                      
-                    </select>
-                  </div>
+                  Pending
                 </td>
-                <td><a href="#"><i class="fas fa-pen"></i></a></td>
-                <td><a href="#pop-process-success"><i class="fas fa-save"></i></a></i></td>
+                <td><a href="#"><i class="fas fa-check-circle"></i></a></td>
+                <td><a href="#pop-process-success"><i class="fas fa-minus-circle"></i></a></i></td>
               </tr>
               <tr>
                 <td>David</td>
@@ -198,17 +187,10 @@
                 <td>1</td>
                 <td>I have to visit my Girlfriend</td>
                 <td>
-                  <div class="custom-select table-select">
-                    <select name="" id="">
-                      <option value="0" disabled selected>Pending</option>
-                      <option value="1">Approved</option>
-                      <option value="2">Declined</option>
-                      
-                    </select>
-                  </div>
+                  Pending
                 </td>
-                <td><a href="#"><i class="fas fa-pen"></i></a></td>
-                <td><a href="#pop-process-success"><i class="fas fa-save"></i></a></i></td>
+                <td><a href="#"><i class="fas fa-check-circle"></i></a></td>
+                <td><a href="#pop-process-success"><i class="fas fa-minus-circle"></i></a></i></td>
               </tr>
               <tr>
                 <td>David</td>
@@ -219,22 +201,14 @@
                 <td>1</td>
                 <td>I have to visit my Girlfriend</td>
                 <td>
-                  <div class="custom-select table-select">
-                    <select name="" id="">
-                      <option value="0" disabled selected>Pending</option>
-                      <option value="1">Approved</option>
-                      <option value="2">Declined</option>
-                      
-                    </select>
-                  </div>
+                  Pending
                 </td>
-                <td><a href="#"><i class="fas fa-pen"></i></a></td>
-                <td><a href="#pop-process-success"><i class="fas fa-save"></i></a></i></td>
+                <td><a href="#"><i class="fas fa-check-circle"></i></a></td>
+                <td><a href="#pop-process-success"><i class="fas fa-minus-circle"></i></a></i></td>
               </tr>
             </table>
           </div>
-        </div>
-        <div class="leave-status mb--30">
+        <!-- <div class="leave-status mb--30">
           <div class="p-title">
             <p>Available Leaves</p>
           </div>
@@ -264,7 +238,7 @@
               <p>10/10</p>
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </div>
     <div id="pop-process-success" class="overlay">
