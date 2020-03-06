@@ -586,13 +586,19 @@ form textarea {
   background-color: #fa7d74;
 } /* Red */
 
-.border-red {
+.err-border-red {
   border: 1px solid red!important;
+  margin-bottom: 0!important;
 }
 
 .alert-msg {
   font-size : 14px;
   color:rgb(255, 0, 0);
+  /* display: none; */
+}
+
+.err-display {
+  display: block !important;
 }
 
 /* ===================================================================
@@ -1302,6 +1308,7 @@ form.index-login {
 .error-message {
   width: 100%;
   border: 1px solid red;
+  /* display: none; */
 }
 
 .warning {
