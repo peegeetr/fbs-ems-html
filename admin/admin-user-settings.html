@@ -182,15 +182,18 @@
                 <div class="add-new-user-form">
                   <div>
                     <p>Email<span class="color--red">*</span></p>
-                    <input type="email" class="input-res" />
+                    <input type="email" class="input-res err-border-red" />
+                    <div class="alert-msg mb--10">Required</div>
                   </div>
                   <div>
                     <p>Username <span class="color--red">*</span></p>
-                    <input type="text" name="name" />
+                    <input type="text" name="name" class="err-border-red"/>
+                    <div class="alert-msg mb--10">Required</div>
                   </div>
                   <div class="mb--10">
                     <p>Password <span class="color--red">*</span></p>
-                    <input type="text" id="reason" name="reason" />
+                    <input type="text" id="reason" name="reason" class="err-border-red"/>
+                    <div class="alert-msg mb--10">Required</div>
                   </div>
                   <div class="save-settings mb--30">
                     <button type="submit" onclick="window.location.href = '#pop-process-success';" class="btn-purple">
@@ -202,6 +205,14 @@
             </div>
           </div>
           </div>
+          <div class="error-message ">
+                      <div class="warning">
+                        <i class="fas fa-exclamation"></i>
+                        <div class="warning-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdamur rerum mollitia quam voluptatum ullam cum commodi?</p>
+                      </div>
+                      </div>
+                </div>
         </div>
       </div>
     </div>

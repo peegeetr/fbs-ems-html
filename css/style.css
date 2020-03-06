@@ -587,13 +587,13 @@ form textarea {
 } /* Red */
 
 .err-border-red {
-  border: 1px solid red!important;
-  margin-bottom: 0!important;
+  border: 1px solid red !important;
+  margin-bottom: 0 !important;
 }
 
 .alert-msg {
-  font-size : 14px;
-  color:rgb(255, 0, 0);
+  font-size: 14px;
+  color: rgb(255, 0, 0);
   /* display: none; */
 }
 
@@ -1300,17 +1300,19 @@ form.index-login {
 
 .error-message {
   /* display: none; */
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .warning {
-  display:flex;
+  display: flex;
   background: rgb(255, 0, 0);
   align-items: center;
-  border: 1px solid rgb(255, 0, 0);;
+  border: 1px solid rgb(255, 0, 0);
 }
 
 .warning-text {
-  background: #fff;
+  background: rgb(255, 253, 235);
   padding: 10px;
   width: 100%;
 }
@@ -1473,12 +1475,18 @@ h3.welcome-title {
   font-size: 30px;
 }
 
+.welcome-sub {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
 .admin-db-box {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px;
+  padding-top: 15px;
   align-items: center;
   margin-bottom: 20px;
+  text-align: center;
+  border-radius: 5px;
 }
 
 .project-stat-box ul li,
@@ -1487,21 +1495,26 @@ h3.welcome-title {
 .admin-employee-stat-box ul li {
   list-style-type: none;
   font-weight: 600;
-  text-align: right;
 }
 
 .admin-db-box i {
-  font-size: 54px;
+  font-size: 40px;
 }
 
 .admin-db-box ul li:first-child {
-  font-size: 36px;
+  font-size: 54px;
   font-weight: 700;
   margin-bottom: 10px;
+  padding: 30px;
 }
 
-.statistics-box-1,
-.statistics-box-2 {
+.admin-db-box ul li:nth-child(2) {
+  background: #b8bec9;
+  color: #2a2a2a;
+  padding: 10px;
+}
+
+.statistics-box {
   padding: 20px;
 }
 
@@ -1510,11 +1523,29 @@ h3.welcome-title {
   font-size: 18px;
 }
 
-.box-1,
-.box-2 {
-  padding: 10px;
-  margin: 20px 10px;
-  border-radius: 5px;
+.employee-chip {
+  display: inline-block;
+  padding: 0 25px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+  width: 100%;
+  margin: 5px;
+}
+
+.employee-chip p {
+  font-weight: bold;
+}
+
+.employee-chip img {
+  float: left;
+  margin: 0 10px 0 -25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .box-title {
@@ -1524,6 +1555,11 @@ h3.welcome-title {
 
 .box-title p {
   margin-bottom: 10px !important;
+}
+
+.progress-bar-box {
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .stat-progress-bar {
@@ -2507,9 +2543,8 @@ article:after {
     text-align: center !important;
   }
   .left-section {
-    margin-top:20%!important;
+    margin-top: 20% !important;
   }
-
 }
 
 @media screen and (min-width: 640px) {
@@ -2587,9 +2622,8 @@ article:after {
     display: none;
   }
   .left-section {
-    margin-top:33%;
+    margin-top: 33%;
   }
-
 }
 
 @media screen and (max-width: 640px) {

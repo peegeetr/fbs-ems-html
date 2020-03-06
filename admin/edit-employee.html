@@ -102,7 +102,7 @@
             
                 <div class="tab-content-wrapper">
                 <div class="tab-content show" id="tab-1-content">
-                    <div class="general-info-box">
+                    <div class="general-info-box mb--20">
                     <form action="">
                         <div class="row">
                         <div class="col-lg-3 col-md-3 col-sm-12">
@@ -114,27 +114,36 @@
                         <div class="col-lg-4 col-md-4 col-sm-12">
                             <div class="employee-id mb--20">
                             <p>Employee ID <span class="color--red">*</span></p>
-                            <input type="text" class="input-res" required value="000001"/>
+                            <input type="text" class="input-res err-border-red" required value="000001"/>
+                            <div class="alert-msg mb--10">Required</div>
                             </div>
                             <div class="employee-status">
                             <p>Employee Status <span class="color--red">*</span></p>
-                            <input type="text" class="input-res" required value="Regular"/>
+                            <select name="" id=""  class="err-border-red" required>
+                            <option value=""disabled></option>
+                            <option value="Provisionary">Proviosinary</option>
+                            <option value="Contractual">Contractual</option>
+                            <option value="SEO" selected >Regular</option>
+                          </select>
+                            <div class="alert-msg mb--10">Required</div>
                             </div>
                         </div>
                         <div class="col-lg-5 col-md-5 col-sm-12">
                             <div class="employee-id mb--20">
                             <p>Department <span class="color--red">*</span></p>
-                            <select name="" id=""  class="" required>
+                            <select name="" id=""  class="err-border-red" required>
                                 <option value=""selected disabled></option>
                                 <option value="Accounting" selected>Accounting</option>
                                 <option value="WebDev">Web Developer</option>
                                 <option value="SEO">SEO</option>
                                 <option value="VA">Virtual Assistant</option>
                             </select>
+                            <div class="alert-msg mb--10">Required</div>
                             </div>
                             <div class="employee-status">
                             <p>Position <span class="color--red">*</span></p>
-                            <input type="text" class="input-res" required value="Accounting associate"/>
+                            <input type="text" class="input-res err-border-red" required value="Accounting associate"/>
+                            <div class="alert-msg mb--10">Required</div>
                             </div>
                         </div>
                         </div>
@@ -145,27 +154,38 @@
                         </div>
                     </form>
                     </div>
+                    <div class="error-message ">
+                      <div class="warning">
+                        <i class="fas fa-exclamation"></i>
+                        <div class="warning-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdamur rerum mollitia quam voluptatum ullam cum commodi?</p>
+                      </div>
+                      </div>
+                </div>
                 </div>
                 <div class="tab-content" id="tab-2-content">
-                    <div class="personal-info-box">
+                    <div class="personal-info-box mb--20">
                     <form action="">
                         <div class="row">
                         <div class="col-lg-3 col-md-3 col-sm-12">
                             <div class="employee-status">
                             <p>First Name <span class="color--red">*</span></p>
-                            <input type="text" class="input-res" required value="David"/>
+                            <input type="text" class="input-res err-border-red" required value="David"/>
+                            <div class="alert-msg mb--10">Required</div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-12">
                             <div class="employee-status">
                             <p>Middle Name <span class="color--red">*</span></p>
-                            <input type="text" class="input-res" required value="Esperas"/>
+                            <input type="text" class="input-res err-border-red" required value="Esperas"/>
+                            <div class="alert-msg mb--10">Required</div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-12">
                             <div class="employee-status">
                             <p>Last Name <span class="color--red">*</span></p>
-                            <input type="text" class="input-res" required value="Catubay"/>
+                            <input type="text" class="input-res err-border-red" required value="Catubay"/>
+                            <div class="alert-msg mb--10">Required</div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-12">
@@ -177,6 +197,7 @@
                                 <label for="">Female
                                 <input type="radio" name="gender" value="female"  />
                                 </label>
+                                <div class="alert-msg mb--10">Required</div>
                             </div>
                         </div>
                         </div>
@@ -184,25 +205,29 @@
                         <div class="col-lg-3 col-md-3 col-sm-12">
                         <div class="employee-status">
                             <p>Age <span class="color--red">*</span></p>
-                            <input type="text" class="input-res" required value="26"/>
+                            <input type="text" class="input-res err-border-red" required value="26"/>
+                            <div class="alert-msg mb--10">Required</div>
                         </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-12">
                         <div class="employee-status">
                             <p>Civil Status <span class="color--red">*</span></p>
-                            <input type="text" class="input-res" required value="Single"/>
+                            <input type="text" class="input-res err-border-red" required value="Single"/>
+                            <div class="alert-msg mb--10">Required</div>
                         </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-12">
                         <div class="employee-status">
                             <p>Date of Birth <span class="color--red">*</span></p>
-                            <input type="text" class="input-res" required value="January 1, 1990"/>
+                            <input type="text" class="input-res err-border-red" required value="January 1, 1990"/>
+                            <div class="alert-msg mb--10">Required</div>
                         </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-12">
                         <div class="employee-status">
                             <p>Birth Place <span class="color--red">*</span></p>
-                            <input type="text" class="input-res" required value="San Pablo City"/>
+                            <input type="text" class="input-res err-border-red" required value="San Pablo City"/>
+                            <div class="alert-msg mb--10">Required</div>
                         </div>
                         </div>
                         </div>
@@ -213,14 +238,16 @@
                             Address
                             <em>(House No., Street, Subd., Brgy., City, Prov., Country)</em><span class="color--red">*</span>
                             </p>
-                            <input type="text" class="input-res" required
+                            <input type="text" class="input-res err-border-red" required
                             value="#123 Brgy. San Gregorio, San Pablo City, Laguna"/>
+                            <div class="alert-msg mb--10">Required</div>
                         </div>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-12">
                         <div class="employee-status">
                             <p>Zip Code <span class="color--red">*</span></p>
-                            <input type="text" class="input-res" required value="4000"/>
+                            <input type="text" class="input-res err-border-red" required value="4000"/>
+                            <div class="alert-msg mb--10">Required</div>
                         </div>
                         </div>
                         </div>
@@ -228,7 +255,8 @@
                         <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="employee-status">
                             <p>Mobile Number <span class="color--red">*</span></p>
-                            <input type="text" class="input-res" required value="+63-901-234-5678"/>
+                            <input type="text" class="input-res err-border-red" required value="+63-901-234-5678"/>
+                            <div class="alert-msg mb--10">Required</div>
                         </div>
                         </div>
                         <div class="col-lg-4 col-md-4 col-sm-12">
@@ -240,7 +268,8 @@
                         <div class="col-lg-4 col-md-4 col-sm-12">
                         <div class="employee-status">
                             <p>Email Address <span class="color--red">*</span></p>
-                            <input type="text" class="input-res" required value="loverboy@gmail.com"/>
+                            <input type="text" class="input-res err-border-red" required value="loverboy@gmail.com"/>
+                            <div class="alert-msg mb--10">Required</div>
                         </div>
                         </div>
                         </div>
@@ -250,47 +279,65 @@
                         </button>
                         </div>
                     </form>
+                    </div>
+                    <div class="error-message ">
+                      <div class="warning">
+                        <i class="fas fa-exclamation"></i>
+                        <div class="warning-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdamur rerum mollitia quam voluptatum ullam cum commodi?</p>
+                      </div>
+                      </div>
                     </div>
                 </div>
                 <div class="tab-content" id="tab-3-content">
-                    <div class="government-id-box">
-                    <form action="">
-                        <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-                            <div class="employee-status">
-                            <p>SSS No. <span class="color--red">*</span></p>
-                            <input type="text" class="input-res" required value="123456789"/>
+                    <div class="government-id-box mb--20">
+                        <form action="">
+                            <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="employee-status">
+                                <p>SSS No. <span class="color--red">*</span></p>
+                                <input type="text" class="input-res err-border-red" required value="123456789"/>
+                                <div class="alert-msg mb--10">Required</div>
+                                </div>
+                                <div class="employee-status">
+                                <p>Pagibig No.<span class="color--red">*</span></p>
+                                <input type="text" class="input-res err-border-red" required value="123456789"/>
+                                <div class="alert-msg mb--10">Required</div>
+                                </div>
                             </div>
-                            <div class="employee-status">
-                            <p>Pagibig No.<span class="color--red">*</span></p>
-                            <input type="text" class="input-res" required value="123456789"/>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="employee-status">
+                                <p>
+                                    Driver's License No.
+                                </p>
+                                <input type="text" class="input-res" value="123456789"/>
+                                </div>
+                                <div class="employee-status">
+                                <p>
+                                    Passport No./Exp. Date
+                                </p>
+                                <input type="text" class="input-res" value="123456789">
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-                            <div class="employee-status">
-                            <p>
-                                Driver's License No.
-                            </p>
-                            <input type="text" class="input-res" value="123456789"/>
                             </div>
-                            <div class="employee-status">
-                            <p>
-                                Passport No./Exp. Date
-                            </p>
-                            <input type="text" class="input-res" value="123456789">
+                            <div class="save-employee t-right">
+                            <button class="save-btn btn-purple" type="submit" onclick="window.location.href='#pop-process-success'">
+                                Save
+                            </button>
                             </div>
-                        </div>
-                        </div>
-                        <div class="save-employee t-right">
-                        <button class="save-btn btn-purple" type="submit" onclick="window.location.href='#pop-process-success'">
-                            Save
-                        </button>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
+                    <div class="error-message ">
+                      <div class="warning">
+                        <i class="fas fa-exclamation"></i>
+                        <div class="warning-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdamur rerum mollitia quam voluptatum ullam cum commodi?</p>
+                      </div>
+                      </div>
                     </div>
                 </div>
                 <div class="tab-content" id="tab-4-content">
-                    <div class="relative-info-box">
+                    <div class="relative-info-box mb--20">
                     <form action="">
                         <div class="row">
                         <div class="col-lg-12">
@@ -300,13 +347,15 @@
                                 <p>
                                     Mother's Maiden Name <span class="color--red">*</span>
                                 </p>
-                                <input type="text" class="input-res" required value="Ezperanza Esperas"/>
+                                <input type="text" class="input-res err-border-red" required value="Ezperanza Esperas"/>
+                                <div class="alert-msg mb--10">Required</div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="employee-status">
                                 <p>Birthdate <span class="color--red">*</span></p>
-                                <input type="text" class="input-res" required value="September 12, 1957"/>
+                                <input type="text" class="input-res err-border-red" required value="September 12, 1957"/>
+                                <div class="alert-msg mb--10">Required</div>
                                 </div>
                             </div>
                             </div>
@@ -316,13 +365,15 @@
                                 <p>
                                     Father's Maiden Name <span class="color--red">*</span>
                                 </p>
-                                <input type="text" class="input-res" required value="Crisostomo Catubay"/>
+                                <input type="text" class="input-res err-border-red" required value="Crisostomo Catubay"/>
+                                <div class="alert-msg mb--10">Required</div>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="employee-status">
                                 <p>Birthdate <span class="color--red">*</span></p>
-                                <input type="text" class="input-res" required value="September 12, 1957"/>
+                                <input type="text" class="input-res err-border-red" required value="September 12, 1957"/>
+                                <div class="alert-msg mb--10">Required</div>
                                 </div>
                             </div>
                             </div>
@@ -360,6 +411,14 @@
                         </button>
                         </div>
                     </form>
+                    </div>
+                    <div class="error-message ">
+                      <div class="warning">
+                        <i class="fas fa-exclamation"></i>
+                        <div class="warning-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdamur rerum mollitia quam voluptatum ullam cum commodi?</p>
+                      </div>
+                      </div>
                     </div>
                 </div>
                 <div class="tab-content" id="tab-5-content">
