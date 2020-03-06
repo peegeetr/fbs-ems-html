@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
     <title>FBS-EMS</title>
   </head>
 
@@ -22,10 +28,11 @@
                   <div class="mb--40">
                     <h3>Forgot Password</h3>
                   </div>
-                  <form action="">
+                  <form action="" class="index-login">
                     <div class="create-password">
                       <label>Registered FBS Email</label>
-                      <input type="text" id="password" name="password" />
+                      <input type="text" id="password" name="password" class="err-border-red"/>
+                      <div class="alert-msg mb--10">Required</div>
                     </div>
                     <div class="new-pass-button mb--20">
                       <button
@@ -34,6 +41,14 @@
                       >
                         Submit
                       </button>
+                    </div>
+                    <div class="error-message mb--30">
+                      <div class="warning">
+                        <i class="fas fa-exclamation"></i>
+                        <div class="warning-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam itaque voluptas cumque tenetur consequuntur, suscipit nulla ipsa consequatur rerum mollitia quam voluptatum ullam cum commodi?</p>
+                      </div>
+                      </div>
                     </div>
                   </form>
                   <div class="t-center">

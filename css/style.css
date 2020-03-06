@@ -1220,21 +1220,18 @@ span:after {
  * 6.0 :: Landing Page
  * ===================================================================
  */
-
-/* Left Section */
-.left-section {
+.login {
   height: 100vh;
 }
-
-.left-content {
-  padding: 40px;
-  width: 100%;
-}
-
+/* Left Section */
 .left-section {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.left-content {
+  width: 100%;
 }
 
 .fbs-logo {
@@ -1244,10 +1241,6 @@ span:after {
 .fbs-logo img {
   width: 300px;
   margin-bottom: 5px;
-}
-
-.username {
-  min-width: 150px;
 }
 
 .forget-account {
@@ -1266,7 +1259,7 @@ form.index-login {
 .left-content form input {
   width: 100%;
   padding: 12px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .sign-up-box {
@@ -1306,33 +1299,26 @@ form.index-login {
 }
 
 .error-message {
-  width: 100%;
-  border: 1px solid red;
   /* display: none; */
 }
 
 .warning {
+  display:flex;
   background: rgb(255, 0, 0);
-  width: 100%;
-  display: flex;
-  min-height:50px;
-  height: 70px;
-}
-
-.warning i {
-  font-size: 25px;
-  color:#fff;
-  margin: auto;
+  align-items: center;
+  border: 1px solid rgb(255, 0, 0);;
 }
 
 .warning-text {
+  background: #fff;
+  padding: 10px;
   width: 100%;
-  display: flex
 }
 
-.warning-text p {
-  margin: 0 auto;
-  padding: 10px 10px 10px 0;
+.warning i {
+  padding: 0 20px;
+  font-size: 30px;
+  color: #fff;
 }
 
 /* Left Section End */
@@ -1438,7 +1424,7 @@ form.index-login {
 
 .forgot-form form input,
 .sign-up-form form input {
-  margin: 15px 0;
+  margin: 5px 0;
 }
 
 .notification-block {
@@ -2520,9 +2506,10 @@ article:after {
     margin: 15px;
     text-align: center !important;
   }
-  /* button {
-    background: none !important;
-  } */
+  .left-section {
+    margin-top:20%!important;
+  }
+
 }
 
 @media screen and (min-width: 640px) {
@@ -2599,6 +2586,10 @@ article:after {
   .mobile-logo {
     display: none;
   }
+  .left-section {
+    margin-top:33%;
+  }
+
 }
 
 @media screen and (max-width: 640px) {
