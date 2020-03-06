@@ -586,6 +586,15 @@ form textarea {
   background-color: #fa7d74;
 } /* Red */
 
+.border-red {
+  border: 1px solid red!important;
+}
+
+.alert-msg {
+  font-size : 14px;
+  color:rgb(255, 0, 0);
+}
+
 /* ===================================================================
  * 3.0 :: Structure / Grid/ Column
  * ===================================================================
@@ -1291,26 +1300,32 @@ form.index-login {
 }
 
 .error-message {
-  display: flex;
   width: 100%;
   border: 1px solid red;
 }
 
 .warning {
-  align-self: flex-start;
   background: rgb(255, 0, 0);
-  flex:2;
+  width: 100%;
+  display: flex;
+  min-height:50px;
+  height: 70px;
 }
 
 .warning i {
   font-size: 25px;
-  color: #fff;
-  margin: 90px 15px;
+  color:#fff;
+  margin: auto;
 }
 
 .warning-text {
   width: 100%;
-  flex:10;
+  display: flex
+}
+
+.warning-text p {
+  margin: 0 auto;
+  padding: 10px 10px 10px 0;
 }
 
 /* Left Section End */
