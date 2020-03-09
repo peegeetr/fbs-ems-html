@@ -23,6 +23,7 @@
  * 13.0 - Employee Dashboard
  * 14.0 - Employee Leave Dashboard
  * 15.0 - Employee Task Manager
+ * 15.0 - Employee Overtime
  * 16.0 - Modal
  * 0.0 - Clearing
  * 0.0 - Mobile CSS / Media Queries
@@ -1521,6 +1522,23 @@ h3.welcome-title {
 .stat-title p {
   font-weight: bold;
   font-size: 18px;
+  margin-bottom: 0;
+}
+
+.sub-stat-title p {
+  font-size: 14px;
+  color: #888;
+}
+
+.holiday-title {
+  padding: 0 10px;
+}
+
+.holiday-image img {
+  width: 100%;
+  object-fit: cover;
+  height: 130px;
+  margin-bottom: -10px;
 }
 
 .employee-chip {
@@ -1982,11 +2000,11 @@ form.radio label {
  * ===================================================================
  */
 
-.add-leave {
+.add-settings {
   text-align: right;
 }
 
-.add-leave button {
+.add-settings button {
   margin-top: 0 !important;
   font-weight: bold;
   font-size: 12px;
@@ -2282,7 +2300,7 @@ button.play i {
 }
 
 /* =================================================================== 
- * 15.0 :: Employee OT
+ * 16.0 :: Employee OT
  * ===================================================================
  */
 
@@ -2295,7 +2313,7 @@ button.play i {
   margin-top: 0;
 }
 
-.ot-add button{
+.ot-add button {
   margin-top: 0;
 }
 
@@ -2324,7 +2342,7 @@ article:after {
 }
 
 /* =================================================================== 
- * 16.0 :: Modal
+ * 17.0 :: Modal
  * ===================================================================
  */
 .overlay {
@@ -2429,18 +2447,12 @@ article:after {
 
 #pop-process-add ul,
 #pop-process-edit ul {
-  text-align: right;
+  text-align: left;
 }
 
 #pop-process-add ul li,
 #pop-process-edit ul li {
   padding: 0 !important;
-}
-
-#pop-process-add ul li input,
-#pop-process-edit ul li input {
-  width: 70%;
-  margin-left: 5px;
 }
 
 .delete-modal {
@@ -2563,7 +2575,6 @@ article:after {
   .left-section {
     margin-top: 20% !important;
   }
-
 }
 
 @media screen and (min-width: 640px) {
@@ -2604,7 +2615,6 @@ article:after {
   .main-content {
     margin-left: 70px;
   }
-  
 }
 
 @media screen and (max-width: 767px) {
@@ -2643,6 +2653,9 @@ article:after {
   }
   .left-section {
     margin-top: 33%;
+  }
+  .settings-popup {
+    width: 25% !important;
   }
 }
 

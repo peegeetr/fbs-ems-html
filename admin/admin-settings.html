@@ -74,8 +74,12 @@
               <span>Settings</span>
             </a>
           </li>
-        </ul>
-        <ul>
+          <li class="menu-task menu">
+            <a href="admin-overtime-dashboard.html">
+              <span><i class="fas fa-clock"></i></span>
+              <span>Overtime</span>
+            </a>
+          </li>
           <li class="menu-user menu">
             <a href="admin-user-settings.html">
               <span><i class="fas fa-user-cog"></i></span>
@@ -93,19 +97,17 @@
     </div>
     <div class="main-content">
       <div class="content-wrap">
-        <h3 class="mb--50">LEAVE SETTINGS <i class="fas fa-cogs"></i></h3>
+        <h3 class="mb--50">SETTINGS <i class="fas fa-cogs"></i></h3>
         <div class="add-leave-box">
           <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-              <div class="add-leave mb--30">
-                <button>
-                  <a href="#pop-process-add" class="btn-purple">
-                    Add New
-                  </a>
-                </button>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <div class="add-settings mb--30">
+                <a href="#pop-process-add" class="btn-purple">
+                  <i class="fas fa-plus"></i> Leave
+                </a>
               </div>
               <div class="add-leave-settings">
-                <table>
+                <table class="mb--40">
                   <tr>
                     <th>Leave Type</th>
                     <th>No. of Days</th>
@@ -199,13 +201,74 @@
                 </table>
               </div>
             </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <div class="add-settings mb--30">
+                <a href="" class="btn-purple"
+                  ><i class="fas fa-plus"></i> Devotion</a
+                >
+              </div>
+              <table class="mb--20">
+                <tr>
+                  <th>
+                    DATE
+                  </th>
+                  <th>
+                    Name
+                  </th>
+                  <th>
+                    Action
+                  </th>
+                </tr>
+                <tr>
+                  <td>March 9 & March 13</td>
+                  <td>Roy Balaaldia</td>
+                  <td>
+                    <div class="action">
+                      <i class="fas fa-pen"></i>
+                      <i class="fas fa-trash"></i>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>March 16 & March 20</td>
+                  <td>David Catubay</td>
+                  <td>
+                    <div class="action">
+                      <i class="fas fa-pen"></i>
+                      <i class="fas fa-trash"></i>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
+          <div class="row">
+              <div class="col-lg-6 col-md-12 col-sm-12 col-sm-12">
+              <div class="add-settings mb--30">
+                <a href="" class="btn-purple"
+                  ><i class="fas fa-plus"></i> Announcement</a
+                >
+              </div>
+                <table class="mb--40">
+                  <tr>
+                    <th>Date</th>
+                    <th>Type</th>
+                    <th>Event</th>
+                  </tr>
+                  <tr>
+                    <td>Feb 25</td>
+                    <td>Special non-working</td>
+                    <td>EDSA REVOLUTION ANNIVERSARY</td>
+                  </tr>
+                </table>
+            </div>
+            </div>
         </div>
       </div>
     </div>
     <div id="pop-process-edit" class="overlay">
-      <div class="popup">
-        <h2 class="mb--20">EDIT</h2>
+      <div class="settings-popup popup">
+        <h2 class="mb--40">EDIT</h2>
         <a class="close" href="#process">&times;</a>
         <div class="content">
           <ul class="list-text">
@@ -240,7 +303,7 @@
       </div>
     </div>
     <div id="pop-process-add" class="overlay">
-      <div class="popup">
+      <div class="settings-popup popup">
         <h2 class="mb--20">ADD NEW</h2>
         <a class="close" href="#process">&times;</a>
         <div class="content">

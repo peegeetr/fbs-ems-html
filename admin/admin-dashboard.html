@@ -74,8 +74,12 @@
               <span>Settings</span>
             </a>
           </li>
-        </ul>
-        <ul>
+          <li class="menu-task menu">
+            <a href="admin-overtime-dashboard.html">
+              <span><i class="fas fa-clock"></i></span>
+              <span>Overtime</span>
+            </a>
+          </li>
           <li class="menu-user menu">
             <a href="admin-user-settings.html">
               <span><i class="fas fa-user-cog"></i></span>
@@ -98,102 +102,165 @@
         <div class="row">
           <div class="col-lg-9">
             <div class="dashboard-box mb--50">
-            <div class="row">
-              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                <div class="project-box admin-db-box box-shadow">
-                  <i class="fas fa-flask"></i>
-                  <div class="project-stat-box">
-                    <ul>
-                      <li>79</li>
-                      <li>Projects</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                <div class="client-box admin-db-box box-shadow">
-                  <i class="fas fa-user-tie"></i>
-                  <div class="client-stat-box">
-                    <ul>
-                      <li>12</li>
-                      <li>Clients</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                <div class="admin-task-box admin-db-box box-shadow">
-                  <i class="fas fa-clipboard-list"></i>
-                  <div class="admin-task-stat-box">
-                    <ul>
-                      <li>22</li>
-                      <li>Task</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                <div class="admin-employee-box admin-db-box box-shadow">
-                  <i class="fas fa-user"></i>
-                  <div class="admin-employee-stat-box">
-                    <ul>
-                      <li>24</li>
-                      <li>Employees</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                  <div class="statistics-box box-shadow mb--20">
-                    <div class="stat-title">
-                      <p>Task Statistics</p>
-                    </div>
-                    <div class="admin-task-stats">
-                      <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-                          <div class="total-task box-shadow">
-                            <p>Total Task</p>
-                            <p class="number">27</p>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12">
-                          <div class="overdue-task box-shadow">
-                            <p>Overdue Task</p>
-                            <p class="number">27</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="task-statistics-tally">
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                  <div class="project-box admin-db-box box-shadow">
+                    <i class="fas fa-flask"></i>
+                    <div class="project-stat-box">
                       <ul>
-                        <li>
-                          <span class="circle"></span> Completed Task
-                          <span>63</span>
-                        </li>
-                        <li>
-                          <span class="circle"></span> In Progress Task
-                          <span>107</span>
-                        </li>
-                        <li>
-                          <span class="circle"></span> On Hold Task <span>24</span>
-                        </li>
-                        <li>
-                          <span class="circle"></span> Pending Task <span>36</span>
-                        </li>
+                        <li>79</li>
+                        <li>Projects</li>
                       </ul>
                     </div>
                   </div>
                 </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                  <div class="client-box admin-db-box box-shadow">
+                    <i class="fas fa-user-tie"></i>
+                    <div class="client-stat-box">
+                      <ul>
+                        <li>12</li>
+                        <li>Clients</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                  <div class="admin-task-box admin-db-box box-shadow">
+                    <i class="fas fa-clipboard-list"></i>
+                    <div class="admin-task-stat-box">
+                      <ul>
+                        <li>22</li>
+                        <li>Task</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                  <div class="admin-employee-box admin-db-box box-shadow">
+                    <i class="fas fa-user"></i>
+                    <div class="admin-employee-stat-box">
+                      <ul>
+                        <li>24</li>
+                        <li>Employees</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="statistics-box box-shadow mb--20">
+                  <div class="stat-title">
+                    <p>Task Statistics</p>
+                  </div>
+                  <div class="admin-task-stats">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="total-task box-shadow">
+                          <p>Total Task</p>
+                          <p class="number">27</p>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="overdue-task box-shadow">
+                          <p>Overdue Task</p>
+                          <p class="number">27</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="task-statistics-tally">
+                    <ul>
+                      <li>
+                        <span class="circle"></span> Completed Task
+                        <span>63</span>
+                      </li>
+                      <li>
+                        <span class="circle"></span> In Progress Task
+                        <span>107</span>
+                      </li>
+                      <li>
+                        <span class="circle"></span> On Hold Task
+                        <span>24</span>
+                      </li>
+                      <li>
+                        <span class="circle"></span> Pending Task
+                        <span>36</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div> -->
+              <div class="col-lg-4">
+                <div class="statistics-box box-shadow mb--20">
+                  <div class="stat-title mb--10">
+                    <p>DEVOTION FOR THIS WEEK</p>
+                  </div>
+                  <div class="employee-chip t-center mb--10">
+                    <img src="../img/dp.jpg" alt="Person" />
+                    <p>Roy Balaaldia</p>
+                  </div>
+                  <div class="devotion-date t-center">
+                    <p class="nm"><strong>March 9 & March 13</strong></p>
+                    <p>Monday & Friday</p>
+                  </div>
+                </div>
+                <div class="statistics-box box-shadow mb--20">
+                  <div class="stat-title mb--10">
+                    <p>GENERAL CLEANING</p>
+                  </div>
+                  <div class="devotion-date">
+                    <p class="nm"><strong>March 26</strong></p>
+                    <p>2:00pm - 3:00pm</p>
+                    <p>Bring extra shirt and cleaning tools.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="box-shadow mb--20">
+                  <div class="statistics-box">
+                    <div class="stat-title">
+                      <p><strong>FEBRUARY 25</strong></p>
+                    </div>
+                    <div class="sub-stat-title">
+                      <p>Special Non-Working Holiday</p>
+                    </div>
+                  </div>
+                  <div class="holiday-title ">
+                    <p>EDSA REVOLUTION ANNIVERSARY</p>
+                  </div>
+                  <div class="holiday-image">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRd24L_3Ho8OeTvZ7WXoyB_M8MRmi9TIczqZrFkNldfehz7OSCE" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="box-shadow mb--20">
+                  <div class="statistics-box">
+                    <div class="stat-title">
+                      <p><strong>COMPANY TEAM BUILDING</strong></p>
+                    </div>
+                    <div class="sub-stat-title">
+                      <p>MAY 26, 2020</p>
+                    </div>
+                  </div>
+                  <div class="holiday-title ">
+                    <p>3:00 PM - Leaving</p>
+                  </div>
+                  <div class="holiday-image">
+                      <img src="https://image.shutterstock.com/image-photo/teambuilding-activity-stick-hands-colleagues-260nw-1035764212.jpg" alt="">
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-lg-3">
             <div class="dashboard-box-2">
               <div class="row">
                 <div class="col-lg-12">
-                  <div class="statistics-box box-shadow mb--20">
+                  <!-- <div class="statistics-box box-shadow mb--20">
                     <div class="stat-title">
                       <p>Statistics</p>
                     </div>
@@ -215,6 +282,41 @@
                         <div class="progress-bar-projects"></div>
                       </div>
                     </div>
+                  </div> -->
+                  <div class="statistics-box box-shadow mb--20">
+                    <div class="stat-title mb--20">
+                      <p>Yesterday's Overtime</p>
+                    </div>
+                    <div class="overtimelist">
+                      <div class="employee-chip t-center">
+                        <img
+                          src="../img/dp.jpg"
+                          alt="Person"
+                          width="96"
+                          height="96"
+                        />
+                        <p>Roy Balaaldia</p>
+                      </div>
+                    </div>
+                    <div class="overtimelist">
+                      <div class="employee-chip t-center">
+                        <img
+                          src="../img/han.jpg"
+                          alt="Person"
+                          width="96"
+                          height="96"
+                        />
+                        <p>David Catubay</p>
+                      </div>
+                    </div>
+                    <div class="t-right">
+                      <button
+                        class="btn-clear"
+                        onclick="window.location.href='admin-overtime-dashboard.html'"
+                      >
+                        See more
+                      </button>
+                    </div>
                   </div>
                 </div>
                 <div class="col-lg-12">
@@ -224,13 +326,23 @@
                     </div>
                     <div class="absentlist">
                       <div class="employee-chip t-center">
-                        <img src="../img/dp.jpg" alt="Person" width="96" height="96">
+                        <img
+                          src="../img/dp.jpg"
+                          alt="Person"
+                          width="96"
+                          height="96"
+                        />
                         <p>Roy Balaaldia</p>
                       </div>
                     </div>
                     <div class="absentlist">
                       <div class="employee-chip t-center">
-                        <img src="../img/han.jpg" alt="Person" width="96" height="96">
+                        <img
+                          src="../img/han.jpg"
+                          alt="Person"
+                          width="96"
+                          height="96"
+                        />
                         <p>David Catubay</p>
                       </div>
                     </div>
@@ -243,20 +355,30 @@
                     </div>
                     <div class="absentlist">
                       <div class="employee-chip t-center">
-                        <img src="../img/dp.jpg" alt="Person" width="96" height="96">
+                        <img
+                          src="../img/dp.jpg"
+                          alt="Person"
+                          width="96"
+                          height="96"
+                        />
                         <p>Roy Balaaldia</p>
                       </div>
                     </div>
                     <div class="absentlist">
                       <div class="employee-chip t-center">
-                        <img src="../img/han.jpg" alt="Person" width="96" height="96">
+                        <img
+                          src="../img/han.jpg"
+                          alt="Person"
+                          width="96"
+                          height="96"
+                        />
                         <p>David Catubay</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-          </div>
+            </div>
           </div>
         </div>
       </div>
