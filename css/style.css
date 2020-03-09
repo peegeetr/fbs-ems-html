@@ -2281,6 +2281,24 @@ button.play i {
   overflow: auto;
 }
 
+/* =================================================================== 
+ * 15.0 :: Employee OT
+ * ===================================================================
+ */
+
+.ot-filter {
+  display: flex;
+}
+
+.ot-filter button {
+  margin-left: 10px;
+  margin-top: 0;
+}
+
+.ot-add button{
+  margin-top: 0;
+}
+
 /* ===================================================================
  * 0.0 :: Clearing
  * ===================================================================
@@ -2545,6 +2563,7 @@ article:after {
   .left-section {
     margin-top: 20% !important;
   }
+
 }
 
 @media screen and (min-width: 640px) {
@@ -2585,6 +2604,7 @@ article:after {
   .main-content {
     margin-left: 70px;
   }
+  
 }
 
 @media screen and (max-width: 767px) {
