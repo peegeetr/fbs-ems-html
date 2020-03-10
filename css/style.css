@@ -113,6 +113,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
+  overflow-x: auto;
+}
+
+.overflow-x {
+  overflow-x: auto;
 }
 
 td,
@@ -371,6 +376,10 @@ img.clients-logo {
 
 .no-pd {
   padding: 0 !important;
+}
+
+.pd--20 {
+  padding: 20px !important;
 }
 
 .no-borderbot {
@@ -1820,7 +1829,7 @@ span.circle {
 
 .search-employee button {
   background: #da28b5;
-  padding: 6px 20px;
+  padding: 6px 5px;
   color: #fff;
   font-size: 18px;
   border-radius: 0.25rem;
@@ -2146,6 +2155,26 @@ button.add-user-btn i {
   float: right;
 }
 
+.noti-badge li {
+  display: inline-block;
+}
+
+.notification {
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+  
+}
+
+.notification .badge {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  padding: 5px 13px;
+  border-radius: 50%;
+  background: #fa2828;
+  color: #fff;
+}
 /* =================================================================== 
  * 14.0 :: Employee Leave Dashboard
  * ===================================================================
