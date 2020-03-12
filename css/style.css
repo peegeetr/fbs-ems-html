@@ -2532,14 +2532,29 @@ article:after {
 }
 
 .side-modal {
-  background: #333;
+  background: rgb(218, 40, 181);
   color: #fff;
   height: 50px;
   text-align: center;
+  font-weight: bold;
 }
 
 .side-modal i {
-  color: #da28b5;
+  color: #fff;
+  font-size: 30px;
+}
+
+.side-modal-btn {
+  margin: 15px 5px 0 5px;
+  width: 80px;
+  font-size: 14px;
+  padding: 5px 10px !important;
+  font-weight: 700;
+  color: #fff;
+}
+
+.side-modal-btn i {
+  font-size: 16px;
 }
 
 .side-success {
