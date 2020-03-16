@@ -17,6 +17,11 @@
     <section class="login">
       <div class="container-fluid">
         <div class="row">
+           <!-- Loader Container -->
+          <div class="loader-container">
+            <div class="loader"></div>
+            <p>Loading...</p>
+          </div>
           <div class="col-lg-4 col-md-4 col-sm-12">
             <div class="left-section">
               <div class="left-content">
@@ -147,11 +152,7 @@
       </div>
     </section>
 
-    <!-- Loader Container -->
-    <div class="loader-container">
-      <div class="loader"></div>
-      <p>Loading...</p>
-    </div>
+   
     <!-- <script>
       var slideIndex = 1;
       showSlides(slideIndex);
@@ -186,20 +187,21 @@
     </script> -->
     <script>
       const btnLogin = document.querySelector(".login-btn");
-      const loginSection = document.querySelector(".login");
       const loaderSpinner = document.querySelector(".loader-container");
+      const leftSection = document.querySelector('.left-section');
+      const rightSection = document.querySelector('.right-section');
 
       btnLogin.addEventListener("click", e => {
         e.preventDefault();
-        // console.log("awawdawda");
-        // console.log(loaderSpinner)
-        loginSection.style.display = "none";
         loaderSpinner.style.display = "block";
+        leftSection.style.display = "none";
+        rightSection.style.display = "none";
 
-        setTimeout(() => {
-          loginSection.style.display = "block";
-          loaderSpinner.style.display = "none";
-        }, 2000);
+        // setTimeout(() => {
+        //   loaderSpinner.style.display = "none";
+        //   leftSection.style.display = "block";
+        //   rightSection.style.display = "block";
+        // }, 2000);
       });
     </script>
   </body>
