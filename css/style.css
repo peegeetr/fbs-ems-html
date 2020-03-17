@@ -2782,6 +2782,22 @@ article:after {
   }
 }
 
+/* Modal */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(255,255,255); /* Fallback color */
+  background-color: rgba(255,255,255,0.4); /* Black w/ opacity */
+}
+
 /* Spinner */
 
 .loader-container {
@@ -2790,6 +2806,7 @@ article:after {
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
+  z-index: 9999;
 }
 
 .loader {
@@ -2805,7 +2822,7 @@ article:after {
 
 .loader-container p {
   margin: 20px 0;
-  color: #888;
+  color: #fff;
 }
 
 /* Safari */
