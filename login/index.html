@@ -17,13 +17,13 @@
     <section class="login">
       <div class="container-fluid">
         <div class="row">
-           <!-- Loader Container -->
-           <div class="modal">
+          <!-- Loader Container -->
+          <div class="modal">
             <div class="loader-container">
               <div class="loader"></div>
               <p>Loading...</p>
-            </div>   
-           </div> 
+            </div>
+          </div>
           <div class="col-lg-4 col-md-4 col-sm-12">
             <div class="left-section">
               <div class="left-content">
@@ -57,15 +57,15 @@
                       >Forgot Account?</a
                     >
                   </div>
-                  <div class="sign-up-box mb--20">
+                  <div class="sign-up-box mb--10">
                     <button class="login-btn btn-purple mb--10" type="submit">
                       Log In
                     </button>
                   </div>
-                  <div class="sign-up-box">
+                  <div class="sign-up-box no-account">
                     <p class="mb--30">
                       No account
-                      <a class="sign-up" href="index-signup.html">Sign Up.</a>
+                      <a href="index-signup.html">Sign Up.</a>
                     </p>
                   </div>
                   <div class="error-message">
@@ -154,7 +154,6 @@
       </div>
     </section>
 
-   
     <!-- <script>
       var slideIndex = 1;
       showSlides(slideIndex);
@@ -198,7 +197,7 @@
         e.preventDefault();
         modal.style.display = "block";
         loaderSpinner.style.display = "block";
-      
+
         setTimeout(() => {
           modal.style.display = "none";
           loaderSpinner.style.display = "none";
