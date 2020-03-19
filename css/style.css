@@ -2867,11 +2867,12 @@ article:after {
 
 /* Login Button Disabled - Outline // Vincent (Mar-19-2020) */
 
-.outline {
+button:disabled {
   background-color: #eee;
+  border: 1px solid #ddd;
 }
 
-.outline:hover {
+button:disabled:hover {
   background-color: #eee;
 }
 
