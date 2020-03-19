@@ -1238,6 +1238,7 @@ span:after {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .left-content {
@@ -1344,10 +1345,10 @@ form.index-login {
 /* Left Section End */
 
 /* Right Section */
-.right-section {
+/* .right-section {
   position: fixed;
   width: 100vw;
-}
+} */
 
 .right-section-content {
   background-color: #da28b5;
@@ -2713,9 +2714,7 @@ article:after {
   .mobile-logo {
     display: none;
   }
-  .left-section {
-    margin-top: 30%;
-  }
+
   .settings-popup {
     width: 25% !important;
   }
