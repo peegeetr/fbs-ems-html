@@ -166,7 +166,7 @@ a {
 }
 
 /* Formating */
-b,
+.bold,
 strong {
   font-weight: bold !important;
 }
@@ -1318,7 +1318,7 @@ form.index-login {
 
 .error-message {
   /* display: none; */
-  max-width: 400px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -1327,6 +1327,7 @@ form.index-login {
   background: #dd3c10;
   align-items: center;
   border: 1px solid #dd3c10;
+  margin-top: -20px;
 }
 
 .warning-text {
@@ -1882,8 +1883,16 @@ span.circle {
   transition: all 0.5s ease-in-out;
 }
 
+.tab-nav ul li {
+  display: block;
+}
+
 .tab-link {
   background: #eef1f7;
+}
+
+.tab-link i {
+  margin: 0 5px;
 }
 
 .tab-content {
@@ -1909,6 +1918,7 @@ span.circle {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
   margin-top: 20px;
 }
 
@@ -1947,8 +1957,12 @@ span.circle {
   border: 1px solid #eee;
 }
 
-.employee-status {
+.employee-info {
   margin: 10px 0;
+}
+
+.employee-info em {
+  font-size: 12px;
 }
 
 form.radio {
@@ -2614,9 +2628,23 @@ article:after {
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .tab-nav ul {
+@media screen and (max-width: 1350px) {
+  .tab-link i {
     display: block;
+  }
+
+  .tab-nav ul li {
+    width: 25%;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .tab-nav ul li span {
+    display: none;
+  }
+  .tab-nav ul li i {
+    font-size: 1.4rem;
   }
 }
 
@@ -2798,6 +2826,10 @@ article:after {
 
   .leave-form-box {
     overflow-y: scroll;
+  }
+
+  .tab-nav ul li i {
+    font-size: 0.9rem;
   }
 }
 

@@ -99,15 +99,33 @@
     <div class="main-content">
       <div class="content-wrap">
         <h3 class="mb--50">ADD NEW EMPLOYEE <i class="fa fa-user"></i></h3>
+          <div class="warning mb--20">
+            <i class="fas fa-exclamation"></i>
+            <div class="warning-text">
+              <p class="nm">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdamur rerum mollitia quam voluptatum ullam cum commodi?
+              </p>
+            </div>
+          </div>
         <div class="row">
           <div class="col-lg-12">
             <div class="tab-nav">
               <ul>
-                <li class="tab-link active" id="tab-1">COMPANY INFO</li>
-                <li class="tab-link" id="tab-2">PERSONAL INFO</li>
-                <li class="tab-link" id="tab-3">GOVERNMENT IDs</li>
-                <li class="tab-link" id="tab-4">FAMILY INFO</li>
-                <li class="tab-link" id="tab-5">FILES</li>
+                <li class="tab-link active" id="tab-1"><p class="nm">
+                  <i class="fas fa-industry"></i> <span>COMPANY INFO</span>
+                </p></li>
+                <li class="tab-link" id="tab-2"><p class="nm">
+                  <i class="fas fa-user"></i> <span>PERSONAL INFO</span>
+                </p></li>
+                <li class="tab-link" id="tab-3"><p class="nm">
+                  <i class="fas fa-id-card"></i> <span>GOVERNMENT IDs</span>
+                </p></li>
+                <li class="tab-link" id="tab-4"><p class="nm">
+                  <i class="fas fa-user-friends"></i> <span>FAMILY INFO</span>
+                </p></li>
+                <li class="tab-link" id="tab-5"><p class="nm">
+                  <i class="fas fa-folder-open"></i> <span>FILES</span>
+                </p></li>
               </ul>
             </div>
         
@@ -116,45 +134,69 @@
                 <div class="general-info-box mb--30">
                   <form action="">
                     <div class="row">
-                      <div class="col-lg-3 col-md-3 col-sm-12">
+                      <div class="col-lg-3 col-md-12 col-sm-12">
                         <div class="employee-add-image">
                           <div class="user-icon"><i class="fa fa-user"></i></div>
                           <a class="employee-add-icon" href="#"><i class="fas fa-plus-circle"></i></a>
                         </div>
                       </div>
-                      <div class="col-lg-4 col-md-4 col-sm-12">
-                        <div class="employee-id mb--20">
-                          <p>Employee ID <span class="color--red">*</span></p>
-                          <input type="text" class="input-res err-border-red" required/>
-                          <div class="alert-msg mb--10">Required</div>
+                      <div class="col-lg-9 col-md-12 col-sm-12">
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <div class="employee-info mb--20">
+                              <p>Employee ID <span class="color--red">*</span></p>
+                              <input type="text" class="input-res err-border-red" required/>
+                              <div class="alert-msg mb--10">Required</div>
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="employee-info mb--20">
+                              <p>Company Email <span class="color--red">*</span></p>
+                              <input type="text" class="input-res err-border-red" required/>
+                              <div class="alert-msg mb--10">Required</div>
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="employee-info mb--20">
+                              <p>Department <span class="color--red">*</span></p>
+                              <select name="" id=""  class="err-border-red" required>
+                                <option value=""selected disabled></option>
+                                <option value="Accounting">Accounting</option>
+                                <option value="WebDev">Web Developer</option>
+                                <option value="SEO">SEO</option>
+                                <option value="VA">Virtual Assistant</option>
+                              </select>
+                              <div class="alert-msg mb--10">Required</div>
+                            </div>
+                          </div>
                         </div>
-                        <div class="employee-status">
-                          <p>Employee Status <span class="color--red">*</span></p>
-                          <select name="" id=""  class="err-border-red" required>
-                            <option value=""selected disabled></option>
-                            <option value="Provisionary">Proviosinary</option>
-                            <option value="Contractual">Contractual</option>
-                            <option value="SEO">Regular</option>
-                          </select>
-                          <div class="alert-msg mb--10">Required</div>
-                        </div>
-                      </div>
-                      <div class="col-lg-5 col-md-5 col-sm-12">
-                        <div class="employee-id mb--20">
-                          <p>Department <span class="color--red">*</span></p>
-                          <select name="" id=""  class="err-border-red" required>
-                            <option value=""selected disabled></option>
-                            <option value="Accounting">Accounting</option>
-                            <option value="WebDev">Web Developer</option>
-                            <option value="SEO">SEO</option>
-                            <option value="VA">Virtual Assistant</option>
-                          </select>
-                          <div class="alert-msg mb--10">Required</div>
-                        </div>
-                        <div class="employee-status">
-                          <p>Position <span class="color--red">*</span></p>
-                          <input type="text" class="input-res err-border-red" required/>
-                          <div class="alert-msg mb--10">Required</div>
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <div class="employee-info">
+                              <p>Position <span class="color--red">*</span></p>
+                              <input type="text" class="input-res err-border-red" required/>
+                              <div class="alert-msg mb--10">Required</div>
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="employee-info">
+                              <p>Date Hired <span class="color--red">*</span></p>
+                              <input type="date" class="input-res err-border-red" required/>
+                              <div class="alert-msg mb--10">Required</div>
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="employee-info">
+                              <p>Employee Status <span class="color--red">*</span></p>
+                              <select name="" id=""  class="err-border-red" required>
+                                <option value=""selected disabled></option>
+                                <option value="Provisionary">Proviosinary</option>
+                                <option value="Contractual">Contractual</option>
+                                <option value="SEO">Regular</option>
+                              </select>
+                              <div class="alert-msg mb--10">Required</div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -165,42 +207,34 @@
                     </div>
                   </form>
                 </div>
-                <div class="error-message ">
-                      <div class="warning">
-                        <i class="fas fa-exclamation"></i>
-                        <div class="warning-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdamur rerum mollitia quam voluptatum ullam cum commodi?</p>
-                      </div>
-                      </div>
-                </div>
               </div>
               <div class="tab-content" id="tab-2-content">
                 <div class="personal-info-box mb--20">
                   <form action="">
                     <div class="row">
                       <div class="col-lg-3 col-md-3 col-sm-12">
-                        <div class="employee-status">
+                        <div class="employee-info">
                           <p>First Name <span class="color--red">*</span></p>
                           <input type="text" class="input-res err-border-red" required/>
                           <div class="alert-msg mb--10">Required</div>
                         </div>
                       </div>
                       <div class="col-lg-3 col-md-3 col-sm-12">
-                        <div class="employee-status">
+                        <div class="employee-info">
                           <p>Middle Name <span class="color--red">*</span></p>
                           <input type="text" class="input-res err-border-red" required/>
                           <div class="alert-msg mb--10">Required</div>
                         </div>
                       </div>
                       <div class="col-lg-3 col-md-3 col-sm-12">
-                        <div class="employee-status">
+                        <div class="employee-info">
                           <p>Last Name <span class="color--red">*</span></p>
                           <input type="text" class="input-res err-border-red" required/>
                           <div class="alert-msg mb--10">Required</div>
                         </div>
                       </div>
                       <div class="col-lg-3 col-md-3 col-sm-12">
-                        <div class="employee-status">
+                        <div class="employee-info">
                           <p>Sex <span class="color--red">*</span></p>
                             <label for="">Male
                               <input type="radio" name="gender" value="male"/>
@@ -214,69 +248,117 @@
                     </div>
                     <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-12">
-                      <div class="employee-status">
+                      <div class="employee-info">
                         <p>Age <span class="color--red">*</span></p>
                         <input type="text" class="input-res err-border-red" required/>
                         <div class="alert-msg mb--10">Required</div>
                       </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-12">
-                      <div class="employee-status">
+                      <div class="employee-info">
                         <p>Civil Status <span class="color--red">*</span></p>
                         <input type="text" class="input-res err-border-red" required/>
                         <div class="alert-msg mb--10">Required</div>
                       </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-12">
-                      <div class="employee-status">
+                      <div class="employee-info">
                         <p>Date of Birth <span class="color--red">*</span></p>
                         <input type="text" class="input-res err-border-red" required/>
                         <div class="alert-msg mb--10">Required</div>
                       </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-12">
-                      <div class="employee-status">
+                      <div class="employee-info">
                         <p>Birth Place <span class="color--red">*</span></p>
                         <input type="text" class="input-res err-border-red" required/>
                         <div class="alert-msg mb--10">Required</div>
                       </div>
                     </div>
                     </div>
-                    <div class="row">
-                    <div class="col-lg-9 col-md-9 col-sm-12">
-                      <div class="employee-status">
-                        <p>
-                          Address
-                          <em>(House No., Street, Subd., Brgy., City, Prov., Country)</em><span class="color--red">*</span>
-                        </p>
-                        <input type="text" class="input-res err-border-red" required/>
-                        <div class="alert-msg mb--10">Required</div>
+                    <div class="employee-address">
+                      <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                      <p class="nm">
+                        Address
+                      </p>
+                      <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                          <div class="employee-info">
+                            <em>House No.</em><span class="color--red">*</span>
+                            <input type="text" class="input-res err-border-red" required/>
+                            <div class="alert-msg mb--10">Required</div>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                          <div class="employee-info">
+                            <em>Street</em><span class="color--red">*</span>
+                            <input type="text" class="input-res err-border-red" required/>
+                            <div class="alert-msg mb--10">Required</div>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                          <div class="employee-info">
+                            <em>Subd.</em><span class="color--red">*</span>
+                            <input type="text" class="input-res err-border-red" required/>
+                            <div class="alert-msg mb--10">Required</div>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                          <div class="employee-info">
+                            <em>Brgy.</em><span class="color--red">*</span>
+                            <input type="text" class="input-res err-border-red" required/>
+                            <div class="alert-msg mb--10">Required</div>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                          <div class="employee-info">
+                            <em>City</em><span class="color--red">*</span>
+                            <input type="text" class="input-res err-border-red" required/>
+                            <div class="alert-msg mb--10">Required</div>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                          <div class="employee-info">
+                            <em>Province</em><span class="color--red">*</span>
+                            <input type="text" class="input-res err-border-red" required/>
+                            <div class="alert-msg mb--10">Required</div>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                          <div class="employee-info">
+                            <em>Country</em><span class="color--red">*</span>
+                            <input type="text" class="input-res err-border-red" required/>
+                            <div class="alert-msg mb--10">Required</div>
+                          </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                          <div class="employee-info">
+                            <em>Zip Code</em><span class="color--red">*</span>
+                            <input type="text" class="input-res err-border-red" required/>
+                            <div class="alert-msg mb--10">Required</div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-lg-3 col-md-3 col-sm-12">
-                      <div class="employee-status">
-                        <p>Zip Code <span class="color--red">*</span></p>
-                        <input type="text" class="input-res err-border-red" required/>
-                        <div class="alert-msg mb--10">Required</div>
-                      </div>
                     </div>
                     </div>
                     <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                      <div class="employee-status">
+                      <div class="employee-info">
                         <p>Mobile Number <span class="color--red">*</span></p>
                         <input type="text" class="input-res err-border-red" required/>
                         <div class="alert-msg mb--10">Required</div>
                       </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                      <div class="employee-status">
+                      <div class="employee-info">
                         <p>Landline Number</p>
                         <input type="text" class="input-res"/>
                       </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                      <div class="employee-status">
+                      <div class="employee-info">
                         <p>Email Address <span class="color--red">*</span></p>
                         <input type="text" class="input-res err-border-red" required/>
                         <div class="alert-msg mb--10">Required</div>
@@ -290,60 +372,50 @@
                     </div>
                   </form>
                 </div>
-                <div class="error-message ">
-                      <div class="warning">
-                        <i class="fas fa-exclamation"></i>
-                        <div class="warning-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdamur rerum mollitia quam voluptatum ullam cum commodi?</p>
-                      </div>
-                      </div>
-                </div>
               </div>
               <div class="tab-content" id="tab-3-content">
                 <div class="government-id-box mb--20">
                   <form action="">
-                    <div class="row">
-                      <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="employee-status">
-                          <p>SSS No. <span class="color--red">*</span></p>
-                          <input type="text" class="input-res err-border-red" required/>
-                          <div class="alert-msg mb--10">Required</div>
-                        </div>
-                        <div class="employee-status">
-                          <p>Pagibig No.<span class="color--red">*</span></p>
-                          <input type="text" class="input-res err-border-red" required/>
-                          <div class="alert-msg mb--10">Required</div>
-                        </div>
+                      <div class="row">
+                          <div class="col-lg-6 col-md-6 col-sm-12">
+                              <div class="employee-info">
+                              <p>SSS No. <span class="color--red">*</span></p>
+                              <input type="text" class="input-res err-border-red" required/>
+                              <div class="alert-msg mb--10">Required</div>
+                              </div>
+                          </div>
+                          <div class="col-lg-6 col-md-6 col-sm-12">
+                              <div class="employee-info">
+                              <p>Pagibig No.<span class="color--red">*</span></p>
+                              <input type="text" class="input-res err-border-red" required/>
+                              <div class="alert-msg mb--10">Required</div>
+                              </div>
+                          </div>
                       </div>
-                      <div class="col-lg-6 col-md-6 col-sm-12">
-                        <div class="employee-status">
-                          <p>
-                            Driver's License No.
-                          </p>
-                          <input type="text" class="input-res"/>
-                        </div>
-                        <div class="employee-status">
-                          <p>
-                            Passport No./Exp. Date
-                          </p>
-                          <input type="text" class="input-res">
-                        </div>
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <div class="employee-info">
+                              <p>
+                                  Driver's License No.
+                              </p>
+                              <input type="text" class="input-res"/>
+                              </div>
+                          </div>
+                          <div class="col-lg-6">
+                              <div class="employee-info">
+                              <p>
+                                  Passport No./Exp. Date
+                              </p>
+                              <input type="text" class="input-res">
+                              </div>
+                          </div>
                       </div>
-                    </div>
-                    <div class="save-employee t-right">
+                      <div class="save-employee t-right">
                       <button class="save-btn btn-purple" type="submit" onclick="window.location.href='#pop-process-success'">
-                        Save
+                          Save
                       </button>
-                    </div>
+                      </div>
                   </form>
-                </div>
-                <div class="error-message ">
-                      <div class="warning">
-                        <i class="fas fa-exclamation"></i>
-                        <div class="warning-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdamur rerum mollitia quam voluptatum ullam cum commodi?</p>
-                      </div>
-                      </div>
                 </div>
               </div>
               <div class="tab-content" id="tab-4-content">
@@ -353,7 +425,7 @@
                       <div class="col-lg-12">
                         <div class="row">
                           <div class="col-lg-6 col-md-6 col-sm-12">
-                            <div class="employee-status">
+                            <div class="employee-info">
                               <p>
                                 Mother's Maiden Name <span class="color--red">*</span>
                               </p>
@@ -362,7 +434,7 @@
                             </div>
                           </div>
                           <div class="col-lg-6 col-md-6 col-sm-12">
-                            <div class="employee-status">
+                            <div class="employee-info">
                               <p>Birthdate <span class="color--red">*</span></p>
                               <input type="text" class="input-res err-border-red" required/>
                               <div class="alert-msg mb--10">Required</div>
@@ -371,7 +443,7 @@
                         </div>
                         <div class="row">
                           <div class="col-lg-6 col-md-6 col-sm-12">
-                            <div class="employee-status">
+                            <div class="employee-info">
                               <p>
                                 Father's Maiden Name <span class="color--red">*</span>
                               </p>
@@ -380,7 +452,7 @@
                             </div>
                           </div>
                           <div class="col-lg-6 col-md-6 col-sm-12">
-                            <div class="employee-status">
+                            <div class="employee-info">
                               <p>Birthdate <span class="color--red">*</span></p>
                               <input type="text" class="input-res err-border-red" required/>
                               <div class="alert-msg mb--10">Required</div>
@@ -389,7 +461,7 @@
                         </div>
                         <div class="row">
                           <div class="col-lg-6 col-md-6 col-sm-12">
-                            <div class="employee-status">
+                            <div class="employee-info">
                               <p>
                                 Spouse's Name (If Any)
                               </p>
@@ -397,7 +469,7 @@
                             </div>
                           </div>
                           <div class="col-lg-6 col-md-6 col-sm-12">
-                            <div class="employee-status">
+                            <div class="employee-info">
                               <p>Birthdate</p>
                               <input type="text" class="input-res"/>
                             </div>
@@ -405,7 +477,7 @@
                         </div>
                         <div class="row">
                           <div class="col-lg-6 col-md-6 col-sm-12">
-                            <div class="employee-status">
+                            <div class="employee-info">
                               <p>
                                 Number of Children
                               </p>
@@ -422,14 +494,7 @@
                     </div>
                   </form>
                 </div>
-                <div class="error-message ">
-                      <div class="warning">
-                        <i class="fas fa-exclamation"></i>
-                        <div class="warning-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdamur rerum mollitia quam voluptatum ullam cum commodi?</p>
-                      </div>
-                      </div>
-                </div>
+
               </div>
               <div class="tab-content" id="tab-5-content">
                 <div class="employee-file-record">
