@@ -1272,7 +1272,7 @@ form.index-login {
   margin-bottom: 15px;
 }
 
-.sign-up-box {
+.log-in-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1284,7 +1284,7 @@ form.index-login {
   width: 100%;
 }
 
-.sign-up-box p {
+.log-in-box p {
   font-size: 18px;
   color: #444;
 }
@@ -1294,7 +1294,7 @@ form.index-login {
 }
 
 .forget-account,
-.sign-up-box {
+.log-in-box {
   color: #b2226f;
   font-size: 14px;
 }
@@ -1312,7 +1312,7 @@ form.index-login {
 }
 
 .forget-account:hover,
-.sign-up-box .sign-up:hover {
+.log-in-box .sign-up:hover {
   color: #6a104f;
 }
 
@@ -2774,12 +2774,12 @@ article:after {
     width: 80% !important;
   }
 
-  .sign-up-box {
+  .log-in-box {
     display: block;
     text-align: center;
   }
 
-  .sign-up-box p {
+  .log-in-box p {
     width: 100%;
   }
 
