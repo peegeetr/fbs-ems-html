@@ -1238,6 +1238,7 @@ span:after {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .left-content {
@@ -2741,9 +2742,9 @@ article:after {
   .mobile-logo {
     display: none;
   }
-  .left-section {
+  /* .left-section {
     margin-top: 30%;
-  }
+  } */
   .settings-popup {
     width: 25% !important;
   }
