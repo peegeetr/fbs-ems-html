@@ -1238,6 +1238,7 @@ span:after {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh
 }
 
 .left-content {
@@ -1447,6 +1448,10 @@ form.index-login {
      * ===================================================================
      */
 
+.gray-bg {
+  background: #e6e6e6;
+}
+
 .forgot-form h3,
 .sign-up-form h3 {
   text-align: center;
@@ -1468,19 +1473,37 @@ form.index-login {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 78vh;
+  height: 100vh;
 }
 
-.verify-box {
+.notification-box {
   width: 500px;
-  padding: 20px;
   background: rgba(255, 255, 255, 0.5);
   margin: auto;
-  border: 1px solid #eee;
 }
 
-.verify-box img {
-  width: 50%;
+.notification-box-content {
+  padding: 20px;
+}
+
+.notification-box-content h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #922b68;
+}
+
+.notification-box-content h3 {
+  font-size: 20px;
+}
+
+.notification-box-content img {
+  width: 40%;
+}
+
+.noti-footer-img img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: -6px;
 }
 
 .verify-check img {
@@ -2621,9 +2644,23 @@ article:after {
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .tab-nav ul {
+@media screen and (max-width: 1350px) {
+  .tab-link i {
     display: block;
+  }
+
+  .tab-nav ul li {
+    width: 25%;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .tab-nav ul li span {
+    display: none;
+  }
+  .tab-nav ul li i {
+    font-size: 1.4rem;
   }
 }
 
@@ -2720,9 +2757,6 @@ article:after {
   .mobile-logo {
     display: none;
   }
-  .left-section {
-    margin-top: 20%;
-  }
   .settings-popup {
     width: 25% !important;
   }
@@ -2795,7 +2829,7 @@ article:after {
     display: none;
   }
 
-  .verify-box {
+  .notification-box {
     text-align: center;
   }
   .form-modal {
