@@ -150,9 +150,9 @@ time {
 }
 
 /* =================================================================== 
-   * 2.0 :: Repeatable Patterns
-   * ===================================================================
-   */
+     * 2.0 :: Repeatable Patterns
+     * ===================================================================
+     */
 
 /* Links */
 
@@ -166,7 +166,7 @@ a {
 }
 
 /* Formating */
-.bold,
+b,
 strong {
   font-weight: bold !important;
 }
@@ -612,9 +612,9 @@ form textarea {
 }
 
 /* ===================================================================
-   * 3.0 :: Structure / Grid/ Column
-   * ===================================================================
-   */
+     * 3.0 :: Structure / Grid/ Column
+     * ===================================================================
+     */
 
 /* Uncomment and set these variables to customize the grid. */
 * {
@@ -938,9 +938,9 @@ form textarea {
 }
 
 /* =================================================================== 
-   * 4.0 :: Header
-   * ===================================================================
-   */
+     * 4.0 :: Header
+     * ===================================================================
+     */
 
 header {
   position: absolute;
@@ -1173,9 +1173,9 @@ span:after {
 }
 
 /* =================================================================== 
-   * 5.0 :: Main Content
-   * ===================================================================
-   */
+     * 5.0 :: Main Content
+     * ===================================================================
+     */
 
 .main-content {
   margin-top: 0;
@@ -1227,9 +1227,9 @@ span:after {
 }
 
 /* ===================================================================
-   * 6.0 :: Landing Page
-   * ===================================================================
-   */
+     * 6.0 :: Landing Page
+     * ===================================================================
+     */
 .login {
   height: 100vh;
 }
@@ -1238,7 +1238,6 @@ span:after {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .left-content {
@@ -1250,7 +1249,7 @@ span:after {
 }
 
 .fbs-logo img {
-  width: 300px;
+  width: 200px;
   margin-bottom: 5px;
 }
 
@@ -1273,7 +1272,7 @@ form.index-login {
   margin-bottom: 15px;
 }
 
-.log-in-box {
+.sign-up-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1285,7 +1284,7 @@ form.index-login {
   width: 100%;
 }
 
-.log-in-box p {
+.sign-up-box p {
   font-size: 18px;
   color: #444;
 }
@@ -1295,7 +1294,7 @@ form.index-login {
 }
 
 .forget-account,
-.log-in-box {
+.sign-up-box {
   color: #b2226f;
   font-size: 14px;
 }
@@ -1313,14 +1312,15 @@ form.index-login {
 }
 
 .forget-account:hover,
-.log-in-box .sign-up:hover {
+.sign-up-box .sign-up:hover {
   color: #6a104f;
 }
 
 .error-message {
   /* display: none; */
-  width: 100%;
+  max-width: 400px;
   margin: 0 auto;
+  font-size: 14px;
 }
 
 .warning {
@@ -1328,7 +1328,6 @@ form.index-login {
   background: #dd3c10;
   align-items: center;
   border: 1px solid #dd3c10;
-  margin-top: -20px;
 }
 
 .warning-text {
@@ -1376,7 +1375,7 @@ form.index-login {
 .announcement {
   position: absolute;
   /* top: 20%;
-  left: 10%; */
+    left: 10%; */
 }
 
 .announcement-slider {
@@ -1444,14 +1443,14 @@ form.index-login {
 }
 
 /* ===================================================================
-   * 6.1 :: Landing Page - SIGN UP / FORGOT ACCOUNT / VERIFY /  THANK YOU
-   * ===================================================================
-   */
+     * 6.1 :: Landing Page - SIGN UP / FORGOT ACCOUNT / VERIFY /  THANK YOU
+     * ===================================================================
+     */
 
 .forgot-form h3,
 .sign-up-form h3 {
   text-align: center;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .forgot-form form input,
@@ -1459,40 +1458,29 @@ form.index-login {
   /* margin: 5px 0; */
 }
 
+.forgot-instruct {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
 .notification-block {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 78vh;
 }
 
 .verify-box {
   width: 500px;
+  padding: 20px;
   background: rgba(255, 255, 255, 0.5);
   margin: auto;
   border: 1px solid #eee;
 }
 
-.verify-box-content {
-  padding: 20px;
-}
-
-.verify-box h2 {
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.verify-box h3 {
-  font-size: 20px;
-}
-
 .verify-box img {
   width: 50%;
-}
-
-.noti-footer-img img {
-  width: 100%;
-  bottom: 0;
 }
 
 .verify-check img {
@@ -1508,14 +1496,14 @@ form.index-login {
 }
 
 .noti-link {
-  font-size: 12px;
+  font-size: 16px;
   color: #b2226f;
 }
 
 /* =================================================================== 
-   * 7.0 :: ADMIN DASHBOARD
-   * ===================================================================
-   */
+     * 7.0 :: ADMIN DASHBOARD
+     * ===================================================================
+     */
 
 h3.welcome-title {
   font-weight: normal;
@@ -1760,9 +1748,9 @@ span.circle {
 }
 
 /* =================================================================== 
-   * 8.0 :: Admin Leave Dashboard
-   * ===================================================================
-   */
+     * 8.0 :: Admin Leave Dashboard
+     * ===================================================================
+     */
 
 .content-wrap {
   margin: 20px 100px;
@@ -1856,9 +1844,9 @@ span.circle {
 }
 
 /* =================================================================== 
-   * 9.0:: Admin Employee (List of Employees)
-   * ===================================================================
-   */
+     * 9.0:: Admin Employee (List of Employees)
+     * ===================================================================
+     */
 
 .employee-search-box {
   padding: 15px;
@@ -1901,16 +1889,8 @@ span.circle {
   transition: all 0.5s ease-in-out;
 }
 
-.tab-nav ul li {
-  display: block;
-}
-
 .tab-link {
   background: #eef1f7;
-}
-
-.tab-link i {
-  margin: 0 5px;
 }
 
 .tab-content {
@@ -1928,15 +1908,14 @@ span.circle {
 }
 
 /* =================================================================== 
-   * 9.1 ::  Add New Employees (Admin)
-   * ===================================================================
-   */
+     * 9.1 ::  Add New Employees (Admin)
+     * ===================================================================
+     */
 
 .employee-add-image {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
   margin-top: 20px;
 }
 
@@ -1975,12 +1954,8 @@ span.circle {
   border: 1px solid #eee;
 }
 
-.employee-info {
+.employee-status {
   margin: 10px 0;
-}
-
-.employee-info em {
-  font-size: 12px;
 }
 
 form.radio {
@@ -2016,9 +1991,9 @@ form.radio label {
 }
 
 /* =================================================================== 
-   * 9.2 ::  Edit / View Employees
-   * ===================================================================
-   */
+     * 9.2 ::  Edit / View Employees
+     * ===================================================================
+     */
 
 .employee-add-image img {
   border: 5px solid #ddd;
@@ -2036,9 +2011,9 @@ form.radio label {
 }
 
 /* =================================================================== 
-   * 10.0 ::  Admin Task Manager
-   * ===================================================================
-   */
+     * 10.0 ::  Admin Task Manager
+     * ===================================================================
+     */
 
 .task-manager-search-box {
   padding: 15px;
@@ -2056,9 +2031,9 @@ form.radio label {
 }
 
 /* =================================================================== 
-   * 11.0 ::  Admin Settings (Add Leave)
-   * ===================================================================
-   */
+     * 11.0 ::  Admin Settings (Add Leave)
+     * ===================================================================
+     */
 
 .add-settings {
   text-align: right;
@@ -2071,9 +2046,9 @@ form.radio label {
 }
 
 /* =================================================================== 
-   * 12.0 ::  Admin User Settings / Employee User Settings
-   * ===================================================================
-   */
+     * 12.0 ::  Admin User Settings / Employee User Settings
+     * ===================================================================
+     */
 
 button.add-user-btn {
   font-size: 12px;
@@ -2142,9 +2117,9 @@ button.add-user-btn i {
 }
 
 /* =================================================================== 
-   * 12.1 ::  Admin Add New User / Edit User / View User
-   * ===================================================================
-   */
+     * 12.1 ::  Admin Add New User / Edit User / View User
+     * ===================================================================
+     */
 
 .add-new-user-box {
   display: flex;
@@ -2188,9 +2163,9 @@ button.add-user-btn i {
 }
 
 /* =================================================================== 
-   * 13.0 :: Employee Dashboard
-   * ===================================================================
-   */
+     * 13.0 :: Employee Dashboard
+     * ===================================================================
+     */
 
 .employee-db-box ul {
   padding: 10px;
@@ -2226,9 +2201,9 @@ button.add-user-btn i {
   color: #fff;
 }
 /* =================================================================== 
-   * 14.0 :: Employee Leave Dashboard
-   * ===================================================================
-   */
+     * 14.0 :: Employee Leave Dashboard
+     * ===================================================================
+     */
 
 .leave-counter button {
   display: inline-block;
@@ -2286,9 +2261,9 @@ button.add-user-btn i {
 }
 
 /* =================================================================== 
-   * 15.0 :: Employee Task Manager
-   * ===================================================================
-   */
+     * 15.0 :: Employee Task Manager
+     * ===================================================================
+     */
 
 .task-form {
   width: 100%;
@@ -2379,9 +2354,9 @@ button.play i {
 }
 
 /* =================================================================== 
-   * 16.0 :: Employee OT
-   * ===================================================================
-   */
+     * 16.0 :: Employee OT
+     * ===================================================================
+     */
 
 .ot-filter {
   display: flex;
@@ -2397,9 +2372,9 @@ button.play i {
 }
 
 /* ===================================================================
-   * 0.0 :: Clearing
-   * ===================================================================
-   */
+     * 0.0 :: Clearing
+     * ===================================================================
+     */
 *,
 *:before,
 *:after {
@@ -2421,9 +2396,9 @@ article:after {
 }
 
 /* =================================================================== 
-   * 17.0 :: Modal
-   * ===================================================================
-   */
+     * 17.0 :: Modal
+     * ===================================================================
+     */
 .overlay {
   position: fixed;
   top: 0;
@@ -2443,14 +2418,14 @@ article:after {
 }
 
 /* .popup {
-    margin: 70px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    width: 30%;
-    position: relative;
-    transition: all 2s ease-in-out;
-  } */
+      margin: 70px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 5px;
+      width: 30%;
+      position: relative;
+      transition: all 2s ease-in-out;
+    } */
 
 .popup {
   margin: auto;
@@ -2617,9 +2592,9 @@ article:after {
   margin: 10px;
 }
 /* ===================================================================
-   * 0.0 :: Mobile CSS
-   * ===================================================================
-   */
+     * 0.0 :: Mobile CSS
+     * ===================================================================
+     */
 
 @media screen and (max-width: 1200px) {
   .leave-filter {
@@ -2646,23 +2621,9 @@ article:after {
   }
 }
 
-@media screen and (max-width: 1350px) {
-  .tab-link i {
-    display: block;
-  }
-
-  .tab-nav ul li {
-    width: 25%;
-    display: inline-block;
-  }
-}
-
 @media screen and (max-width: 1000px) {
-  .tab-nav ul li span {
-    display: none;
-  }
-  .tab-nav ul li i {
-    font-size: 1.4rem;
+  .tab-nav ul {
+    display: block;
   }
 }
 
@@ -2759,9 +2720,9 @@ article:after {
   .mobile-logo {
     display: none;
   }
-  /* .left-section {
-    margin-top: 30%;
-  } */
+  .left-section {
+    margin-top: 20%;
+  }
   .settings-popup {
     width: 25% !important;
   }
@@ -2792,12 +2753,12 @@ article:after {
     width: 80% !important;
   }
 
-  .log-in-box {
+  .sign-up-box {
     display: block;
     text-align: center;
   }
 
-  .log-in-box p {
+  .sign-up-box p {
     width: 100%;
   }
 
@@ -2845,16 +2806,12 @@ article:after {
   .leave-form-box {
     overflow-y: scroll;
   }
-
-  .tab-nav ul li i {
-    font-size: 0.9rem;
-  }
 }
 
 /* Modal */
 
 .modal {
-  display: none; /* Hidden by default */
+  /* display: none;  Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
@@ -2863,7 +2820,8 @@ article:after {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(255, 255, 255); /* Fallback color */
+  background-color: #fff; /* Fallback color */
+  z-index: 999;
   /* background-color: rgba(255, 255, 255, 0.4); Black w/ opacity */
 }
 
@@ -2874,23 +2832,23 @@ article:after {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none;
+  /* display: none; */
   z-index: 9999;
 }
 
 .loader {
-  border: 10px solid #f3f3f3;
+  border: 5px solid #fff;
   border-radius: 50%;
-  border-top: 10px solid #6a103f;
-  width: 60px;
-  height: 60px;
+  border-top: 5px solid #6a103f;
+  width: 35px;
+  height: 35px;
   -webkit-animation: spin 0.8s linear infinite;
   animation: spin 0.8s linear infinite;
   margin: 0 auto;
 }
 
 .loader-container p {
-  margin: 20px 0;
+  margin: 15px 0;
   color: rgb(110, 110, 110);
 }
 
@@ -2927,3 +2885,7 @@ button:disabled:hover {
 }
 
 /* End Login Button Disabled - Outline // Vincent (Mar-19-2020) */
+
+.json {
+  display: none;
+}
