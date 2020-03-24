@@ -953,6 +953,7 @@ header {
   height: 70px;
   background-color: #fff;
   box-shadow: 0 0 5px 0 rgb(0, 0, 0, 0.3);
+  
 }
 
 header .logo {
@@ -1185,7 +1186,8 @@ span:after {
   margin-top: 0;
   padding: 0;
   padding-top: 100px;
-  height: 100%;
+  height: 100vh;
+  position: relative;
 }
 .main-content .content-block {
   margin: 40px;
@@ -2825,7 +2827,7 @@ article:after {
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: #fff; /* Fallback color */
-  z-index: 999;
+  /* z-index: 999; */
   /* background-color: rgba(255, 255, 255, 0.4); Black w/ opacity */
 }
 
