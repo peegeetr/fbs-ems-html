@@ -1463,19 +1463,36 @@ form.index-login {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 78vh;
+  height: 100vh;
 }
 
 .verify-box {
   width: 500px;
-  padding: 20px;
   background: rgba(255, 255, 255, 0.5);
   margin: auto;
   border: 1px solid #eee;
 }
 
+.verify-box-content {
+  padding: 20px;
+}
+
+.verify-box h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.verify-box h3 {
+  font-size: 20px;
+}
+
 .verify-box img {
   width: 50%;
+}
+
+.noti-footer-img img {
+  width: 100%;
+  bottom: 0;
 }
 
 .verify-check img {
