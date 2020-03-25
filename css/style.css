@@ -1528,6 +1528,24 @@ form.index-login {
   color: #b2226f;
 }
 
+/* --Page Not Found-- */
+
+.error-404 {
+  font-size: 70px !important;
+}
+
+.error-404-btn a {
+  margin: 0 10px;
+}
+
+.error-404-btn a:first-child {
+  background: #b2226f;
+}
+
+.error-404-btn a:first-child:hover {
+  background: #6d145b;
+}
+
 /* =================================================================== 
      * 7.0 :: ADMIN DASHBOARD
      * ===================================================================
@@ -2848,6 +2866,12 @@ article:after {
 
   .notification-box {
     width: 100% !important;
+  }
+
+  .error-404-btn a {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
 
