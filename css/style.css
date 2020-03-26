@@ -1468,10 +1468,10 @@ form.index-login {
   font-size: 24px;
 }
 
-.forgot-form form input,
+/* .forgot-form form input,
 .sign-up-form form input {
-  /* margin: 5px 0; */
-}
+  margin: 5px 0;
+} */
 
 .forgot-instruct {
   max-width: 400px;
