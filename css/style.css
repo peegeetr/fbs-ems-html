@@ -346,6 +346,10 @@ img.clients-logo {
 
 /* Margin */
 
+.mt--20 {
+  margin-top: 20px !important;
+}
+
 .mb--10 {
   margin-bottom: 10px !important;
 }
@@ -449,7 +453,7 @@ textarea {
   border-radius: 0.25rem;
   height: 38px;
   padding: 6px 15px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
   color: #54667a;
@@ -1187,6 +1191,7 @@ span:after {
   padding-top: 100px;
   height: 100vh;
   position: relative;
+  font-size: 14px;
 }
 .main-content .content-block {
   margin: 40px;
@@ -2952,7 +2957,3 @@ button:disabled:hover {
 }
 
 /* End Login Button Disabled - Outline // Vincent (Mar-19-2020) */
-
-.json {
-  display: none;
-}
