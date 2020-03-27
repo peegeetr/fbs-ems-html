@@ -619,6 +619,10 @@ form textarea {
   position: absolute !important;
 }
 
+.bold {
+  font-weight: bold !important;
+}
+
 /* ===================================================================
      * 3.0 :: Structure / Grid/ Column
      * ===================================================================
@@ -2061,6 +2065,10 @@ form.radio label {
   font-weight: 600;
 }
 
+.word-break {
+  word-wrap: break-word;
+}
+
 /* =================================================================== 
      * 10.0 ::  Admin Task Manager
      * ===================================================================
@@ -2706,8 +2714,14 @@ article:after {
     margin: 15px;
     text-align: center !important;
   }
+
   .left-section {
-    margin-top: 20% !important;
+    display: block;
+  }
+
+  .left-content {
+    margin-top: 20px;
+    overflow-y: auto;
   }
 }
 
@@ -2835,6 +2849,7 @@ article:after {
     width: 100%;
     text-align: center;
   }
+
 }
 
 @media screen and (max-width: 450px) {
