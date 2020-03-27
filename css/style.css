@@ -619,6 +619,10 @@ form textarea {
   position: absolute !important;
 }
 
+.bold {
+  font-weight: bold !important;
+}
+
 /* ===================================================================
      * 3.0 :: Structure / Grid/ Column
      * ===================================================================
@@ -2059,6 +2063,10 @@ form.radio label {
 .file-name {
   padding: 10px;
   font-weight: 600;
+}
+
+.word-break {
+  word-wrap: break-word;
 }
 
 /* =================================================================== 
