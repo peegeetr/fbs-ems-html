@@ -2706,6 +2706,15 @@ article:after {
     margin: 15px;
     text-align: center !important;
   }
+
+  .left-section {
+    display: block;
+  }
+
+  .left-content {
+    margin-top: 20px;
+    overflow-y: auto;
+  }
 }
 
 @media screen and (min-width: 640px) {
@@ -2832,6 +2841,7 @@ article:after {
     width: 100%;
     text-align: center;
   }
+
 }
 
 @media screen and (max-width: 450px) {
@@ -2874,15 +2884,6 @@ article:after {
     display: block;
     width: 100%;
     margin-bottom: 10px;
-  }
-
-  .left-section {
-    display: block;
-  }
-
-  .left-content {
-    margin-top: 0;
-    overflow-y: auto;
   }
 }
 
