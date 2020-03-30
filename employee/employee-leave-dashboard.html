@@ -88,10 +88,10 @@
     </div>
     <div class="main-content">
       <div class="content-wrap">
-        <h3 class="mb--60">
+        <h3 class="mb--40">
           LEAVE DASHBOARD <i class="fas fa-plane-departure"></i>
         </h3>
-        <div class="t-right">
+        <div class="t-left mb--40">
             <a class="btn-purple" href="#pop-process-form">Apply Leave</a>
         </div>
         <div class="leave-status mb--30">
@@ -100,15 +100,11 @@
           </div>
           <ul>
             <li class="box-shadow">
-              <p>Vacation</p>
+              <p>Vacation/Emergency</p>
               <p>1/5</p>
             </li>
             <li class="box-shadow">
               <p>Sick</p>
-              <p>1/5</p>
-            </li>
-            <li class="box-shadow">
-              <p>Emergency</p>
               <p>1/5</p>
             </li>
             <li class="box-shadow">
@@ -131,29 +127,19 @@
             <table>
               <tr>
                 <th>Status</th>
-                <th>Leave Type</th>
-                <th>From</th>
-                <th>To</th>
-                <th>No. of Days</th>
-                <th>Reason</th>
-                <th>Edit</th>
-                <th>Delete</th>
+                <th>Type</th>
+                <th>Filed</th>
+                <th>Days</th>
+                <th>Action</th>
               </tr>
               <tr>
                 <td><p class="label approved">Approved</p></td>
                 <td>Vacation</td>
                 <td>1/1/2020</td>
-                <td>1/2/2020</td>
                 <td>1</td>
-                <td>I have to visit my Girlfriend</td>
                 <td>
-                  <a href="#pop-process-form-edit">
+                  <a href="#pop-process-form">
                     <i class="fas fa-pen"></i>
-                  </a>
-                </td>
-                <td>
-                  <a href="#pop-process-delete">
-                    <i class="fas fa-trash-alt"></i>
                   </a>
                 </td>
               </tr>
@@ -161,17 +147,10 @@
                 <td><p class="label pending">Pending</p></td>
                 <td>Vacation</td>
                 <td>1/1/2020</td>
-                <td>1/2/2020</td>
                 <td>1</td>
-                <td>I have to visit my Girlfriend</td>
                 <td>
-                  <a href="#pop-process-form-edit">
+                  <a href="#pop-process-form">
                     <i class="fas fa-pen"></i>
-                  </a>
-                </td>
-                <td>
-                  <a href="#pop-process-delete">
-                    <i class="fas fa-trash-alt"></i>
                   </a>
                 </td>
               </tr>
@@ -179,17 +158,10 @@
                 <td><p class="label declined">Declined</p></td>
                 <td>Vacation</td>
                 <td>1/1/2020</td>
-                <td>1/2/2020</td>
                 <td>1</td>
-                <td>I have to visit my Girlfriend</td>
                 <td>
-                  <a href="#pop-process-form-edit">
+                  <a href="#pop-process-form">
                     <i class="fas fa-pen"></i>
-                  </a>
-                </td>
-                <td>
-                  <a href="#pop-process-delete">
-                    <i class="fas fa-trash-alt"></i>
                   </a>
                 </td>
               </tr>
@@ -197,17 +169,10 @@
                 <td><p class="label approved">Approved</p></td>
                 <td>Vacation</td>
                 <td>1/1/2020</td>
-                <td>1/2/2020</td>
                 <td>1</td>
-                <td>I have to visit my Girlfriend</td>
                 <td>
-                  <a href="#pop-process-form-edit">
+                  <a href="#pop-process-form">
                     <i class="fas fa-pen"></i>
-                  </a>
-                </td>
-                <td>
-                  <a href="#pop-process-delete">
-                    <i class="fas fa-trash-alt"></i>
                   </a>
                 </td>
               </tr>
@@ -215,17 +180,10 @@
                 <td><p class="label approved">Approved</p></td>
                 <td>Vacation</td>
                 <td>1/1/2020</td>
-                <td>1/2/2020</td>
                 <td>1</td>
-                <td>I have to visit my Girlfriend</td>
                 <td>
-                  <a href="#pop-process-form-edit">
+                  <a href="#pop-process-form">
                     <i class="fas fa-pen"></i>
-                  </a>
-                </td>
-                <td>
-                  <a href="#pop-process-delete">
-                    <i class="fas fa-trash-alt"></i>
                   </a>
                 </td>
               </tr>
@@ -250,69 +208,6 @@
         </div>
       </div>
     </div>
-    <div id="pop-process-form" class="overlay">
-      <div class="popup form-modal">
-        <a class="close" href="#process">&times;</a>
-        <div class="content"></div>
-        <div class="leave-form">
-          <div class="leave-form-wrap ">
-            <div class="box-title-head">
-              <p>Apply Leave</p>
-            </div>
-            <form action="">
-              <div class="leave-form-box">
-              <div class="leave-select">
-                <p>Leave Type <span class="color--red">*</span></p>
-                <select name="" id="">
-                  <option value="0" disabled selected>-</option>
-                  <option value="1">Vacation</option>
-                  <option value="2">Sick Leave</option>
-                  <option value="3">Emergency</option>
-                  <option value="4">Birthday</option>
-                  <option value="5">Paternity</option>
-                  <option value="6">Maternity</option>
-                </select>
-              </div>
-              <div class="date">
-                <div class="row">
-                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="leave-date-box mb--20">
-                      <p>From <span class="color--red">*</span></p>
-                        <input type="date" class="input-res" />
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="leave-date-box mb--20">
-                      <p>To <span class="color--red">*</span></p>
-                        <input type="date" class="input-res" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-                <p>Reason <span class="color--red">*</span></p>
-                <input type="text" id="reason" name="reason" />
-              <p>Numbers of Date Applied <span class="color--red">*</span></p>
-              <select name="" id="" class="leave-duration mb--20">
-                <option value="0" disabled selected>-</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-                <p>Your Supervisor</p>
-                <input type="text" disabled="disabled" value="Dichoso, Juan" />
-              <div class="leave-button">
-                <button class="btn-purple" onclick="window.location.href='#success'" >
-                    APPLY LEAVE</a>
-                </button>
-              </div>
-            </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
     <div id="pop-process-delete" class="overlay">
       <div class="popup delete-modal">
         <h2 class="mb--20">CONFIRMATION</h2>
@@ -329,19 +224,33 @@
       </div>
     </div>
 
-    <div id="pop-process-form-edit" class="overlay">
+    <div id="pop-process-form" class="overlay">
       <div class="popup form-modal">
         <a class="close" href="#process">&times;</a>
-        <div>
+        <div class="content">
           <div class="leave-form mb--20">
               <div class="leave-form-wrap ">
-              <div class="box-title-head">
-                <p>Apply Leave</p>
+              
+              <div class="warning mb--10">
+                <i class="fas fa-exclamation"></i>
+                <div class="warning-text">
+                  <p class="nm">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdamur rerum
+                  </p>
+                </div>
+              </div>
+              <div class="warning-info mb--10">
+                <i class="fas fa-info"></i>
+                <div class="warning-info-text">
+                  <p class="nm">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdamur rerum
+                  </p>
+                </div>
               </div>
               <form action="">
                 <div class="leave-form-box">
                 <div class="leave-select">
-                  <p>Leave Type <span class="color--red">*</span></p>
+                  <p>Type <span class="color--red">*</span></p>
                   <select name="" id="">
                     <option value="1">Vacation</option>
                     <option value="2">Sick Leave</option>
@@ -350,6 +259,7 @@
                     <option value="5">Paternity</option>
                     <option value="6">Maternity</option>
                   </select>
+                  <div class="alert-msg mb--10">Required</div>
                 </div>
                 <div class="date">
                   <div class="row">
@@ -357,40 +267,41 @@
                       <div class="leave-date-box mb--20">
                         <p>From <span class="color--red">*</span></p>
                           <input type="date" class="input-res"/>
+                          <div class="alert-msg mb--10">Required</div>
                       </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                       <div class="leave-date-box mb--20">
                         <p>To <span class="color--red">*</span></p>
                           <input type="date" class="input-res" />
+                          <div class="alert-msg mb--10">Required</div>
                       </div>
                     </div>
                   </div>
                 </div>
-                  <div class="leave-reason">
+                  <div class="leave-reason mb--10">
                     <p>Reason <span class="color--red">*</span></p>
-                  <input type="text" id="reason" name="reason" value="I have to visit my girlfriend" />
+                    <input type="text" id="reason" name="reason" value="I have to visit my girlfriend" />
                   </div>
-                <p>Numbers of Date Applied <span class="color--red">*</span></p>
-                <select name="" id="" class="leave-duration mb--20">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-                  <div class="mb--20">
-                    <p>Your Supervisor</p>
-                  <input type="text" disabled="disabled" value="Dichoso, Juan" />
+                  <div class="days mb--10">
+                    <p>No. of Date Applied:</p>
+                    <p class="leave-days"><strong>1 Day(s)</strong></p>
                   </div>
+                  <div class="supervisor mb--20">
+                    <p>Your Supervisor:</p>
+                    <p><strong>Jhonny Dichoso</strong></p>
+                  </div>
+
+                  <!-- "cancel-leave display only for edit leave" -->
                   <div class="cancel-leave mb--20">
                     <input type="checkbox"><label for="checkbox"> Check if you want to cancel leave</label>
                   </div>
-                <div class="leave-button">
-                  <button class="btn-purple" onclick="window.location.href='#pop-process-success'">
-                      Save Changes</a>
-                  </button>
-                </div>
+                  
+                  <div class="leave-button">
+                    <button class="btn-purple" onclick="window.location.href='#pop-process-success'">
+                        Save Changes</a>
+                    </button>
+                  </div>
               </div>
               </form>
             </div>
