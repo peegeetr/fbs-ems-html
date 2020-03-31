@@ -17,8 +17,10 @@ btnTrigger.addEventListener('click', e => {
     notification.classList.add('small-notif-show');
     setTimeout(() => {
       notification.classList.remove('small-notif-show');
-    }, 3000);
+    }, 10000);
   }
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 });
 
 close.addEventListener('click', e => {
