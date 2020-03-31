@@ -978,7 +978,7 @@ form textarea {
      */
 
 header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: 3;
   height: 70px;
@@ -1014,7 +1014,7 @@ header .user ul li {
 
 header .user .fas {
   font-size: 22px;
-  margin: 0 10px;
+  margin: 10px 10px 0 10px;
   cursor: pointer;
 }
 
@@ -1057,8 +1057,8 @@ header .user .fa-sign-out-alt:hover:after {
 .user-dp img {
   object-fit: cover;
   border-radius: 100px;
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   margin-top: 5px;
 }
 
@@ -1863,7 +1863,13 @@ span.circle {
   margin-top: 30px;
 }
 
-.leave-filter {
+.leave-filter-button {
+  margin-top: 11px;
+}
+
+
+
+/* .leave-filter {
   display: flex;
   padding: 20px;
   border: 1px solid #ddd;
@@ -1888,7 +1894,7 @@ span.circle {
   margin: 0;
   font-size: 16px;
   padding: 6px;
-}
+} */
 
 .input-res {
   width: 100%;
@@ -1918,14 +1924,40 @@ span.circle {
   margin-top: 0;
 }
 
-.leave-status ul li {
+.leave-status {
+  padding-top: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.leave-status ul {
+  list-style-type: none;
+  font-weight: bold;
+}
+
+.leave-status ul li:first-child {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding: 15px 10px;
+}
+
+.leave-status ul li:last-child {
+  background: #eef1f7;
+  color: #2a2a2a;
+  padding: 5px;
+}
+
+/* .leave-status ul li {
   list-style-type: none;
   display: inline-block;
   padding: 10px;
   text-align: center;
   font-weight: 700;
   color: #444;
-  max-width: 190px;
+  max-width: 180px;
   width: 100%;
   margin: 10px;
 }
@@ -1933,7 +1965,7 @@ span.circle {
 .leave-status ul li p:last-child {
   font-size: 24px;
   color: #000;
-}
+} */
 
 /* =================================================================== 
      * 9.0:: Admin Employee (List of Employees)
@@ -2317,18 +2349,17 @@ button.add-user-btn i {
 }
 
 .leave-form-box {
-  padding: 15px;
+  padding: 30px;
 }
 
 .leave-select {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-top: 0 !important;
   width: 100%;
 }
 
 .leave-select select {
   width: 100%;
-  min-width: 200px;
 }
 
 .leave-date-box {
@@ -2345,7 +2376,7 @@ button.add-user-btn i {
 }
 
 .leave-button {
-  text-align: center;
+  text-align: right;
 }
 
 .leave-form input[type='submit'] {
@@ -2356,7 +2387,28 @@ button.add-user-btn i {
   background: #eef1f7;
 }
 
-.leave-type-admin,
+.form-header {
+  margin: 0 15px;
+  z-index: 3 !important;
+}
+
+.form-header-box {
+  border-radius: 3px;
+  background-color: #999;
+  padding: 10px;
+  margin-top: -20px;
+  margin-right: 15px;
+  float: left;
+  background: #b2226f;
+}
+
+.form-header-box h4 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* .leave-type-admin,
 .leave-reason-admin,
 .leave-date-box-admin,
 .supervisor,
@@ -2370,8 +2422,15 @@ button.add-user-btn i {
 .supervisor p,
 .days p {
   flex: 1;
+} */
+
+<<<<<<< HEAD
+=======
+.filter-stats {
+  overflow-x: auto;
 }
 
+>>>>>>> db15e10fd8b84a9674221914511cf3fe62678c88
 /* =================================================================== 
      * 15.0 :: Employee Task Manager
      * ===================================================================
@@ -2715,7 +2774,7 @@ article:after {
      */
 
 @media screen and (max-width: 1200px) {
-  .leave-filter {
+  /* .leave-filter {
     display: block;
   }
 
@@ -2725,7 +2784,7 @@ article:after {
 
   .filter-btn {
     float: none;
-  }
+  } */
 
   .left-content {
     padding: 10px !important;
@@ -2946,6 +3005,11 @@ article:after {
     width: 100%;
     text-align: center;
   }
+
+  .leave-form-box p {
+    /* padding: 10px 5px 0 0; */
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -2974,10 +3038,6 @@ article:after {
   .form-modal {
     overflow-y: scroll;
     margin: 10px auto;
-  }
-
-  .leave-form-box {
-    overflow-y: scroll;
   }
 
   .notification-box {
