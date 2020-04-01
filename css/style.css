@@ -23,7 +23,7 @@
  * 13.0 - Employee Dashboard
  * 14.0 - Employee Leave Dashboard
  * 15.0 - Employee Task Manager
- * 16.0 - Employee Overtime
+ * 16.0 - Employee Overtime / Admin Overtime
  * 17.0 - Modal
  * 0.0 - Clearing
  * 0.0 - Mobile CSS / Media Queries
@@ -1153,12 +1153,13 @@ span:after {
 }
 
 .side-nav {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100vh;
   background-color: #34444c;
   z-index: 1;
   display: none;
+  overflow-y: auto;
 }
 .side-nav.visible {
   display: block;
@@ -1356,7 +1357,6 @@ form.index-login {
 
 .error-message {
   /* display: none; */
-  max-width: 400px;
   margin: 0 auto;
   font-size: 14px;
 }
@@ -1392,6 +1392,10 @@ form.index-login {
   background: rgb(203, 217, 255);
   padding: 10px;
   width: 100%;
+}
+
+.ot-desc {
+  height: 50px;
 }
 
 /* Left Section End */
@@ -1916,7 +1920,7 @@ span.circle {
 }
 
 .filter-btn {
-  float: right;
+  float: left;
   min-width: 200px;
   margin-right: 20px;
   margin-top: 0;
@@ -2591,9 +2595,9 @@ button.play i {
 }
 
 /* =================================================================== 
-     * 16.0 :: Employee OT
-     * ===================================================================
-     */
+* 16.0 :: Employee OT / Admin OT
+* ===================================================================
+*/
 
 .ot-filter {
   display: flex;
@@ -2682,13 +2686,15 @@ article:after {
 }
 .popup .close {
   position: absolute;
-  top: 20px;
-  right: 30px;
+  top: 0;
+  right: 3px;
+  padding: 1px 1px 5px 1px;
   transition: all 200ms;
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
   color: #333;
+  z-index: 9999;
 }
 .popup .close:hover {
   color: #b2226f;
@@ -2875,6 +2881,12 @@ article:after {
   }
 }
 
+@media screen and (min-width: 1030px) {
+  .add-ot-modal {
+    width: 30%;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .tab-nav ul li span {
     display: none;
@@ -2905,6 +2917,19 @@ article:after {
 
   .left-content {
     margin-top: 20px;
+    overflow-y: auto;
+  }
+  .add-ot-modal .content {
+    overflow-y: auto;
+    padding: 15px;
+  }
+}
+
+/* mobile responsive landscape */
+@media screen and (max-width: 813px) {
+  .add-ot-modal {
+    width: 80% !important;
+    max-height: 350px;
     overflow-y: auto;
   }
 }
@@ -2956,6 +2981,10 @@ article:after {
   .noti-button {
     text-align: center;
   }
+  .ot-add button {
+    width: 100%;
+  }
+
   /* .small-notif-notification {
     right: 0px !important;
     position: unset !important;
@@ -3013,6 +3042,15 @@ article:after {
   }
   .settings-popup {
     width: 25% !important;
+  }
+
+  .add-ot-modal {
+    max-height: 450px;
+    overflow-y: auto;
+  }
+
+  .ot-btn-adm {
+    margin-top: 22px;
   }
 }
 
@@ -3075,6 +3113,10 @@ article:after {
   .leave-form-box p {
     /* padding: 10px 5px 0 0; */
     text-align: left;
+  }
+
+  .add-ot-box p {
+    font-size: 14px;
   }
 }
 
