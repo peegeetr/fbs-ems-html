@@ -973,9 +973,9 @@ form textarea {
 }
 
 /* =================================================================== 
-     * 4.0 :: Header
-     * ===================================================================
-     */
+* 4.0 :: Header
+* ===================================================================
+*/
 
 header {
   position: fixed;
@@ -1010,6 +1010,15 @@ header .user ul li {
   display: inline-flex;
   align-items: center;
   margin: 0 5px;
+}
+
+header .user-img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin: 0 5px;
+  object-fit: cover;
+  vertical-align: -10px;
 }
 
 header .user .fas {
@@ -1867,36 +1876,13 @@ span.circle {
   margin-top: 30px;
 }
 
+.leave-filter input[type="date"] {
+  min-width: 100px;
+}
+
 .leave-filter-button {
   margin-top: 11px;
 }
-
-/* .leave-filter {
-  display: flex;
-  padding: 20px;
-  border: 1px solid #ddd;
-}
-
-.leave-filter-box p {
-  font-size: 16px;
-}
-
-.leave-filter-box {
-  margin-right: 20px;
-  width: 100%;
-  flex: 1;
-}
-
-.leave-filter-box form input[type='date'] {
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.leave-filter-box form input {
-  margin: 0;
-  font-size: 16px;
-  padding: 6px;
-} */
 
 .input-res {
   width: 100%;
