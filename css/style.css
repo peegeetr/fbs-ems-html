@@ -2512,11 +2512,57 @@ button.play i {
 
 .task-stats {
   margin-top: 30px;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 /* MON EDIT MAR 31, 2020 */
+.task-stats .view-more {
+  position: relative;
+}
 
+.task-stats .view-more i {
+  float: right;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.task-stats .more-info {
+  background: #eee;
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  left: 98%;
+  display: none;
+  color: #707070;
+}
+
+.task-stats .more-info td {
+  white-space: nowrap;
+}
+.more-info {
+  padding: 10px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.more-info ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  border-bottom: 1px solid #ccc;
+}
+.more-info ul:last-child {
+  border: none;
+}
+.more-info ul li:first-child {
+  font-weight: bold;
+}
+.more-info ul li {
+  font-size: 14px;
+}
+
+.more-info-open {
+  display: block !important;
+}
 @media screen and (max-width: 414px) {
   .task-stats table,
   .task-stats thead,
@@ -2575,18 +2621,28 @@ button.play i {
   .task-stats td:nth-of-type(4):before {
     content: "Time Spent";
   }
+
   .task-stats td:nth-of-type(5):before {
-    content: "Goal";
+    content: "Active";
   }
 
-  .task-stats td:nth-of-type(6):before {
-    content: "Remarks";
+  .task-stats .more-info {
+    left: 35%;
+    top: 25px;
   }
-  .task-stats td:nth-of-type(7):before {
-    content: "Date Create";
+
+  .task-title {
+    display: none;
   }
-  .task-stats td:nth-of-type(8):before {
-    content: "Active";
+  .task-counter-time p {
+    font-size: 30px;
+  }
+  .task-counter-icon li {
+    margin: 0 10px;
+  }
+
+  .task-counter-icon button i {
+    font-size: 40px;
   }
 }
 
