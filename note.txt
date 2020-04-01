@@ -1,0 +1,33 @@
+     +++++++++++++ PARA MAG OPEN ANG MODAL SA ADD OT   +++++++++++++++++++++ 
+     <button class="btn-purple ot-btn" onclick="window.location.href='#add-ot'" >ADD O.T</button>
+     +++++++++++++++++++++++++++++++++++++++++++
+ 
+
+ +++++++++++++++++++++++Filter Menu++++++++++++++++++++++++++++++++++++
+   <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <form action="">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="ot-filter mb--10">
+                        <input type="date" class="nm" />
+                        <button type="submit" class="btn-purple">
+                          Filter
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="t-right ot-add">
+                  <button
+                    class="btn-purple ot-btn"
+                    onclick="window.location.href='#add-ot'"
+                  >
+                    ADD O.T
+                  </button>
+                </div>
+              </div>
+            </div>
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

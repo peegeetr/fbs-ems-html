@@ -2331,7 +2331,7 @@ button.add-user-btn i {
      * ===================================================================
      */
 
-.leave-counter button {
+.overtime button {
   display: inline-block;
 }
 
@@ -2515,7 +2515,49 @@ button.play i {
   /* overflow: auto; */
 }
 
-/* MON EDIT MAR 31, 2020 */
+/* MON EDIT MAR 31, 2020 - APR 1, 2020*/
+
+/* emp overtime manager */
+.form-overtime-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.form-overtime-wrapper a {
+  align-self: center;
+  margin-top: 0;
+}
+
+.form-overtime-wrapper a i {
+  background-color: #da28b5;
+  padding: 5px;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+.form-overtime-wrapper a:hover {
+  color: #da28b5;
+}
+
+.form-overtime-wrapper form {
+  display: flex;
+  align-items: center;
+}
+
+.form-overtime-wrapper form input {
+  margin-right: 10px;
+
+  margin-bottom: 0;
+}
+.form-overtime-wrapper form button {
+  align-self: center;
+  width: 130px;
+  margin-top: 0;
+}
+
+/* emp task manager */
 .task-stats .view-more {
   position: relative;
 }
@@ -2565,27 +2607,36 @@ button.play i {
 }
 @media screen and (max-width: 414px) {
   .task-stats table,
+  .overtime table,
   .task-stats thead,
+  .overtime thead,
   .task-stats tbody,
+  .overtime tbody,
   .task-stats th,
+  .overtime th,
   .task-stats td,
-  .task-stats tr {
+  .overtime td,
+  .task-stats tr,
+  .overtime tr {
     display: block;
   }
 
-  .task-stats thead tr {
+  .task-stats thead tr,
+  .overtime thead tr {
     position: absolute;
     top: -9999px;
     left: -9999px;
   }
 
-  .task-stats tr:nth-child(odd) {
+  .task-stats tr:nth-child(odd),
+  .overtime tr:nth-child(odd) {
     background-color: #808080;
     margin: 20px 0;
     color: #fff;
   }
 
-  .task-stats td {
+  .task-stats td,
+  .overtime td {
     border: none;
     border-bottom: 1px solid #d6d6d6;
     position: relative;
@@ -2594,11 +2645,13 @@ button.play i {
     padding: 8px 8px 8px 50%;
   }
 
-  .task-stats td:last-child {
+  .task-stats td:last-child,
+  .overtime td:last-child {
     border: none;
   }
 
-  .task-stats td:before {
+  .task-stats td:before,
+  .overtime td:before {
     position: absolute;
     top: 6px;
     left: 6px;
@@ -2626,6 +2679,22 @@ button.play i {
     content: "Active";
   }
 
+  .overtime td:nth-of-type(1):before {
+    content: "Date";
+  }
+
+  .overtime td:nth-of-type(2):before {
+    content: "Time Spent";
+  }
+  .overtime td:nth-of-type(3):before {
+    content: "Remarks";
+  }
+
+  .overtime td:nth-of-type(4):before {
+    content: "Status";
+  }
+
+  /* THIS IS NOT FOR TABLE STYLING */
   .task-stats .more-info {
     left: 35%;
     top: 25px;
