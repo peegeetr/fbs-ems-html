@@ -2521,12 +2521,15 @@ button.play i {
 .form-overtime-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
+  position: relative;
 }
 
 .form-overtime-wrapper a {
   align-self: center;
   margin-top: 0;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .form-overtime-wrapper a i {
@@ -2539,6 +2542,17 @@ button.play i {
 
 .form-overtime-wrapper a:hover {
   color: #da28b5;
+}
+
+.filter-option {
+  position: absolute;
+  display: flex;
+  top: 50px;
+  z-index: 3;
+}
+
+.filter-option label {
+  padding-right: 10px;
 }
 
 .form-overtime-wrapper form {
@@ -2555,6 +2569,19 @@ button.play i {
   align-self: center;
   width: 130px;
   margin-top: 0;
+}
+
+.filter-toggle-menu {
+  text-align: right;
+  margin-right: 10px;
+  margin-bottom: 15px;
+
+  cursor: pointer;
+  display: none;
+}
+
+.filter-toggle-menu i {
+  font-size: 25px;
 }
 
 /* emp task manager */
@@ -2602,41 +2629,49 @@ button.play i {
   font-size: 14px;
 }
 
-.more-info-open {
+.more-info-open,
+.open {
   display: block !important;
 }
+
+.leave-filter-a form {
+  display: flex;
+}
+
+.leave-filter-a form .form-group {
+  margin-right: 10px;
+}
+
+.leave-filter-a form button {
+  align-self: center;
+}
+
+.leave-counter {
+  position: relative;
+}
+
 @media screen and (max-width: 414px) {
-  .task-stats table,
-  .overtime table,
-  .task-stats thead,
-  .overtime thead,
-  .task-stats tbody,
-  .overtime tbody,
-  .task-stats th,
-  .overtime th,
-  .task-stats td,
-  .overtime td,
-  .task-stats tr,
-  .overtime tr {
+  .responsive-tbl,
+  .responsive-tbl thead,
+  .responsive-tbl tbody,
+  .responsive-tbl tbody,
+  .responsive-tbl td,
+  .responsive-tbl tr {
     display: block;
   }
 
-  .task-stats thead tr,
-  .overtime thead tr {
+  .responsive-tbl thead tr {
     position: absolute;
     top: -9999px;
     left: -9999px;
   }
-
-  .task-stats tr:nth-child(odd),
-  .overtime tr:nth-child(odd) {
+  .responsive-tbl tr:nth-child(odd) {
     background-color: #808080;
     margin: 20px 0;
     color: #fff;
   }
 
-  .task-stats td,
-  .overtime td {
+  .responsive-tbl td {
     border: none;
     border-bottom: 1px solid #d6d6d6;
     position: relative;
@@ -2645,13 +2680,11 @@ button.play i {
     padding: 8px 8px 8px 50%;
   }
 
-  .task-stats td:last-child,
-  .overtime td:last-child {
+  .responsive-tbl td:last-child {
     border: none;
   }
 
-  .task-stats td:before,
-  .overtime td:before {
+  .responsive-tbl td:before {
     position: absolute;
     top: 6px;
     left: 6px;
@@ -2663,18 +2696,15 @@ button.play i {
   .task-stats td:nth-of-type(1):before {
     content: "Client";
   }
-
   .task-stats td:nth-of-type(2):before {
     content: "Task Name";
   }
   .task-stats td:nth-of-type(3):before {
     content: "Description";
   }
-
   .task-stats td:nth-of-type(4):before {
     content: "Time Spent";
   }
-
   .task-stats td:nth-of-type(5):before {
     content: "Active";
   }
@@ -2682,15 +2712,35 @@ button.play i {
   .overtime td:nth-of-type(1):before {
     content: "Date";
   }
-
   .overtime td:nth-of-type(2):before {
     content: "Time Spent";
   }
   .overtime td:nth-of-type(3):before {
     content: "Remarks";
   }
-
   .overtime td:nth-of-type(4):before {
+    content: "Status";
+  }
+
+  .leave-summary td:nth-of-type(1):before {
+    content: "First Name";
+  }
+  .leave-summary td:nth-of-type(2):before {
+    content: "Last Name";
+  }
+  .leave-summary td:nth-of-type(3):before {
+    content: "Department";
+  }
+  .leave-summary td:nth-of-type(4):before {
+    content: "Date";
+  }
+  .leave-summary td:nth-of-type(5):before {
+    content: "Hours";
+  }
+  .leave-summary td:nth-of-type(6):before {
+    content: "Description";
+  }
+  .leave-summary td:nth-of-type(7):before {
     content: "Status";
   }
 
@@ -2712,6 +2762,63 @@ button.play i {
 
   .task-counter-icon button i {
     font-size: 40px;
+  }
+
+  .form-overtime-box {
+    width: 55%;
+    display: block;
+    position: absolute;
+    right: 20px;
+    z-index: 2;
+  }
+
+  .form-overtime-wrapper {
+    margin-bottom: 10px;
+  }
+
+  .form-overtime-box .form-overtime {
+    padding: 20px 10px;
+    background-color: #eee;
+    flex-direction: column;
+    display: none;
+  }
+
+  .form-overtime-box .form-overtime input {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .form-overtime-box .form-overtime .filter-option {
+    width: 100%;
+    position: static;
+    display: block;
+  }
+
+  .form-overtime-box .form-overtime .filter-option label {
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .form-overtime-box .form-overtime .filter-option label:last-child {
+    margin-bottom: 10px;
+  }
+
+  .filter-toggle-menu {
+    display: block;
+  }
+
+  .leave-filter-a .form-admin-overtime {
+    display: none;
+  }
+
+  .leave-counter form {
+    position: absolute;
+    background-color: #eee;
+    padding: 10px;
+    flex-direction: column;
+    z-index: 2;
+    width: 70%;
+    right: 20px;
   }
 }
 

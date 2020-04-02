@@ -57,3 +57,46 @@ function removeOpen() {
     more.classList.remove("more-info-open");
   });
 }
+
+//Mon Edit apr 2
+
+const icoFilter = document.querySelector("#ico-filter");
+const formOvertime = document.querySelector(".form-overtime");
+const filterBar = document.querySelector("#filter-bar");
+const inputs = document.querySelectorAll(".filter-option input");
+const keyword = document.querySelector("#keyword");
+const status = document.querySelector("#status");
+const date = document.querySelector("#date");
+
+icoFilter.addEventListener("click", e => {
+  e.preventDefault();
+  icoFilter.nextElementSibling.classList.toggle("open");
+});
+
+function removeChecked() {
+  inputs.forEach(function(input) {
+    input.removeAttribute("checked");
+  });
+}
+function checkInput() {
+  if (date.hasAttribute("checked")) {
+    filterBar.setAttribute("type", "date");
+  } else if (status.hasAttribute("checked")) {
+    filterBar.setAttribute("type", "text");
+    filterBar.setAttribute("placeholder", "Type Status");
+  } else if (keyword.hasAttribute("checked")) {
+    filterBar.setAttribute("type", "text");
+    filterBar.setAttribute("placeholder", "Type Keyword");
+  }
+}
+
+selectFilter();
+function selectFilter() {
+  inputs.forEach(function(input) {
+    input.addEventListener("click", () => {
+      removeChecked();
+      input.setAttribute("checked", "");
+      checkInput();
+    });
+  });
+}
