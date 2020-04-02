@@ -610,7 +610,7 @@ form textarea {
 .alert-msg {
   font-size: 14px;
   color: rgb(255, 0, 0);
-  display: none;
+  /* display: none; */
 }
 
 .err-display {
