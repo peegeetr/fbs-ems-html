@@ -97,38 +97,56 @@
     </div>
     <div class="main-content">
       <div class="content-wrap">
-        <h3 class="mb--60">
+        <h3 class="mb--30">
           EMPLOYEE OVERTIME COUNTER <i class="fas fa-clock"></i>
         </h3>
-        <div class="leave-counter ">
+        <div class="ot-counter mb--30">
           <div class="employee-section">
             <div class="employee">
-              
-              <div class="leave-filter-a">
-                <div class="filter-toggle-menu" id="ico-filter">
-                  <i class="fa fa-ellipsis-v" ></i>
+              <p class="p-title">Overtime Filter</p>
+              <div class="">
+                <div class="row">
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <div class="ot-filter-box">
+                      <label for="date">From</label>
+                        <input type="date" class="input-res" />
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <div class="ot-filter-box">
+                      <label for="date">to</label>
+                        <input type="date" class="input-res" />
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="ot-filter-box">
+                      <label for="status">Status</label>
+                      <div>
+                        <select name="" id="">
+                          <option value="0" disabled selected>All</option>
+                          <option value="1">Approved</option>
+                          <option value="2">Declined</option>
+                          <option value="3">Pending</option>
+                          <option value="4">Cancelled</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                      <button class="btn-purple ot-btn-adm input-res" type="submit">
+                        Filter
+                      </button>
+                  </div>
                 </div>
-                <form action="" class="form-admin-overtime">
-                  <div class="form-group">
-                    <label for="">Start Date</label>
-                    <input type="date">
-                  </div>
-                  <div class="form-group">
-                    <label for="">End Date</label>
-                    <input type="date">
-                  </div>
-                  <button class="btn-purple"> Filter</button>
-                </form>
               </div>
             </div>
           </div>
         </div>
-        <div class="leave-sum-content mb--50">
-          <div class="leave-summary mb--10">
+        <div class="ot-sum-content mb--50">
+          <div class="ot-summary mb--10">
             <p class="p-title">Overtime Request</p>
-             
-            <table class="responsive-tbl">
-              <thead>
+            <div class="overflow-x">
+              <table>
               <tr>
                 <th>First Name</th>
                 <th>Last Name</th>
@@ -161,6 +179,7 @@
               </tr>
             </tbody>
             </table>
+            </div>
           </div>
         <!-- <div class="leave-status mb--30">
           <div class="p-title">
