@@ -2371,6 +2371,10 @@ button.add-user-btn i {
   font-weight: bold;
 }
 
+.reason-input {
+  height: 38px;
+}
+
 .leave-supervisor input[type="text"] {
   background: #eef1f7;
 }
