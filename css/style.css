@@ -2524,6 +2524,7 @@ button.play i {
   margin-top: 0;
   font-size: 14px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .form-overtime-wrapper a i {
@@ -2552,11 +2553,11 @@ button.play i {
 .form-overtime-wrapper form {
   display: flex;
   align-items: center;
+  width: 300px;
 }
 
 .form-overtime-wrapper form input {
   margin-right: 10px;
-
   margin-bottom: 0;
 }
 .form-overtime-wrapper form button {
@@ -2628,6 +2629,16 @@ button.play i {
   display: block !important;
 }
 
+.leave-counter {
+  position: relative;
+}
+
+.ot-status {
+  margin-bottom: 0;
+  margin-right: 10px;
+  display: none;
+}
+
 .leave-filter-a form {
   display: flex;
 }
@@ -2643,7 +2654,6 @@ button.play i {
 .leave-counter {
   position: relative;
 }
-
 @media screen and (max-width: 414px) {
   .responsive-tbl,
   .responsive-tbl thead,
@@ -2716,32 +2726,32 @@ button.play i {
     content: "Status";
   }
 
-  .leave-summary td:nth-of-type(1):before {
+  .ot-summary td:nth-of-type(1):before {
     content: "First Name";
   }
-  .leave-summary td:nth-of-type(2):before {
+  .ot-summary td:nth-of-type(2):before {
     content: "Last Name";
   }
-  .leave-summary td:nth-of-type(3):before {
+  .ot-summary td:nth-of-type(3):before {
     content: "Department";
   }
-  .leave-summary td:nth-of-type(4):before {
+  .ot-summary td:nth-of-type(4):before {
     content: "Date";
   }
-  .leave-summary td:nth-of-type(5):before {
+  .ot-summary td:nth-of-type(5):before {
     content: "Hours";
   }
-  .leave-summary td:nth-of-type(6):before {
+  .ot-summary td:nth-of-type(6):before {
     content: "Description";
   }
-  .leave-summary td:nth-of-type(7):before {
+  .ot-summary td:nth-of-type(7):before {
     content: "Status";
   }
 
   /* THIS IS NOT FOR TABLE STYLING */
   .task-stats .more-info {
     left: 35%;
-    top: 25px;
+    top: 40px;
   }
 
   .task-title {
@@ -2775,9 +2785,11 @@ button.play i {
     background-color: #eee;
     flex-direction: column;
     display: none;
+    width: 100%;
   }
 
-  .form-overtime-box .form-overtime input {
+  .form-overtime-box .form-overtime input,
+  .form-overtime-box .form-overtime select {
     margin-bottom: 10px;
     margin-right: 0;
   }

@@ -93,14 +93,18 @@
         </h3>
         <div class="employee-dashboard">
           <div class="form-overtime-wrapper">
-            <a href=""><i class="fa fa-plus"></i> New</a>
+            <a onclick="window.location.href='#add-ot'"><i class="fa fa-plus"></i> New</a>
             <div class="form-overtime-box">
               <div class="filter-toggle-menu" id="ico-filter">
                 <i class="fa fa-ellipsis-v"></i>
               </div>
               <form action="" class="form-overtime">
                 <input type="date" id="filter-bar" />
-
+                <select class="ot-status" id="">
+                  <option value="pending">Pending</option>
+                  <option value="approve">Approve</option>
+                  <option value="decline">Decline</option>
+                </select>
                 <div class="filter-option">
                   <input
                     type="radio"

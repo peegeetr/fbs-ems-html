@@ -41,6 +41,7 @@ icoMore.forEach(ico => {
     if (ico.nextElementSibling.classList.contains("more-info-open")) {
       ico.nextElementSibling.classList.remove("more-info-open");
     } else {
+      removeOpen();
       ico.nextElementSibling.classList.add("more-info-open");
     }
   });
@@ -67,6 +68,7 @@ const inputs = document.querySelectorAll(".filter-option input");
 const keyword = document.querySelector("#keyword");
 const status = document.querySelector("#status");
 const date = document.querySelector("#date");
+const otStatus = document.querySelector(".ot-status");
 
 icoFilter.addEventListener("click", e => {
   e.preventDefault();
@@ -81,11 +83,15 @@ function removeChecked() {
 function checkInput() {
   if (date.hasAttribute("checked")) {
     filterBar.setAttribute("type", "date");
+    filterBar.style.display = "block";
+    otStatus.style.display = "none";
   } else if (status.hasAttribute("checked")) {
-    filterBar.setAttribute("type", "text");
-    filterBar.setAttribute("placeholder", "Type Status");
+    filterBar.style.display = "none";
+    otStatus.style.display = "block";
   } else if (keyword.hasAttribute("checked")) {
     filterBar.setAttribute("type", "text");
+    filterBar.style.display = "block";
+    otStatus.style.display = "none";
     filterBar.setAttribute("placeholder", "Type Keyword");
   }
 }
