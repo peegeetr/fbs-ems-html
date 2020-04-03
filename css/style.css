@@ -2512,6 +2512,24 @@ button.play i {
 /* MON EDIT MAR 31, 2020 - APR 1, 2020*/
 
 /* emp overtime manager */
+
+.modal-popup {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.modal-popup i {
+  background-color: #da28b5;
+  padding: 5px;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
 .form-overtime-wrapper {
   display: flex;
   justify-content: space-between;
@@ -2629,6 +2647,21 @@ button.play i {
   display: block !important;
 }
 
+.form-group label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.form-admin-task {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: flex-end;
+}
+
+.form-admin-task .form-group {
+  margin-right: 10px;
+}
+
 .leave-counter {
   position: relative;
 }
@@ -2647,13 +2680,99 @@ button.play i {
   margin-right: 10px;
 }
 
-.leave-filter-a form button {
-  align-self: center;
-}
-
 .leave-counter {
   position: relative;
 }
+
+/* MODAL STYLE */
+.modal-new {
+  position: fixed;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.modal-new .modal-box {
+  max-width: 450px;
+  margin: 0 15px;
+  background-color: #fff;
+  padding: 20px 15px;
+}
+
+.modal-new .modal-box .modal-head {
+  margin-bottom: 10px;
+}
+
+.modal-new .modal-box .modal-head a {
+  float: right;
+  transform: translateY(-40px) rotate(45deg);
+}
+.modal-new .modal-box .modal-head h2 {
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.modal-new .modal-box .modal-body .form-group {
+  margin-bottom: 5px;
+}
+.modal-new .modal-box .modal-body .form-group label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.modal-new .modal-box .modal-body .form-group .d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.modal-new .modal-box .modal-body .form-group .d-flex span {
+  padding: 0 20px;
+}
+.modal-new .modal-box .modal-footer {
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+}
+
+.modal-new .modal-box .modal-footer a {
+  margin-left: 10px;
+  /* display: inline-block; */
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  background: #ccc;
+  color: #fff;
+}
+
+.responsive-form {
+  margin-bottom: 20px;
+}
+.responsive-form .form-group {
+  margin-bottom: 0;
+}
+
+.responsive-form .form-group input,
+.responsive-form .form-group select {
+  margin-bottom: 0;
+}
+
+.responsive-form button {
+  margin-top: 0;
+  align-self: flex-end;
+  /* margin-bottom: 10px; */
+  margin-left: 10px;
+}
+
 @media screen and (max-width: 414px) {
   .responsive-tbl,
   .responsive-tbl thead,
@@ -2748,7 +2867,87 @@ button.play i {
     content: "Status";
   }
 
+  .admin-emp-task td:nth-of-type(1):before {
+    content: "Employee";
+  }
+
+  .admin-emp-task td:nth-of-type(2):before {
+    content: "Client";
+  }
+
+  .admin-emp-task td:nth-of-type(3):before {
+    content: "Task";
+  }
+  .admin-emp-task td:nth-of-type(4):before {
+    content: "Description";
+  }
+
+  .admin-emp-task td:nth-of-type(5):before {
+    content: "Time Spent";
+  }
+
+  .admin-emp-task td:nth-of-type(6):before {
+    content: "Start";
+  }
+  .admin-emp-task td:nth-of-type(7):before {
+    content: "End";
+  }
+
+  .leave-counter td:nth-of-type(1):before {
+    content: "Status";
+  }
+
+  .leave-counter td:nth-of-type(2):before {
+    content: "Type";
+  }
+
+  .leave-counter td:nth-of-type(3):before {
+    content: "Reason";
+  }
+
+  .leave-counter td:nth-of-type(4):before {
+    content: "Start";
+  }
+  .leave-counter td:nth-of-type(5):before {
+    content: "End";
+  }
+
+  .leave-counter td:nth-of-type(6):before {
+    content: "# of days";
+  }
+
+  .form-wrapper {
+    display: relative;
+  }
+
+  .responsive-form {
+    position: absolute;
+    right: 20px;
+    width: 60%;
+    background-color: #eee;
+    padding: 10px;
+    z-index: 2;
+    display: none;
+  }
+
+  .responsive-form .form-group select {
+    margin: 0;
+  }
+
+  .responsive-form .form-group {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+
+  .responsive-form button {
+    margin-left: 0;
+  }
+
   /* THIS IS NOT FOR TABLE STYLING */
+  .form-admin-task {
+    flex-direction: column;
+  }
+
   .task-stats .more-info {
     left: 35%;
     top: 40px;

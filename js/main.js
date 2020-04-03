@@ -70,10 +70,12 @@ const status = document.querySelector("#status");
 const date = document.querySelector("#date");
 const otStatus = document.querySelector(".ot-status");
 
-icoFilter.addEventListener("click", e => {
-  e.preventDefault();
-  icoFilter.nextElementSibling.classList.toggle("open");
-});
+if (icoFilter) {
+  icoFilter.addEventListener("click", e => {
+    e.preventDefault();
+    icoFilter.nextElementSibling.classList.toggle("open");
+  });
+}
 
 function removeChecked() {
   inputs.forEach(function(input) {
@@ -105,4 +107,39 @@ function selectFilter() {
       checkInput();
     });
   });
+}
+
+//MODAL
+
+//const empTaskAdd = document.querySelector("#emp-task-add");
+const modalPopup = document.querySelectorAll(".modal-popup");
+const modalNew = document.querySelector(".modal-new");
+const modalClose = document.querySelector(".modal-close");
+
+modalPopup.forEach(modal => {
+  modal.addEventListener("click", openModal);
+});
+
+if (modalNew) {
+  modalNew.addEventListener("click", e => {
+    if (e.target.classList.contains("modal-new")) {
+      modalNew.style.display = "none";
+      e.stopPropagation();
+    }
+  });
+}
+
+if (modalClose) {
+  modalClose.addEventListener("click", closeModal);
+}
+
+function closeModal(e) {
+  e.target.parentElement.parentElement.parentElement.parentElement.style.display =
+    "none";
+}
+
+function openModal(e) {
+  e.preventDefault();
+  const openModal = document.querySelector(`#modal-${e.target.id}`);
+  openModal.style.display = "flex";
 }

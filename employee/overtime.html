@@ -93,7 +93,9 @@
         </h3>
         <div class="employee-dashboard">
           <div class="form-overtime-wrapper">
-            <a onclick="window.location.href='#add-ot'"><i class="fa fa-plus"></i> New</a>
+            <a id="add-emp-overtime" class="modal-popup"
+              ><i class="fa fa-plus"></i> File New Overtime</a
+            >
             <div class="form-overtime-box">
               <div class="filter-toggle-menu" id="ico-filter">
                 <i class="fa fa-ellipsis-v"></i>
@@ -185,89 +187,70 @@
         </div>
       </div>
     </div>
-    <div id="add-ot" class="overlay">
-      <div class="popup add-ot-modal">
-        <a class="close" href="#process">&times;</a>
-        <div class="content">
-          <div class="add-ot">
-            <div class="add-ot-box">
-              <div class="error-message mb--20">
-                <div class="warning">
-                  <i class="fas fa-exclamation"></i>
-                  <div class="warning-text">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <form action="">
-                <div class="add-ot-form">
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                      <div>
-                        <p>Date<span class="color--red">*</span></p>
-                        <input type="date" class="input-res err-border-red" />
-                        <div class="alert-msg mb--10">Required</div>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                      <div>
-                        <p>Hour(s)<span class="color--red">*</span></p>
-                        <input type="text" name="name" class="err-border-red" />
-                        <div class="alert-msg mb--20">Required</div>
-                      </div>
-                    </div>
-                  </div>
 
-                    <div class="mb--10">
-                      <p>
-                        DETAILED EXPLANATION WHY OVERTIME IS REQUIRED<span
-                          class="color--red"
-                          >*</span
-                        >
-                      </p>
-                      <textarea
-                        name=""
-                        id=""
-                        cols="30"
-                        rows="10"
-                        class="err-border-red"
-                      ></textarea>
-                      <div class="alert-msg mb--10">Required</div>
-                    </div>
-                    <div class="save-settings mb--30">
-                      <button
-                        type="submit"
-                        onclick="window.location.href = '#pop-process-success';"
-                        class="btn-purple"
-                      >
-                    </p>
-                    <textarea
-                      name=""
-                      id=""
-                      cols="30"
-                      rows="10"
-                      class="err-border-red ot-desc"
-                    ></textarea>
-                    <div class="alert-msg mb--10">Required</div>
-                  </div>
-                  <div class="save-settings mb--10">
-                    <button
-                      type="submit"
-                      onclick="window.location.href = '#pop-process-success';"
-                      class="btn-purple"
-                    >
-                      ADD OVERTIME
-                    </button>
-                  </div>
-                </div>
-              </form>
+    <section class="modal-new" id="modal-add-emp-overtime">
+      <div class="modal-box">
+        <div class="modal-head">
+          <h2>Overtime Time</h2>
+          <a href="#" class="modal-close"><i class="fa fa-plus"></i> </a>
+        </div>
+
+        <div class="modal-body">
+          <form action="">
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input type="date" />
             </div>
-          </div>
+
+            <div class="form-group">
+              <label for="clients">Client Name</label>
+              <select name="clients">
+                <option value="0" disabled selected>-</option>
+                <option value="1">Avant Advisory</option>
+                <option value="2">Balai Inn</option>
+                <option value="3">Catalyst Community</option>
+                <option value="4">Chamber of Tourism</option>
+                <option value="5">Eddie Wouldgrow</option>
+                <option value="6">FBS</option>
+                <option value="7">FCA</option>
+                <option value="8">FTW</option>
+                <option value="9">FWC</option>
+                <option value="10">FCA</option>
+                <option value="11">Immersion Program</option>
+                <option value="12">Jardin De Julieta Resort</option>
+                <option value="13">Jesus Christ's CEO</option>
+                <option value="14">Maja Thai Massage</option>
+                <option value="15">Over the Top Marketing</option>
+                <option value="16">PFM</option>
+                <option value="17">Phix Genomics</option>
+                <option value="18">Pyrobuster Enterprise</option>
+                <option value="19">REMOTELINK USA</option>
+                <option value="20">San Pablo Colleges</option>
+                <option value="21">Social Economic Enterprise</option>
+                <option value="22">Taza Mia Coffee</option>
+                <option value="23">Two Miles</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="goal">Time Spent</label>
+              <input type="text" />
+            </div>
+
+            <div class="form-group">
+              <label for="description">Description</label>
+              <textarea name="description" id="" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="modal-footer">
+              <button class="btn btn-purple">
+                <i class="fa fa-plus"></i> Add Overtime
+              </button>
+            </div>
+          </form>
         </div>
       </div>
-    </div>
+    </section>
     <script src="../js/main.js"></script>
   </body>
 </html>

@@ -98,115 +98,124 @@
         </h3>
         <div class="task-manager">
           <div class="task-manager-wrap">
-            <p class="p-title">Completed Task</p>
-            <div class="task-manager-search-box box-shadow mb--30">
-              <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-12 mb--10">
-                  <p>All Clients</p>
-                  <select name="" id="">
+            <div class="form-admin-task-wrapper form-wrapper">
+              <div class="filter-toggle-menu" id="ico-filter">
+                <i class="fa fa-ellipsis-v"></i>
+              </div>
+
+              <form action="" class="form-admin-task responsive-form">
+                <div class="form-group">
+                  <label for="">Clients</label>
+                  <select name="clients">
                     <option value="0" disabled selected>-</option>
-                    <option value="1">Avant Advisory</option>
-                    <option value="2">Balai Inn</option>
-                    <option value="3">Catalyst Community</option>
-                    <option value="4">Chamber of Tourism</option>
-                    <option value="5">Eddie Wouldgrow</option>
-                    <option value="6">FBS</option>
-                    <option value="7">FCA</option>
-                    <option value="8">FTW</option>
-                    <option value="9">FWC</option>
-                    <option value="10">FCA</option>
-                    <option value="11">Immersion Program</option>
-                    <option value="12">Jardin De Julieta Resort</option>
-                    <option value="13">Jesus Christ's CEO</option>
-                    <option value="14">Maja Thai Massage</option>
-                    <option value="15">Over the Top Marketing</option>
-                    <option value="16">PFM</option>
-                    <option value="17">Phix Genomics</option>
-                    <option value="18">Pyrobuster Enterprise</option>
-                    <option value="19">REMOTELINK USA</option>
-                    <option value="20">San Pablo Colleges</option>
-                    <option value="21">Social Economic Enterprise</option>
-                    <option value="22">Taza Mia Coffee</option>
-                    <option value="23">Two Miles</option>
+                    <option value="avant-advisory">Avant Advisory</option>
+                    <option value="balai-inn">Balai Inn</option>
+                    <option value="catalyst-community"
+                      >Catalyst Community</option
+                    >
+                    <option value="picc">Chamber of Tourism</option>
+                    <option value="eddie-wouldgrow">Eddie Wouldgrow</option>
+                    <option value="fbs">FBS</option>
+                    <option value="fca">FCA</option>
+                    <option value="ftw">FTW</option>
+                    <option value="fwc">FWC</option>
+                    <option value="fca">FCA</option>
+                    <option value="immersion">Immersion Program</option>
+                    <option value="jardin-de-julita"
+                      >Jardin De Julieta Resort</option
+                    >
+                    <option value="jesus-christ-ceo">Jesus Christ's CEO</option>
+                    <option value="maja-thai">Maja Thai Massage</option>
+                    <option value="oot">Over the Top Marketing</option>
+                    <option value="prm">PFM</option>
+                    <option value="phixgenomics">Phix Genomics</option>
+                    <option value="pyrobuster">Pyrobuster Enterprise</option>
+                    <option value="remotelink-us">REMOTELINK USA</option>
+                    <option value="sam-pablo-colleges"
+                      >San Pablo Colleges</option
+                    >
+                    <option value="see">Social Economic Enterprise</option>
+                    <option value="taza-mia">Taza Mia Coffee</option>
+                    <option value="twomiles">Two Miles</option>
                   </select>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-12">
-                  <p>From</p>
-                  <input type="date" name="" id="" />
+
+                <div class="form-group">
+                  <label for="">Date Start</label>
+                  <input type="date" />
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-12">
-                  <p>To</p>
-                  <input type="date" name="" id="" />
+
+                <div class="form-group">
+                  <label for="">Date End</label>
+                  <input type="date" />
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-12">
-                  <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                      <div class="admin-task-button">
-                        <button class="sort-btn btn-purple" type="submit">
-                          <span>Filter</span> <i class="fas fa-filter"></i>
-                        </button>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
-                      <div class="admin-task-button">
-                        <button class="export-btn btn-purple">
-                          <a href="#"
-                            >Export <i class="fas fa-file-export"></i
-                          ></a>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
+                <button class="btn-purple">
+                  <i class="fas fa-filter"></i> Filter
+                </button>
+                <button class="btn-purple">
+                  <i class="fas fa-filter"></i> Export
+                </button>
+              </form>
             </div>
-            <div class="employee-list-box">
-              <table>
-                <tr>
-                  <th>Client Name</th>
-                  <th>Task Name</th>
-                  <th>Description</th>
-                  <th>Time Spent</th>
-                  <th>Employee</th>
-                  <th>Date Created</th>
-                  <th>Date Completed</th>
-                </tr>
-                <tr>
-                  <td>Two Miles</td>
-                  <td>Two Miles Website</td>
-                  <td>Developing Two Miles website</td>
-                  <td>00:00:00</td>
-                  <td>Catubay</td>
-                  <td>2020-01-23</td>
-                  <td>2020-01-24</td>
-                </tr>
-                <tr>
-                  <td>Two Miles</td>
-                  <td>Two Miles Website</td>
-                  <td>Developing Two Miles website</td>
-                  <td>00:00:00</td>
-                  <td>Catubay</td>
-                  <td>2020-01-23</td>
-                  <td>2020-01-24</td>
-                </tr>
-                <tr>
-                  <td>Two Miles</td>
-                  <td>Two Miles Website</td>
-                  <td>Developing Two Miles website</td>
-                  <td>00:00:00</td>
-                  <td>Catubay</td>
-                  <td>2020-01-23</td>
-                  <td>2020-01-24</td>
-                </tr>
-                <tr>
-                  <td>Two Miles</td>
-                  <td>Two Miles Website</td>
-                  <td>Developing Two Miles website</td>
-                  <td>00:00:00</td>
-                  <td>Catubay</td>
-                  <td>2020-01-23</td>
-                  <td>2020-01-24</td>
-                </tr>
+            <div class="employee-list-box admin-emp-task">
+              <table class="responsive-tbl">
+                <thead>
+                  <tr>
+                    <th>Employee</th>
+                    <th>Client Name</th>
+                    <th>Task Name</th>
+                    <th>Description</th>
+                    <th>Time Spent</th>
+                    <th>Date Created</th>
+                    <th>Date Completed</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Catubay</td>
+                    <td>Two Miles</td>
+                    <td>Two Miles Website</td>
+                    <td>Developing Two Miles website</td>
+                    <td>00:00:00</td>
+
+                    <td>2020-01-23</td>
+                    <td>2020-01-24</td>
+                  </tr>
+
+                  <tr>
+                    <td>Catubay</td>
+                    <td>Two Miles</td>
+                    <td>Two Miles Website</td>
+                    <td>Developing Two Miles website</td>
+                    <td>00:00:00</td>
+
+                    <td>2020-01-23</td>
+                    <td>2020-01-24</td>
+                  </tr>
+
+                  <tr>
+                    <td>Catubay</td>
+                    <td>Two Miles</td>
+                    <td>Two Miles Website</td>
+                    <td>Developing Two Miles website</td>
+                    <td>00:00:00</td>
+
+                    <td>2020-01-23</td>
+                    <td>2020-01-24</td>
+                  </tr>
+
+                  <tr>
+                    <td>Catubay</td>
+                    <td>Two Miles</td>
+                    <td>Two Miles Website</td>
+                    <td>Developing Two Miles website</td>
+                    <td>00:00:00</td>
+
+                    <td>2020-01-23</td>
+                    <td>2020-01-24</td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>
