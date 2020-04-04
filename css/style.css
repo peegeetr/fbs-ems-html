@@ -3025,6 +3025,24 @@ button.play i {
     width: 70%;
     right: 20px;
   }
+
+  /* MODAL  */
+  .modal-new .modal-box .modal-body .form-group {
+    margin-bottom: 0px;
+  }
+  .modal-new .modal-box .modal-body .form-group input,
+  .modal-new .modal-box .modal-body .form-group select {
+    height: auto;
+    margin-bottom: 5px;
+  }
+  .modal-new .modal-box .modal-body .form-group label {
+    font-size: 12px;
+    display: block;
+  }
+
+  .modal-new .modal-box .modal-body .form-group textarea {
+    height: 50px;
+  }
 }
 
 /* =================================================================== 
