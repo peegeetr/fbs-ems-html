@@ -105,7 +105,7 @@
           LEAVE DASHBOARD <i class="fas fa-plane-departure"></i>
         </h3>
         <div class="mb--30 leave-btn">
-          <a class="modal-popup" id="add-emp-leave"
+          <a href="employee-add-leave.html" class="btn-primary"
             ><i class="fa fa-plus"></i> Apply Leave</a
           >
         </div>
@@ -137,7 +137,7 @@
           </ul>
         </div> -->
         <div class="row">
-          <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
+          <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
             <div class="leave-status box-shadow">
               <ul>
                 <li>1/5</li>
@@ -145,7 +145,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
+          <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
             <div class="leave-status box-shadow">
               <ul>
                 <li>1/5</li>
@@ -153,7 +153,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
+          <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
             <div class="leave-status box-shadow">
               <ul>
                 <li>1/1</li>
@@ -161,7 +161,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
+          <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
             <div class="leave-status box-shadow">
               <ul>
                 <li>1/10</li>
@@ -169,7 +169,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
+          <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
             <div class="leave-status box-shadow">
               <ul>
                 <li>1/10</li>
@@ -178,7 +178,7 @@
             </div>
           </div>
         </div>
-        <div class="leave-counter ">
+        <div class="leave-counter">
           <p class="p-title mb--30">Leave Status</p>
           <div class="filter-stats mb--30">
             <table class="leave-table responsive-tbl">
@@ -186,33 +186,49 @@
                 <tr>
                   <th>Status</th>
                   <th>Type</th>
-                  <th>Reason</th>
-                  <th>Start</th>
-                  <th>End</th>
+                  <th>Leave Date</th>
                   <th># of days</th>
+                  <th>Action</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Approved</td>
+                  <td class="pending">Approved</td>
                   <td>Vacation</td>
-                  <td>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit
-                  </td>
+
                   <td>1/1/2020</td>
-                  <td>1/2/2020</td>
                   <td>2</td>
+                  <td>
+                    <a href="employee-add-leave.html " class="btn-edit-leave"
+                      ><i class="fas fa-edit"></i
+                    ></a>
+                  </td>
                 </tr>
 
                 <tr>
-                  <td>Approved</td>
+                  <td class="declined">Declined</td>
                   <td>Vacation</td>
-                  <td>
-                    Lorem ipsum, dolor sit amet consectetur
-                  </td>
+
                   <td>1/1/2020</td>
-                  <td>1/2/2020</td>
                   <td>2</td>
+                  <td>
+                    <a href="employee-add-leave.html " class="btn-edit-leave"
+                      ><i class="fas fa-edit"></i
+                    ></a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="approved">Approved</td>
+                  <td>Vacation</td>
+
+                  <td>1/1/2020</td>
+                  <td>2</td>
+                  <td>
+                    <a href="employee-add-leave.html " class="btn-edit-leave"
+                      ><i class="fas fa-edit"></i
+                    ></a>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -220,7 +236,7 @@
         </div>
       </div>
     </div>
-
+    <!-- 
     <section class="modal-new" id="modal-add-emp-leave">
       <div class="modal-box">
         <div class="modal-head">
@@ -247,22 +263,20 @@
               </select>
             </div>
 
+         
             <div class="form-group">
-              <label for="reason">Reason</label>
-              <textarea name="reason" id="" cols="30" rows="10"></textarea>
-            </div>
-
-            <div class="form-group">
-              <label for="start">Start</label>
+              <label for="start">Leave Date</label>
               <input type="date" />
             </div>
-            <div class="form-group">
-              <label for="end">End</label>
-              <input type="date" />
-            </div>
+          
 
             <div class="form-group">
               <label for="total-days"># of days</label>
+              <input type="number" />
+            </div>
+
+            <div class="form-group">
+              <label for="total-days">Action</label>
               <input type="number" />
             </div>
 
@@ -274,7 +288,7 @@
           </form>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <script src="../js/main.js"></script>
   </body>

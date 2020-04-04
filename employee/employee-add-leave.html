@@ -120,9 +120,9 @@
         </div>
         </div>
         <div class="leave-box box-shadow">
-            <form action="">
-                <div class="leave-form-box">
-                    <div class="row">
+            <form action="" class="standard-form">
+                 <div class="leave-form-box">
+                    <!-- <div class="row">
                         <div class="col-sm-4">
                             <p>Type<span class="color--red">*</span></p>
                             <select name="" id="" class="">
@@ -146,8 +146,8 @@
                             <input type="date" class="input-res "/>
                             <div class="alert-msg mb--10">Required</div>
                         </div>
-                    </div>
-                    <div class="row">
+                    </div> -->
+                    <!-- <div class="row">
                         <div class="col-sm-4">
                         <p>Reason<span class="color--red">*</span></p>
                         <textarea name="" id="" cols="30" rows="10"></textarea>
@@ -161,12 +161,12 @@
                             <p>Your Supervisor:</p>
                             <input class="form-control" type="text" value="Jhonny Dichoso">
                         </div>
-                    </div>
-                <div class="row">
+                    </div> -->
+                <!-- <div class="row">
                     <div class="col-sm-12">
-                        <!-- "cancel-leave display only for edit leave" -->
-                    <div class="cancel-leave mb--20">
-                        <input type="checkbox">
+                        "cancel-leave display only for edit leave" -->
+                    <!-- <div class="cancel-leave mb--20"> -->
+                        <!-- <input type="checkbox">
                         <label for="checkbox"> Check if you want to cancel leave</label>
                     </div>
                     </div>
@@ -175,9 +175,80 @@
                     <button class="btn-purple" onclick="window.location.href='#pop-process-success'">
                         Submit</a>
                     </button>
-                </div>
-              </div>
+                </div> --> 
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="">Type</label>
+                      <select name="" id="">
+                        <option value="pending">Pending</option>
+                        <option value="approved">Approved</option>
+                        <option value="declined">Declined</option>
+                        <option value="cancelled">Cancelled</option>
+                      </select>
+                      <span class="required"> *Required</span>
+                    </div>
+    
+                    <div class="form-group">
+                      <label for="">Start Date</label>
+                      <input type="date">
+                      <span class="required"> *Required</span>
+                    </div>
+    
+                    <div class="form-group">
+                      <label for="">End Date</label>
+                      <input type="date">
+                      <span class="required"> *Required</span>
+                    </div>
+
+                    <div class="form-group">
+                      <input type="checkbox"> <span>Check if you want to cancel application</span>
+                  </div>
+                  </div>
+                  <div class="col-md-6">
+
+                    <div class="form-group">
+                      <label for=""># of days</label>
+                      <select name="" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                      </select>
+                      <span class="required"> *Required</span>
+                    </div>
+
+                    
+                    <div class="form-group">
+                      <label for="">Reason</label>
+                      <textarea name="" id="" ></textarea>
+                      <span class="required"> *Required</span>
+                    </div>
+
                 
+
+                    <div class="form-group d-flex">
+                      <p><strong>Assign Supervisor</strong></p>
+                      <span>Jhonny Dichoso</span>
+                    </div>
+
+                
+                    <button class="btn-purple right">Submit </button>
+
+                  
+
+                  </div>
+                </div>
+
+
+              </div> 
+         
             </form>
         </div>
     </div>

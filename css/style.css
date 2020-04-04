@@ -593,13 +593,13 @@ form textarea {
   margin: 0 !important;
 }
 .approved {
-  background-color: rgb(149, 238, 152);
+  background-color: #6fdf73;
 } /* Green */
 .pending {
-  background-color: rgba(255, 152, 0, 0.5);
+  background-color: #faae3b;
 } /* Orange */
 .declined {
-  background-color: #fa7d74;
+  background-color: #ff9f98;
 } /* Red */
 
 .err-border-red {
@@ -1166,7 +1166,7 @@ span:after {
   width: 100%;
   height: 100vh;
   background-color: #34444c;
-  z-index: 1;
+  z-index: 2;
   display: none;
   overflow-y: auto;
 }
@@ -2512,7 +2512,7 @@ button.play i {
 /* MON EDIT MAR 31, 2020 - APR 1, 2020*/
 
 /* emp overtime manager */
-
+.btn-primary,
 .modal-popup {
   margin-top: 0;
   margin-bottom: 20px;
@@ -2522,7 +2522,8 @@ button.play i {
   display: inline-block;
 }
 
-.modal-popup i {
+.modal-popup i,
+.btn-primary i {
   background-color: #da28b5;
   padding: 5px;
   color: #fff;
@@ -2754,15 +2755,50 @@ button.play i {
   color: #fff;
 }
 
+.standard-form .form-group textarea {
+  height: 145px;
+}
+
+.standard-form .d-flex {
+  display: flex;
+}
+
+.standard-form .d-flex > * {
+  margin-right: 20px;
+}
+
+.stardard-form .form-group input,
+.stardard-form .form-group select,
+.stardard-form .form-group textarea {
+  margin-bottom: 0;
+}
+
+.stardard-form .form-group label {
+  margin-bottom: 0px;
+}
+
 .responsive-form {
   margin-bottom: 20px;
 }
 .responsive-form .form-group {
-  margin-bottom: 0;
+  margin-bottom: 10px;
+}
+
+.responsive-form .form-group label {
+  margin-bottom: 5px;
+}
+
+.responsive-form .form-group textarea {
+  height: 145px;
+}
+
+.responsive-form .form-group {
+  margin-bottom: 5px;
 }
 
 .responsive-form .form-group input,
-.responsive-form .form-group select {
+.responsive-form .form-group select,
+.responsive-form .form-group textarea {
   margin-bottom: 0;
 }
 
@@ -2902,18 +2938,14 @@ button.play i {
   }
 
   .leave-counter td:nth-of-type(3):before {
-    content: "Reason";
+    content: "Leave Date";
   }
 
   .leave-counter td:nth-of-type(4):before {
-    content: "Start";
+    content: "# fo days";
   }
   .leave-counter td:nth-of-type(5):before {
-    content: "End";
-  }
-
-  .leave-counter td:nth-of-type(6):before {
-    content: "# of days";
+    content: "Action";
   }
 
   .form-wrapper {
@@ -2972,7 +3004,7 @@ button.play i {
     display: block;
     position: absolute;
     right: 20px;
-    z-index: 2;
+    z-index: 1;
   }
 
   .form-overtime-wrapper {
@@ -3025,23 +3057,24 @@ button.play i {
     width: 70%;
     right: 20px;
   }
-
-  /* MODAL  */
-  .modal-new .modal-box .modal-body .form-group {
-    margin-bottom: 0px;
-  }
-  .modal-new .modal-box .modal-body .form-group input,
-  .modal-new .modal-box .modal-body .form-group select {
-    height: auto;
-    margin-bottom: 5px;
-  }
-  .modal-new .modal-box .modal-body .form-group label {
-    font-size: 12px;
-    display: block;
+  .leave-status {
+    padding: 10px;
   }
 
-  .modal-new .modal-box .modal-body .form-group textarea {
-    height: 50px;
+  .leave-status ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .leave-status ul li:first-child {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+  }
+  .leave-status ul li:last-child {
+    padding: 0;
+    margin-left: 20px;
+    background-color: transparent;
   }
 }
 
@@ -3403,7 +3436,6 @@ article:after {
   .side-nav {
     display: block;
     width: 70px;
-    z-index: 2;
   }
   .side-nav ul li span:nth-child(2) {
     display: none;
