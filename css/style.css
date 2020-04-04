@@ -1386,7 +1386,7 @@ form.index-login {
 .warning-info i,
 .warning i {
   padding: 0 20px;
-  font-size: 30px;
+  font-size: 16px;
   color: #fff;
 }
 
@@ -2700,6 +2700,21 @@ button.play i {
   display: none;
 }
 
+/* GENERAL STYLE PARA SA FORM SA TAAS NANG MGA TABLE */
+
+.page-action-form {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.page-action-form > .form-group {
+  margin-right: 10px;
+}
+
+.page-action-form button {
+  align-self: flex-end;
+}
+
 .modal-new .modal-box {
   max-width: 450px;
   margin: 0 15px;
@@ -2761,12 +2776,23 @@ button.play i {
 
 .standard-form .d-flex {
   display: flex;
+  align-items: center;
 }
 
 .standard-form .d-flex > * {
   margin-right: 20px;
 }
 
+.standard-form .form-group h4 {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+}
+.standard-form .form-group p {
+  margin-bottom: 25px;
+}
 .stardard-form .form-group input,
 .stardard-form .form-group select,
 .stardard-form .form-group textarea {
@@ -2824,15 +2850,18 @@ button.play i {
     top: -9999px;
     left: -9999px;
   }
-  .responsive-tbl tr:nth-child(odd) {
-    background-color: #808080;
-    margin: 20px 0;
-    color: #fff;
+
+  .responsive-tbl tr {
+    margin-bottom: 10px;
   }
+
+  /* .responsive-tbl tr:nth-child(odd) {
+     background-color: #f3f3f3;
+  } */
 
   .responsive-tbl td {
     border: none;
-    border-bottom: 1px solid #d6d6d6;
+    /* border-bottom: 1px solid #d6d6d6; */
     position: relative;
     padding-left: 50%;
     text-align: left;
@@ -2840,7 +2869,7 @@ button.play i {
   }
 
   .responsive-tbl td:last-child {
-    border: none;
+    border-bottom: 1px solid #d6d6d6;
   }
 
   .responsive-tbl td:before {
@@ -2945,6 +2974,34 @@ button.play i {
     content: "# fo days";
   }
   .leave-counter td:nth-of-type(5):before {
+    content: "Action";
+  }
+
+  .admin-leave-table td:nth-of-type(1):before {
+    content: "Status";
+  }
+
+  .admin-leave-table td:nth-of-type(2):before {
+    content: "Type";
+  }
+
+  .admin-leave-table td:nth-of-type(3):before {
+    content: "First Name";
+  }
+
+  .admin-leave-table td:nth-of-type(4):before {
+    content: "Last Name";
+  }
+
+  .admin-leave-table td:nth-of-type(5):before {
+    content: "Leave Date";
+  }
+
+  .admin-leave-table td:nth-of-type(6):before {
+    content: "# of days";
+  }
+
+  .admin-leave-table td:nth-of-type(7):before {
     content: "Action";
   }
 
@@ -3075,6 +3132,14 @@ button.play i {
     padding: 0;
     margin-left: 20px;
     background-color: transparent;
+  }
+
+  .page-action-form {
+    flex-direction: column;
+  }
+
+  .page-action-form > .form-group {
+    margin-bottom: 20px;
   }
 }
 

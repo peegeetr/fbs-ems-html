@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Employee Add Leave Dashboard</title>
+    <title>Administrator View Leave Dashboard</title>
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans"
       rel="stylesheet"
@@ -98,6 +98,7 @@
         </ul>
       </nav>
     </div>
+    
     <div class="main-content">
       <div class="content-wrap">
         <h3 class="mb--30">
@@ -122,124 +123,60 @@
         <div class="leave-box box-shadow">
             <form action="" class="standard-form">
                  <div class="leave-form-box">
-                    <!-- <div class="row">
-                        <div class="col-sm-4">
-                            <p>Type<span class="color--red">*</span></p>
-                            <select name="" id="" class="">
-                                <option value="" selected disabled>--</option>
-                                <option value="Vacation">Vacation</option>
-                                <option value="Sick">Sick Leave</option>
-                                <option value="Emergency">Emergency</option>
-                                <option value="Birthday">Birthday</option>
-                                <option value="Paternity">Paternity</option>
-                                <option value="Maternity">Maternity</option>
-                            </select>
-                            <div class="alert-msg mb--10">Required</div>
-                        </div>
-                        <div class="col-sm-4">
-                            <p>From<span class="color--red">*</span></p>
-                            <input type="date" class="input-res "/>
-                            <div class="alert-msg mb--10">Required</div>
-                        </div>
-                        <div class="col-sm-4">
-                            <p>From<span class="color--red">*</span></p>
-                            <input type="date" class="input-res "/>
-                            <div class="alert-msg mb--10">Required</div>
-                        </div>
-                    </div> -->
-                    <!-- <div class="row">
-                        <div class="col-sm-4">
-                        <p>Reason<span class="color--red">*</span></p>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                        <div class="alert-msg mb--10">Required</div>
-                        </div>
-                        <div class="col-sm-4">
-                            <p>No. of Day/s:</p>
-                             <input class="form-control" type="text" value="1">
-                        </div>
-                        <div class="col-sm-4">
-                            <p>Your Supervisor:</p>
-                            <input class="form-control" type="text" value="Jhonny Dichoso">
-                        </div>
-                    </div> -->
-                <!-- <div class="row">
-                    <div class="col-sm-12">
-                        "cancel-leave display only for edit leave" -->
-                    <!-- <div class="cancel-leave mb--20"> -->
-                        <!-- <input type="checkbox">
-                        <label for="checkbox"> Check if you want to cancel leave</label>
-                    </div>
-                    </div>
-                </div>
-                <div class="leave-button">
-                    <button class="btn-purple" onclick="window.location.href='#pop-process-success'">
-                        Submit</a>
-                    </button>
-                </div> --> 
+                  
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
-                      <label for="">Type</label>
-                      <select name="" id="">
-                        <option value="pending">Vacation</option>
-                        <option value="approved">Sick</option>
-                        <option value="birthday">Birthday</option>
-                        <option value="paternal">Parternal</option>
-                        <option value="maternal">Maternal</option>
-                      </select>
-                      <span class="required"> *Required</span>
+                      <h4>Leave Type</h4>
+                      <p>Vacation Leave</p>
                     </div>
     
                     <div class="form-group">
-                      <label for="">Start Date</label>
-                      <input type="date">
-                      <span class="required"> *Required</span>
+                      <h4>Start Date</h4>
+                      <p>1/12/2020</p>
                     </div>
     
                     <div class="form-group">
-                      <label for="">End Date</label>
-                      <input type="date">
-                      <span class="required"> *Required</span>
+                      <h4>End Date</h4>
+                      <p>1/12/2020</p>
                     </div>
 
                     <div class="form-group">
-                      <input type="checkbox"> <span>Check if you want to cancel application</span>
-                  </div>
+                      <h4># of Days</h4>
+                      <p>4</p>
+                    </div>
+
+                    <div class="form-group">
+                      <h4>Leave Reason</h4>
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas numquam labore vero porro ipsa, </p>
+                    </div>
+
+                   
                   </div>
                   <div class="col-md-6">
 
                     <div class="form-group">
-                      <label for=""># of days</label>
+                      <label for="">Leave Action</label>
+                      
                       <select name="" id="">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
+                        <option value="pending">Pending</option>
+                        <option value="approved">Approved</option>
+                        <option value="declined">Declined</option>
+                        
                       </select>
                       <span class="required"> *Required</span>
                     </div>
 
                     
                     <div class="form-group">
-                      <label for="">Reason</label>
+                      <label for="">Reason for Rejection</label>
                       <textarea name="" id="" ></textarea>
                       <span class="required"> *Required</span>
                     </div>
 
                 
 
-                    <div class="form-group d-flex">
-                      <p><strong>Assign Supervisor</strong></p>
-                      <span>Jhonny Dichoso</span>
-                    </div>
-
-                
+                                    
                     <button class="btn-purple right">Submit </button>
 
                   
