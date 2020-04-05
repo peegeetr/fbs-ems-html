@@ -100,83 +100,114 @@
         <h3 class="mb--30">
           ADMIN LEAVE DASHBOARD <i class="fas fa-plane-departure"></i>
         </h3>
-        <div class="leave-counter mb--30">
+        <div class="leave-admin-counter mb--30">
           <div class="employee-section">
             <div class="employee">
-              <p class="p-title">Leave Filter</p>
-              <form action="">
-                <div class="leave-filter">
-                  <div class="row">
-                  <div class="col-sm-3 col-md3">
+      
+              <div class="top-form-wrapper">
+                <p class="t-right">
+                  <span class="required">All fields are require!</span>
+                </p>
+              <form action="" class="stardard-form page-action-form">
+                  <div class="form-group">
+                   
                     <label for="">Name</label>
-                    <input type="text">
+                    <select name="" id="">
+                      <option value="all">All Employee</option>
+                      <option value="reyes-patrick">Reyes, Patrick</option>
+                      <option value="plaza-ramon">Plaza, Ramon</option>
+                      <option value="dichoso-jhonny">Dichoso, Jhonny</option>
+                    </select>
+                    
                   </div>
-                  <div class="col-sm-8 col-md-4">
-                    <div class="row">
-                      <div class="col-sm-6 col-xs-6">
-                      <label for="">From</label>
-                      <input type="date">
-                    </div>
-                    <div class="col-sm-6 col-xs-6">
-                      <label for="">To</label>
-                      <input type="date">
-                    </div>
-                    </div>
+                  
+                  <div class="form-group">
+                    <label for="">From</label>
+                    <input type="date">
                   </div>
-                  <div class="col-sm-3 col-md-3">
+
+                  <div class="form-group">
+                    <label for="">To</label>
+                    <input type="date">
+                  </div>
+
+                  <div class="form-group">
                     <label for="">Status</label>
-                    <select name="" id="" class="">
-                        <option value="all" selected>All</option>
-                        <option value="vacation">Vacation</option>
-                        <option value="sick">Sick Leave</option>
-                        <option value="emergency">Emergency</option>
-                        <option value="birthday">Birthday</option>
-                        <option value="Paternity">Paternity</option>
-                        <option value="Maternity">Maternity</option>
+                    <select name="" id="">
+                     
+                      <option value="pending " selected> Pending</option>
+                      <option value="approved"> Approved</option>
+                      <option value="declined"> Declined</option>
+                      <option value="all-leave"> Add Leave</option>
                     </select>
                   </div>
-                  <div class="col-sm-2 col-md-2">
-                    <label for=""></label>
-                    <div class="leave-filter-button">
-                      <button class="btn-purple">
-                        Filter
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                </div>
+                  <button class="btn-purple"><i class="fa fas-filter"></i>  Filter</button>
               </form>
+              
+            </div>
             </div>
           </div>
         </div>
         <div class="leave-sum-content mb--50">
           <div class="leave-summary mb--10">
-            <p class="p-title">Leave Request</p>
             <div class="overflow-x">
-              <table>
-              <tr>
-                <th>Name</th>
-                <th>Type</th>
-                <th>Filed</th>
-                <th>Day(s)</th>
-                <th>Status</th>
-                <th>Action</th>
-              </tr>
-              <tr>
-                <td>David Catubay</td>
-                <td>Vacation</td>
-                <td>1/1/2020</td>
-                <td>1</td>
-                <td>
-                  Pending
-                </td>
-                <td>
-                  <button onclick="window.location.href=''">
-                    <i class="fas fa-eye"></i>
-                  </button>
-                </td>
-              </tr>
-            </table>
+              <table class="admin-leave-table responsive-tbl">
+                <thead>
+                  <tr>
+                    <th>Status</th>
+                    <th>Type</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Leave Date</th>
+                    <th># of days</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="pending">Approved</td>
+                    <td>Vacation</td>
+                    <td>Ramon</td>
+                    <td>Plaza</td>
+                    <td>1/1/2020</td>
+                    <td>2</td>
+                    <td>
+                      <a href="admin-leave-view.html " class="btn-edit-leave"
+                        ><i class="fas fa-edit"></i
+                      ></a>
+                    </td>
+                  </tr>
+  
+                  <tr>
+                    <td class="declined">Declined</td>
+                    <td>Vacation</td>
+                    <td>Ramon</td>
+                    <td>Plaza</td>
+                    <td>1/1/2020</td>
+                    <td>2</td>
+                    <td>
+                      <a href="admin-leave-view.html " class="btn-edit-leave"
+                        ><i class="fas fa-edit"></i
+                      ></a>
+                    </td>
+                  </tr>
+  
+                  <tr>
+                    <td class="approved">Approved</td>
+                    <td>Vacation</td>
+                    <td>Ramon</td>
+                    <td>Plaza</td>
+                    <td>1/1/2020</td>
+                    <td>2</td>
+                    <td>
+                      <a href="admin-leave-view.html " class="btn-edit-leave"
+                        ><i class="fas fa-edit"></i
+                      ></a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
             </div>
           </div>
         <!-- <div class="leave-status mb--30">
