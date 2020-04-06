@@ -3207,6 +3207,12 @@ article:after {
   z-index: 6;
 }
 
+.modal-delete {
+  visibility: visible;
+  opacity: 1;
+  z-index: 6;
+}
+
 /* .popup {
       margin: 70px auto;
       padding: 20px;
