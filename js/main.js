@@ -1,7 +1,7 @@
 var trigger = document.querySelector(".nav-trigger");
 var mobileNav = document.querySelector(".side-nav");
 
-trigger.addEventListener("click", function(event) {
+trigger.addEventListener("click", function (event) {
   event.preventDefault();
   mobileNav.classList.toggle("show");
 });
@@ -11,7 +11,7 @@ const notification = document.querySelector(".small-notif-notification");
 const close = document.querySelector(".small-notif-close");
 
 if (btnTrigger) {
-  btnTrigger.addEventListener("click", e => {
+  btnTrigger.addEventListener("click", (e) => {
     e.preventDefault();
     // console.log(btnTrigger);
     if (!notification.classList.contains("small-notif-show")) {
@@ -26,7 +26,7 @@ if (btnTrigger) {
 }
 
 if (close) {
-  close.addEventListener("click", e => {
+  close.addEventListener("click", (e) => {
     e.preventDefault();
     notification.classList.remove("small-notif-show");
   });
@@ -36,7 +36,7 @@ if (close) {
 const icoMore = document.querySelectorAll(".ico-more");
 const moreInfo = document.querySelectorAll(".more-info");
 
-icoMore.forEach(ico => {
+icoMore.forEach((ico) => {
   ico.addEventListener("click", () => {
     if (ico.nextElementSibling.classList.contains("more-info-open")) {
       ico.nextElementSibling.classList.remove("more-info-open");
@@ -47,14 +47,14 @@ icoMore.forEach(ico => {
   });
 });
 
-window.addEventListener("click", e => {
+window.addEventListener("click", (e) => {
   if (e.target.classList.contains("main-content")) {
     removeOpen();
   }
 });
 
 function removeOpen() {
-  moreInfo.forEach(more => {
+  moreInfo.forEach((more) => {
     more.classList.remove("more-info-open");
   });
 }
@@ -71,14 +71,14 @@ const date = document.querySelector("#date");
 const otStatus = document.querySelector(".ot-status");
 
 if (icoFilter) {
-  icoFilter.addEventListener("click", e => {
+  icoFilter.addEventListener("click", (e) => {
     e.preventDefault();
     icoFilter.nextElementSibling.classList.toggle("open");
   });
 }
 
 function removeChecked() {
-  inputs.forEach(function(input) {
+  inputs.forEach(function (input) {
     input.removeAttribute("checked");
   });
 }
@@ -100,7 +100,7 @@ function checkInput() {
 
 selectFilter();
 function selectFilter() {
-  inputs.forEach(function(input) {
+  inputs.forEach(function (input) {
     input.addEventListener("click", () => {
       removeChecked();
       input.setAttribute("checked", "");
@@ -116,12 +116,12 @@ const modalPopup = document.querySelectorAll(".modal-popup");
 const modalNew = document.querySelector(".modal-new");
 const modalClose = document.querySelector(".modal-close");
 
-modalPopup.forEach(modal => {
+modalPopup.forEach((modal) => {
   modal.addEventListener("click", openModal);
 });
 
 if (modalNew) {
-  modalNew.addEventListener("click", e => {
+  modalNew.addEventListener("click", (e) => {
     if (e.target.classList.contains("modal-new")) {
       modalNew.style.display = "none";
       e.stopPropagation();
@@ -143,3 +143,12 @@ function openModal(e) {
   const openModal = document.querySelector(`#modal-${e.target.id}`);
   openModal.style.display = "flex";
 }
+
+const openModalIco = document.querySelectorAll(".open-modal-ico");
+
+openModalIco.forEach((modalIco) => {
+  modalIco.addEventListener("click", (e) => {
+    e.preventDefault();
+    modalNew.style.display = "flex";
+  });
+});

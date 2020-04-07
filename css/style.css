@@ -113,7 +113,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
-  overflow-x: auto;
 }
 
 .overflow-x {
@@ -349,6 +348,9 @@ img.clients-logo {
 
 .mt--20 {
   margin-top: 20px !important;
+}
+.mt--30 {
+  margin-top: 30px !important;
 }
 
 .mb--10 {
@@ -2178,6 +2180,10 @@ button.add-user-btn i {
   font-size: 18px;
 }
 
+.list-of-users {
+  position: relative;
+}
+
 .list-of-users table ul li {
   list-style-type: none;
   margin: 5px;
@@ -2622,6 +2628,15 @@ button.play i {
 .task-stats .more-info td {
   white-space: nowrap;
 }
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
 .more-info {
   padding: 10px;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
@@ -2701,10 +2716,16 @@ button.play i {
 }
 
 /* GENERAL STYLE PARA SA FORM SA TAAS NANG MGA TABLE */
+.d-flex {
+  display: flex;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
 
 .page-action-form {
   display: flex;
-  justify-content: flex-end;
 }
 
 .page-action-form > .form-group {
@@ -2716,6 +2737,7 @@ button.play i {
 }
 
 .modal-new .modal-box {
+  width: 450px;
   max-width: 450px;
   margin: 0 15px;
   background-color: #fff;
@@ -2750,7 +2772,11 @@ button.play i {
 }
 
 .modal-new .modal-box .modal-body .form-group .d-flex span {
-  padding: 0 20px;
+  padding: 0 10px;
+}
+
+.modal-new .modal-box .modal-body .form-group .goal-timer input {
+  width: 30px;
 }
 .modal-new .modal-box .modal-footer {
   padding: 10px 0;
@@ -2833,6 +2859,26 @@ button.play i {
   align-self: flex-end;
   /* margin-bottom: 10px; */
   margin-left: 10px;
+}
+
+.emp-leave-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.emp-leave-action .standard-form select {
+  margin-right: 0;
+}
+
+.emp-leave-action a {
+  margin-bottom: 11px;
+}
+
+@media screen and (max-width: 769px) {
+  .modal-new {
+    overflow: scroll;
+    align-items: flex-start;
+  }
 }
 
 @media screen and (max-width: 414px) {
@@ -3005,6 +3051,19 @@ button.play i {
     content: "Action";
   }
 
+  .list-of-users td:nth-of-type(1):before {
+    content: "Name";
+  }
+  .list-of-users td:nth-of-type(2):before {
+    content: "Email";
+  }
+  .list-of-users td:nth-of-type(3):before {
+    content: "Role";
+  }
+  .list-of-users td:nth-of-type(4):before {
+    content: "Action";
+  }
+
   .form-wrapper {
     display: relative;
   }
@@ -3056,12 +3115,26 @@ button.play i {
     font-size: 40px;
   }
 
-  .form-overtime-box {
-    width: 55%;
+  .form-overtime-box,
+  .tooltip {
+    max-width: 450px;
+    width: 250px;
     display: block;
     position: absolute;
     right: 20px;
     z-index: 1;
+  }
+
+  .tooltip {
+    background-color: #fff;
+  }
+
+  .tooltip form {
+    padding: 20px 10px;
+    background-color: #eee;
+    flex-direction: column;
+    display: none;
+    width: 100%;
   }
 
   .form-overtime-wrapper {
@@ -3138,8 +3211,32 @@ button.play i {
     flex-direction: column;
   }
 
-  .page-action-form > .form-group {
+  .page-action-form .d-flex {
+    flex-direction: column;
+  }
+
+  .page-action-form .form-group {
     margin-bottom: 20px;
+  }
+
+  .top-form-wrapper p {
+    text-align: center !important;
+  }
+
+  /* MODAL */
+  .modal-new {
+    overflow: scroll;
+    align-items: center;
+  }
+
+  .modal-new .modal-box .modal-body .form-group label {
+    font-size: 14px;
+  }
+  .modal-new .modal-box .modal-body .form-group input,
+  .modal-new .modal-box .modal-body .form-group select {
+    font-size: 14px;
+    padding: 4px 8px;
+    height: auto;
   }
 }
 
@@ -3620,10 +3717,6 @@ article:after {
     font-size: 18px;
     margin-bottom: 20px !important;
     margin-top: -20px;
-  }
-
-  .leave-btn {
-    text-align: center;
   }
 
   .save-employee button,
