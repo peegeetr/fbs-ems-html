@@ -3906,6 +3906,7 @@ button:disabled:hover {
   justify-content: center;
   -webkit-animation: fadein 0.5s;
   animation: fadein 0.5s;
+  z-index: 999999;
 }
 
 .small-notif-show {
