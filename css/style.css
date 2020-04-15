@@ -1219,6 +1219,22 @@ span:after {
   margin: 0 10px;
 }
 
+.side-nav nav {
+  height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.console-btn {
+  color: #fff;
+  padding: 15px;
+  background-color: #5d6b72;
+}
+.console-btn i {
+  padding-right: 10px;
+}
+
 /* =================================================================== 
      * 5.0 :: Main Content
      * ===================================================================
@@ -2734,6 +2750,7 @@ button.play i {
 
 .page-action-form button {
   align-self: flex-end;
+  margin-top: 0;
 }
 
 .modal-new .modal-box {
