@@ -1198,11 +1198,13 @@ span:after {
   left: 0;
   background-color: #fff;
 }
-.side-nav ul li a {
+.side-nav ul li a,
+.side-nav button {
   color: #fff;
   display: block;
   text-decoration: none;
   padding: 16px 16px;
+  text-align: left;
 }
 .side-nav ul li i {
   color: #fff;
@@ -2533,6 +2535,26 @@ button.play i {
 
 /* MON EDIT MAR 31, 2020 - APR 1, 2020*/
 
+.leave-filter {
+  float: right;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.leave-filter .form-group {
+  display: flex;
+  align-items: center;
+}
+
+.leave-filter .form-group select {
+  width: auto !important;
+  margin-left: 10px;
+}
+
 /* emp overtime manager */
 .btn-primary,
 .modal-popup {
@@ -2849,9 +2871,9 @@ button.play i {
 .responsive-form {
   margin-bottom: 20px;
 }
-.responsive-form .form-group {
-  margin-bottom: 10px;
-}
+/* .responsive-form .form-group {
+  margin-bottom: 10px; 
+} */
 
 .responsive-form .form-group label {
   margin-bottom: 5px;
@@ -2859,10 +2881,6 @@ button.play i {
 
 .responsive-form .form-group textarea {
   height: 145px;
-}
-
-.responsive-form .form-group {
-  margin-bottom: 5px;
 }
 
 .responsive-form .form-group input,
@@ -3634,8 +3652,9 @@ article:after {
   .side-nav ul li i {
     font-size: 26px;
   }
-  .side-nav ul li a {
-    text-align: center;
+  .side-nav ul li a,
+  .side-nav ul li button {
+    text-align: left;
   }
   .main-content {
     margin-left: 70px;
@@ -3693,7 +3712,8 @@ article:after {
   .side-nav ul li i {
     font-size: 16px;
   }
-  .side-nav ul li a {
+  .side-nav ul li a,
+  .side-nav ul li button {
     text-align: left;
   }
   .side-nav .logo i {

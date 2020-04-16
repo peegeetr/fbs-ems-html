@@ -87,10 +87,10 @@
             </a>
           </li>
           <li class="menu-logout menu">
-            <a href="#">
+            <button id="btn-logout">
               <span><i class="fas fa-sign-out-alt"></i></span>
               <span>Log Out</span>
-            </a>
+            </button>
           </li>
         </ul>
       </nav>
@@ -141,10 +141,32 @@
                       <option value="all-leave"> Add Leave</option>
                     </select>
                   </div>
+
+                  <div class="form-group">
+                    <label for="">Leave Type</label>
+                    <select name="" id="">
+                      <option value="all " selected> All</option>
+                      <option value="vacation"> Vacation</option>
+                      <option value="sick"> Sick</option>
+                      <option value="birthday"> Birthday</option>
+                      
+                    </select>
+                  </div>
+
+                  
+                  <div class="form-group">
+                    <label for="">Department</label>
+                    <select name="" id="">
+                      <option value="twomiles " selected> Two Miles</option>
+                      <option value="fbs"> Web</option>
+                      <option value="admin"> Administration</option>
+                      
+                    </select>
+                  </div>
+
                   <div class="form-group">
                     <label for="">&nbsp;</label>
                     <button class="btn-purple"><i class="fa fas-filter"></i>  Filter</button>
-                   
                   </div>
               </form>
               
@@ -155,7 +177,22 @@
         <div class="leave-sum-content mb--50">
           <div class="leave-summary mb--10">
             <div class="overflow-x">
-              <table class="admin-leave-table responsive-tbl">
+
+              <form action="" class="leave-filter">
+                <div class="form-group" >
+                  <label for="">Sort By:</label>
+                  <select name="" id="">
+                    <option value="leave-asc" selected> Leave Date [A-Z]</option>
+                    <option value="leave-desc">Leave Date [Z-A]</option>
+                    <option value="lastname-asc">Lastname [A-Z]</option>
+                    <option value="lastname-desc">Lastname [Z-A]</option>
+                    
+                  </select>
+                </div>
+
+              </form>  
+
+              <table class="admin-leave-table responsive-tbl clearfix">
                 <thead>
                   <tr>
                     <th>Status</th>
@@ -164,6 +201,7 @@
                     <th>Last Name</th>
                     <th>Leave Date</th>
                     <th># of days</th>
+                    <th>Remaining Leaves</th>
                     <th>Action</th>
                   </tr>
                 </thead>
@@ -175,6 +213,7 @@
                     <td>Plaza</td>
                     <td>1/1/2020</td>
                     <td>2</td>
+                    <td>5</td>
                     <td>
                       <a href="admin-leave-view.html " class="btn-edit-leave"
                         ><i class="fas fa-edit"></i
@@ -189,6 +228,7 @@
                     <td>Plaza</td>
                     <td>1/1/2020</td>
                     <td>2</td>
+                    <td>5</td>
                     <td>
                       <a href="admin-leave-view.html " class="btn-edit-leave"
                         ><i class="fas fa-edit"></i
@@ -203,6 +243,7 @@
                     <td>Plaza</td>
                     <td>1/1/2020</td>
                     <td>2</td>
+                    <td>5</td>
                     <td>
                       <a href="admin-leave-view.html " class="btn-edit-leave"
                         ><i class="fas fa-edit"></i
@@ -338,6 +379,9 @@
         </div>
       </div>
     </div>
+
+
+
     <script src="../js/main.js"></script>
   </body>
 </html>
