@@ -2536,7 +2536,7 @@ button.play i {
 /* MON EDIT MAR 31, 2020 - APR 1, 2020*/
 
 .leave-filter {
-  float: right;
+  float: left;
   display: block;
   margin-bottom: 10px;
 }
