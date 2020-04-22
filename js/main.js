@@ -152,3 +152,41 @@ openModalIco.forEach((modalIco) => {
     modalNew.style.display = "flex";
   });
 });
+
+const filterBtn = document.querySelector(".filter-toggle-btn");
+const filterForm = document.querySelector('.admin-leave-filter');
+
+
+filterBtn.addEventListener('click', () =>{
+  filterForm.classList.toggle('open-filters')
+})
+
+
+const tableLeave = document.querySelectorAll('.table-leave');
+const tabNav = document.querySelectorAll('.table-tabs-nav ul li');
+
+
+selectTab();
+function selectTab(){
+  tabNav.forEach((tab) => {
+    tab.addEventListener('click', ()=> {
+      removeActive();
+      tab.classList.add('active-navtab')
+      const activeTab = document.querySelector(`#${tab.id}-box`);
+      activeTab.classList.add('active-table');
+    })
+  })
+}
+
+
+
+
+function removeActive(){
+  tableLeave.forEach((table)=>{
+    table.classList.remove('active-table')
+  })
+
+  tabNav.forEach((nav)=>{
+    nav.classList.remove('active-navtab')
+  })
+}

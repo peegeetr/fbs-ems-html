@@ -2536,7 +2536,7 @@ button.play i {
 /* MON EDIT MAR 31, 2020 - APR 1, 2020*/
 
 .leave-filter {
-  float: left;
+  float: right;
   display: block;
   margin-bottom: 10px;
 }
@@ -2909,6 +2909,72 @@ button.play i {
   margin-bottom: 11px;
 }
 
+
+.filter-toggle {
+  max-width: 520vw;
+}
+
+.filter-toggle-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.filter-toggle-form .form-group {
+  margin-right: 10px;
+  flex: 0 0 32%;
+  margin-bottom: 10px;
+}
+
+.filter-toggle-btn:hover {
+  cursor: pointer;
+  color: #da28b5;
+}
+
+.admin-leave-filter {
+  height: auto;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .5s ease;
+}
+
+.open-filters {
+  max-height: 620px;
+}
+
+.table-tabs-nav {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.table-tabs-nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.table-tabs-nav ul li {
+  
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 10px;
+}
+.table-tabs-nav ul li.active-navtab {
+  background-color: #da28b5;
+  color: #fff;
+  font-weight: bold;
+}
+
+.table-leave {
+  display: none;
+}
+
+.active-table {
+  display: block;
+}
+
+.filter-toggle-form .form-group input,
+.filter-toggle-form .form-group select {
+  width: 100%;
+}
+
 @media screen and (max-width: 769px) {
   .modal-new {
     overflow: scroll;
@@ -3272,6 +3338,10 @@ button.play i {
     font-size: 14px;
     padding: 4px 8px;
     height: auto;
+  }
+
+  .filter-toggle-form .form-group {
+    flex: 0 0 100%;
   }
 }
 
