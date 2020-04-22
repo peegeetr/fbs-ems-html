@@ -153,13 +153,16 @@ openModalIco.forEach((modalIco) => {
   });
 });
 
-const filterBtn = document.querySelector(".filter-toggle-btn");
-const filterForm = document.querySelector('.admin-leave-filter');
+const filterBtn = document.querySelectorAll(".filter-toggle-btn");
+//const filterForm = document.querySelector('.admin-leave-filter');
 
 
-filterBtn.addEventListener('click', () =>{
-  filterForm.classList.toggle('open-filters')
-})
+filterBtn.forEach((filter) => {
+  filter.addEventListener('click', () =>{
+    filter.nextElementSibling.classList.toggle('open-filters')
+  })
+});
+
 
 
 const tableLeave = document.querySelectorAll('.table-leave');

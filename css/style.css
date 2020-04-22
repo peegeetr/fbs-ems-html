@@ -2911,18 +2911,25 @@ button.play i {
 
 
 .filter-toggle {
-  max-width: 520vw;
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
 }
 
 .filter-toggle-form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+
+ 
 }
 .filter-toggle-form .form-group {
-  margin-right: 10px;
-  flex: 0 0 32%;
+  padding-right: 10px;
+  flex: 0 0 33.3%;
   margin-bottom: 10px;
+}
+.filter-toggle-form .form-group input,
+.filter-toggle-form .form-group select {
+  width: 100%;
 }
 
 .filter-toggle-btn:hover {
@@ -2938,7 +2945,7 @@ button.play i {
 }
 
 .open-filters {
-  max-height: 620px;
+  max-height: 1200px;
 }
 
 .table-tabs-nav {
@@ -3124,20 +3131,21 @@ button.play i {
     content: "Action";
   }
 
-  .admin-leave-table td:nth-of-type(1):before {
-    content: "Status";
-  }
+ 
 
-  .admin-leave-table td:nth-of-type(2):before {
+  .admin-leave-table td:nth-of-type(1):before {
     content: "Type";
   }
 
-  .admin-leave-table td:nth-of-type(3):before {
+  .admin-leave-table td:nth-of-type(2):before {
     content: "First Name";
   }
 
-  .admin-leave-table td:nth-of-type(4):before {
+  .admin-leave-table td:nth-of-type(3):before {
     content: "Last Name";
+  }
+  .admin-leave-table td:nth-of-type(4):before {
+    content: "Department";
   }
 
   .admin-leave-table td:nth-of-type(5):before {
@@ -3149,8 +3157,14 @@ button.play i {
   }
 
   .admin-leave-table td:nth-of-type(7):before {
+    content: "Status";
+  }
+
+  .admin-leave-table td:nth-of-type(8):before {
     content: "Action";
   }
+
+
 
   .list-of-users td:nth-of-type(1):before {
     content: "Name";

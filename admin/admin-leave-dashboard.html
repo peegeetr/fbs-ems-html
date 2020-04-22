@@ -109,71 +109,7 @@
                   <span class="required">All fields are require!</span>
                 </p>
               
-              <div class="filter-toggle">
-                <div class="filter-toggle-btn"><i class="fas fa-filter"></i> Filter Options</div>
-                <form action="" class="stardard-form admin-leave-filter">
-                  <div class="filter-toggle-form">
-                  <div class="form-group">
-                    <label for="">Name</label>
-                    <select name=""  >
-                      <option value="all">All Employee</option>
-                      <option value="reyes-patrick">Reyes, Patrick</option>
-                      <option value="plaza-ramon">Plaza, Ramon</option>
-                      <option value="dichoso-jhonny">Dichoso, Jhonny</option>
-                    </select>
-                    <div class="alert-msg mb--10">Required</div>
-                  </div>
-                  
-                  <div class="form-group">   
-                    <label for="">From</label>
-                    <input type="date">
-                  </div>
-
-                  <div class="form-group">
-                    <label for="">To</label>
-                    <input type="date">
-                  </div>
-
-                  <div class="form-group">
-                    <label for="">Status</label>
-                    <select name=""  >
-                     
-                      <option value="pending " selected> Pending</option>
-                      <option value="approved"> Approved</option>
-                      <option value="declined"> Declined</option>
-                      <option value="all-leave"> Add Leave</option>
-                    </select>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="">Leave Type</label>
-                    <select name=""  >
-                      <option value="all " selected> All</option>
-                      <option value="vacation"> Vacation</option>
-                      <option value="sick"> Sick</option>
-                      <option value="birthday"> Birthday</option>
-                      
-                    </select>
-                  </div>
-
-                  
-                  <div class="form-group">
-                    <label for="">Department</label>
-                    <select name=""  >
-                      <option value="twomiles " selected> Two Miles</option>
-                      <option value="fbs"> Web</option>
-                      <option value="admin"> Administration</option>
-                      
-                    </select>
-                  </div>
-                </div>
-
-                  <div class="form-group">
-                
-                    <button class="btn-purple"><i class="fa fas-filter"></i>  Filter</button>
-                  </div>
-              </form>
-              </div>
+           
               
               
             </div>
@@ -187,6 +123,7 @@
              
 
               <div class="table-tabs ">
+                
                 <div class="table-tabs-nav">
                   <ul>
                     <li class="active-navtab" id="table-1">Main Table</li>
@@ -194,7 +131,72 @@
                   </ul>
                 </div> 
                 <div class="table-leave active-table" id="table-1-box">
-                  <form action="" class="leave-filter ">
+                  <div class="filter-toggle">
+                    <div class="filter-toggle-btn"><i class="fas fa-filter"></i> Filter Options</div>
+                    <form action="" class="stardard-form admin-leave-filter">
+                      <div class="filter-toggle-form">
+                      <div class="form-group">
+                        <label for="">Name</label>
+                        <select name=""  >
+                          <option value="all">All Employee</option>
+                          <option value="reyes-patrick">Reyes, Patrick</option>
+                          <option value="plaza-ramon">Plaza, Ramon</option>
+                          <option value="dichoso-jhonny">Dichoso, Jhonny</option>
+                        </select>
+                        <div class="alert-msg mb--10">Required</div>
+                      </div>
+                      
+                      <div class="form-group">   
+                        <label for="">From</label>
+                        <input type="date">
+                      </div>
+    
+                      <div class="form-group">
+                        <label for="">To</label>
+                        <input type="date">
+                      </div>
+    
+                      <div class="form-group">
+                        <label for="">Status</label>
+                        <select name=""  >
+                         
+                          <option value="pending " selected> Pending</option>
+                          <option value="approved"> Approved</option>
+                          <option value="declined"> Declined</option>
+                          <option value="all-leave"> Add Leave</option>
+                        </select>
+                      </div>
+    
+                      <div class="form-group">
+                        <label for="">Leave Type</label>
+                        <select name=""  >
+                          <option value="all " selected> All</option>
+                          <option value="vacation"> Vacation</option>
+                          <option value="sick"> Sick</option>
+                          <option value="birthday"> Birthday</option>
+                          
+                        </select>
+                      </div>
+    
+                      
+                      <div class="form-group">
+                        <label for="">Department</label>
+                        <select name=""  >
+                          <option value="twomiles " selected> Two Miles</option>
+                          <option value="fbs"> Web</option>
+                          <option value="admin"> Administration</option>
+                          
+                        </select>
+                      </div>
+                    </div>
+    
+                      <div class="form-group">
+                    
+                        <button class="btn-purple"><i class="fa fas-filter"></i>  Filter</button>
+                      </div>
+                  </form>
+                  </div>
+                  <!-- <form action="" class="leave-filter ">
                     <div class="form-group" >
                       <label for="">Sort By:</label>
                       <select name="" >
@@ -206,72 +208,129 @@
                       </select>
                     </div>
     
-                  </form>  
+                  </form>   -->
     
                   <table class="admin-leave-table responsive-tbl clearfix">
                     <thead>
                       <tr>
-                        <th>Status</th>
+                        
                         <th>Type</th>
                         <th>First Name</th>
                         <th>Last Name</th>
+                        <th>Department</th>
                         <th>Leave Date</th>
+                       
+              
                         <th># of days</th>
-                        <th>Remaining Leaves</th>
+                        <th>Status</th>
                         <th>Action</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td class="pending">Approved</td>
+                       
                         <td>Vacation</td>
                         <td>Ramon</td>
                         <td>Plaza</td>
+                        <td>Web </td>
                         <td>1/1/2020</td>
-                        <td>2</td>
+                      
                         <td>5</td>
+                        <td class="pending">Pending</td>
                         <td>
                           <a href="admin-leave-view.html " class="btn-edit-leave"
                             ><i class="fas fa-edit"></i
                           ></a>
                         </td>
                       </tr>
-      
+
                       <tr>
-                        <td class="declined">Declined</td>
+                       
                         <td>Vacation</td>
                         <td>Ramon</td>
                         <td>Plaza</td>
+                        <td>Web </td>
                         <td>1/1/2020</td>
-                        <td>2</td>
+                      
                         <td>5</td>
-                        <td>
-                          <a href="admin-leave-view.html " class="btn-edit-leave"
-                            ><i class="fas fa-edit"></i
-                          ></a>
-                        </td>
-                      </tr>
-      
-                      <tr>
                         <td class="approved">Approved</td>
-                        <td>Vacation</td>
-                        <td>Ramon</td>
-                        <td>Plaza</td>
-                        <td>1/1/2020</td>
-                        <td>2</td>
-                        <td>5</td>
                         <td>
                           <a href="admin-leave-view.html " class="btn-edit-leave"
                             ><i class="fas fa-edit"></i
                           ></a>
                         </td>
                       </tr>
+
+                      <tr>
+                       
+                        <td>Vacation</td>
+                        <td>Ramon</td>
+                        <td>Plaza</td>
+                        <td>Web </td>
+                        <td>1/1/2020</td>
+                      
+                        <td>5</td>
+                        <td class="declined">Declined</td>
+                        <td>
+                          <a href="admin-leave-view.html " class="btn-edit-leave"
+                            ><i class="fas fa-edit"></i
+                          ></a>
+                        </td>
+                      </tr>
+      
+                  
+      
+                    
                     </tbody>
                   </table>
                 </div>
 
                 <div class="table-leave" id="table-2-box">
-                  <table class="admin-leave-table responsive-tbl ">
+                  <div class="filter-toggle">
+                    <div class="filter-toggle-btn"><i class="fas fa-filter"></i> Filter Options</div>
+                    <form action="" class="stardard-form admin-leave-filter">
+                      <div class="filter-toggle-form">
+                      <div class="form-group">
+                        <label for="">Name</label>
+                        <select name=""  >
+                          <option value="all">All Employee</option>
+                          <option value="reyes-patrick">Reyes, Patrick</option>
+                          <option value="plaza-ramon">Plaza, Ramon</option>
+                          <option value="dichoso-jhonny">Dichoso, Jhonny</option>
+                        </select>
+                        <div class="alert-msg mb--10">Required</div>
+                      </div>
+          
+    
+                      <div class="form-group">
+                        <label for="">Leave Type</label>
+                        <select name=""  >
+                          <option value="all " selected> All</option>
+                          <option value="vacation"> Vacation</option>
+                          <option value="sick"> Sick</option>
+                          <option value="birthday"> Birthday</option>
+                          
+                        </select>
+                      </div>
+    
+                      
+                      <div class="form-group">
+                        <label for="">Department</label>
+                        <select name=""  >
+                          <option value="twomiles " selected> Two Miles</option>
+                          <option value="fbs"> Web</option>
+                          <option value="admin"> Administration</option>
+                          
+                        </select>
+                      </div>
+                    </div>
+    
+                      <div class="form-group">
+                        <button class="btn-purple"><i class="fa fas-filter"></i>  Filter</button>
+                      </div>
+                  </form>
+                  </div>
+                  <table class="admin-leave-table responsive-tbl clearfix">
                     <thead>
                       <tr>
                        
@@ -287,21 +346,21 @@
                         <td>Vacation</td>
                         <td>Ramon</td>
                         <td>Plaza</td>
-                        <td>Web Team</td>
+                        <td>Web</td>
                         <td>5</td>
                       </tr>
                       <tr>
                         <td>Sick</td>
                         <td>Ramon</td>
                         <td>Plaza</td>
-                        <td>Web Team</td>
+                        <td>Web</td>
                         <td>5</td>
                       </tr>
                       <tr>
                         <td>Birthday</td>
                         <td>Ramon</td>
                         <td>Plaza</td>
-                        <td>Web Team</td>
+                        <td>Web</td>
                         <td>1</td>
                       </tr>
                     </tbody>
