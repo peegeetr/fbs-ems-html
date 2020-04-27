@@ -3611,6 +3611,47 @@ article:after {
 .side-success div {
   margin: 10px;
 }
+
+.google-link {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.google-link .form-group input {
+  margin-bottom: 0;
+}
+
+.google-link .form-group.google-url {
+  flex: 0 0 70%;
+  margin-bottom: 0;
+}
+
+.google-link .form-group.google-nav {
+  flex: 0 0 25%;
+  align-self: flex-end;
+  margin-bottom: 0;
+}
+.google-link .form-group ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.google-link .form-group ul li {
+  white-space: nowrap;
+}
+
+.google-link .form-group.google-nav a {
+  padding: 8px 14px;
+  margin-top: -10px;
+  display: inline-block;
+}
+.google-link .form-group.google-nav a:hover {
+  color: #da28b5;
+}
+
+
+
 /* ===================================================================
      * 0.0 :: Mobile CSS
      * ===================================================================
@@ -3824,6 +3865,8 @@ article:after {
   .ot-btn-adm {
     margin-top: 22px;
   }
+
+
 }
 
 @media screen and (max-width: 640px) {
@@ -3886,6 +3929,21 @@ article:after {
   .add-ot-box p {
     font-size: 14px;
   }
+  .google-link {
+    flex-direction: column;
+   }
+   .google-link .form-group.google-url,
+   .google-link .form-group.google-nav {
+     margin-bottom: 10px;
+   }
+   .google-link .form-group.google-nav{
+     flex: 0 0 100%;
+     align-self: flex-start;
+   }
+
+   .google-link .form-group ul {
+     justify-content: space-between;
+   }
 }
 
 @media screen and (max-width: 450px) {
